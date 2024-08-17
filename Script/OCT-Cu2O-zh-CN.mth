@@ -1,0 +1,137 @@
+﻿
+#Method(DisplayName=OCT-Cu2O-Pd合成,Overlapping=False)
+
+#Column(ValueList={InsGetField('$WhichPal3$','TraySlots')},Token=$SL.Tray$,DisplayName=样品盘,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="Tray Holder 2:Slot1")
+#Column(Max={InsGetField('$WhichPal3$','$SL.Tray$.MaxIndex')},Min=1,Token=$SL.Vial$,DisplayName=样品瓶,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=$Sample.Index$)
+#Column(CheckCondition='Z#this#'!='Z',CheckErrorMsg="样品名$System.StringCanNotBeEmpty$",Token=$SL.SampleName$,DisplayName=样品名,Type=String,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=Sample00$Sample.Index$)
+
+#Param(ValueList=$System._Instrument.CTCPal3$,Token="$WhichPal3$",DisplayName="进样臂",Type="List",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="ListCount('$System._Instrument.CTCPal3$')!=1",Default="$System.DefaultPal3Name$")
+//#Param(ValueList="4#8",Token="$CentriMaxCount$",DisplayName="离心机2mL数量",Type="List",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="4")
+#Param(Token=$IfPostClean$,DisplayName=结束后自动洗针,Type=Bool,DisableCondition="False",RefreshKey="*",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=True)
+#Param(Max=10,Min=0,Token=$PostClean1$,DisplayName=结束洗针次数1,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=3)
+#Param(Max=10,Min=0,Token=$PostClean2$,DisplayName=结束洗针次数2,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=0)
+#Param(ValueList={InsGetField('$WhichPal3$','IIncubator')},Token=$Pre_Agitator$,DisplayName=振荡槽,Type=List,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="Agitator 1")
+#Param(Max=200,Min=30,Token=$AgiTemp$,DisplayName=加热温度(°C),Type=Int32,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=30)
+#Param(Default="15",Token="$PostSetting$",DisplayName="..",Type="Splitor",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True")
+
+
+//CuCl2
+#Param(Token=$Pre_IfAddCuCl2$,DisplayName=是否添CuCl2,Type=Bool,DisableCondition="False",RefreshKey="*",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=True)
+#Param(ValueList={InsGetField('$System.DefaultPal3Name$','IToolLiquid')},Token="$CuCl2Tool$",DisplayName="CuCl2针",Type="List",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="#0")
+#Param(Max={InsGetField('$System.DefaultPal3Name$','$CuCl2Tool$.AspirateMax')},Min=0.1,Token="$CuCl2GetSpeed$",DisplayName="取样速度(uL/s)",Type="Double",DisableCondition="False",RefreshKey="$CuCl2Tool$",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default={InsGetField('$System.DefaultPal3Name$','$CuCl2Tool$.AspirateDef')})
+#Param(Max="10",Min="0",Token="$CuCl2Clean1$",DisplayName="取CuCl2前洗针次数1",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="2")
+#Param(Max="10",Min="0",Token="$CuCl2Clean2$",DisplayName="取CuCl2前洗针次数2",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="0")
+#Param(Max="10",Min="0",Token="$CuCl2CleanSample$",DisplayName="样品润针次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="1")
+#Param(Max="10",Min="0",Token="$CuCl2StrokeCount$",DisplayName="赶气泡次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="3")
+#Param(Max={StrToDouble(InsGetField('$System.DefaultPal3Name$','$CuCl2Tool$.SyringeVolume'))*10},Min=0,Token=$PreCuCl2Volume$,DisplayName=添加体积(uL),Type=Double,DisableCondition="",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=1000)
+#Param(Max=120,Min=0,Token=$CuCl2AgiTime$,DisplayName=振摇时间(min),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=10)
+#Param(Max=750,Min=250,Token=$CuCl2AgiSpeed$,DisplayName=振摇速度(rmp),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=700)
+#Param(Default="15",Token="$CuCl22Splitor$",DisplayName="..",Type="Splitor",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True")
+
+//NaOH
+#Param(Token=$Pre_IfAddNaOH$,DisplayName=是否添NaOH,Type=Bool,DisableCondition="False",RefreshKey="*",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=True)
+#Param(ValueList={InsGetField('$System.DefaultPal3Name$','IToolLiquid')},Token="$NaOHTool$",DisplayName="NaOH针",Type="List",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="#0")
+#Param(Max={InsGetField('$System.DefaultPal3Name$','$NaOHTool$.AspirateMax')},Min=0.1,Token="$NaOHGetSpeed$",DisplayName="取样速度(uL/s)",Type="Double",DisableCondition="False",RefreshKey="$NaOHTool$",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default={InsGetField('$System.DefaultPal3Name$','$NaOHTool$.AspirateDef')})
+#Param(Max="10",Min="0",Token="$NaOHClean1$",DisplayName="取NaOH前洗针次数1",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="2")
+#Param(Max="10",Min="0",Token="$NaOHClean2$",DisplayName="取NaOH前洗针次数2",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="0")
+#Param(Max="10",Min="0",Token="$NaOHCleanSample$",DisplayName="样品润针次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="1")
+#Param(Max="10",Min="0",Token="$NaOHStrokeCount$",DisplayName="赶气泡次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="3")
+#Param(Max={StrToDouble(InsGetField('$System.DefaultPal3Name$','$NaOHTool$.SyringeVolume'))*10},Min=0,Token=$PreNaOHVolume$,DisplayName=添加体积(uL),Type=Double,DisableCondition="",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=1000)
+#Param(Max=300,Min=0,Token=$NaOHAgiTime$,DisplayName=振摇时间(min),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=180)
+#Param(Max=750,Min=250,Token=$NaOHAgiSpeed$,DisplayName=振摇速度(rmp),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=700)
+
+
+//AA
+#Param(Token=$Pre_IfAddAA$,DisplayName=是否添AA,Type=Bool,DisableCondition="False",RefreshKey="*",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=True)
+#Param(ValueList={InsGetField('$System.DefaultPal3Name$','IToolLiquid')},Token="$AATool$",DisplayName="AA针",Type="List",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="#0")
+#Param(Max={InsGetField('$System.DefaultPal3Name$','$AATool$.AspirateMax')},Min=0.1,Token="$AAGetSpeed$",DisplayName="取样速度(uL/s)",Type="Double",DisableCondition="False",RefreshKey="$AATool$",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default={InsGetField('$System.DefaultPal3Name$','$AATool$.AspirateDef')})
+#Param(Max="10",Min="0",Token="$AAClean1$",DisplayName="取AA前洗针次数1",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="2")
+#Param(Max="10",Min="0",Token="$AAClean2$",DisplayName="取AA前洗针次数2",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="0")
+#Param(Max="10",Min="0",Token="$AACleanSample$",DisplayName="样品润针次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="1")
+#Param(Max="10",Min="0",Token="$AAStrokeCount$",DisplayName="赶气泡次数",Type="Int32",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="3")
+#Param(Max={StrToDouble(InsGetField('$System.DefaultPal3Name$','$AATool$.SyringeVolume'))*10},Min=0,Token=$PreAAVolume$,DisplayName=添加体积(uL),Type=Double,DisableCondition="",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=1000)
+#Param(Max=180,Min=0,Token=$AAAgiTime$,DisplayName=振摇时间(min),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=10)
+#Param(Max=750,Min=250,Token=$AAAgiSpeed$,DisplayName=振摇速度(rmp),Type=Double,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=700)
+#Param(Default="15",Token="$AA2Splitor$",DisplayName="..",Type="Splitor",DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True")
+
+
+
+Block(Name=PreQueue)
+    If($SampleList.Count$>12)
+        System.ErrorExit(ErrorInfo="样品数量不能大于12")
+    EndIf()
+EndBlock()
+Block(Name=PreSampleList)
+    $WhichPal3$.SetTemperature(Target=$Pre_Agitator$,Temperature=$AgiTemp$C,Wait=False,Tolerance=0.1K,MonitorTemperature=True)
+    SetVar(VarRange=SampleList,VarName=$TotalGroup$,VarValue=0)
+    System.PrintMessage(Message="序列开始运行",FCColor=Blue,BGColor=White)
+EndBlock()
+Block(Name=PostSampleList)
+    $WhichPal3$.Reset()
+EndBlock()
+
+If($Sample.Index$==$SampleList.Count$)
+    $WhichPal3$.SetTemperature(Target=$Pre_Agitator$,Temperature=$AgiTemp$C,Wait=True,Tolerance=0.1K,MonitorTemperature=True)
+    SetVar(VarRange=SampleList,VarName=$RepeatLoopCount$,VarValue=0)
+    Repeat(@@All)
+        SetVar(VarRange=SampleList,VarName=$RepeatLoopCount$,VarValue={$RepeatLoopCount$+1})
+        If($SampleList.RepeatLoopCount$>6)
+            $WhichPal3$.TransportVial(Source=$SL.Tray$:$SL.Vial$,Destination=Agitator 2,DestinationIndex={$SampleList.RepeatLoopCount$-6},LeaveDrawerOpen=True)
+        Else()
+            $WhichPal3$.TransportVial(Source=$SL.Tray$:$SL.Vial$,Destination=Agitator 1,DestinationIndex=$SampleList.RepeatLoopCount$,LeaveDrawerOpen=True)
+        EndIf()
+    EndRepeat()
+
+    If('$Pre_IfAddCuCl2$'=='True')
+        Repeat(@@All)
+            System.PrintMessage(Message="$SL.Tray$:$SL.Vial$添加CuCl2",FCColor=Blue,BGColor=White)
+            Call(Name=Pal3_SmartTranseLiquid,Pal3Name=$WhichPal3$,Volume=$PreCuCl2Volume$,Source=CuCl2Vial,SourceIndex=1,Target=$SL.Tray$,TargetIndex=$SL.Vial$,ForceTool=$CuCl2Tool$,CleanCount1=$CuCl2Clean1$,CleanCount2=$CuCl2Clean2$,CleanWithSample=$CuCl2CleanSample$,FillStrokeCount=$CuCl2StrokeCount$,FillSpeed=$CuCl2GetSpeed$,AddDeep=15,MovedVial=True)
+        EndRepeat()
+        If($CuCl2AgiTime$>0)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=True,Speed=$CuCl2AgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=True,Speed=$CuCl2AgiSpeed$rpm)
+            $WhichPal3$.Wait(Time=$CuCl2AgiTime$min)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=False,Speed=$CuCl2AgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=False,Speed=$CuCl2AgiSpeed$rpm)
+        EndIf()
+    EndIf()
+
+    If('$Pre_IfAddNaOH$'=='True')
+        Repeat(@@All)
+            System.PrintMessage(Message="$SL.Tray$:$SL.Vial$添加NaOH",FCColor=Blue,BGColor=White)
+            Call(Name=Pal3_SmartTranseLiquid,Pal3Name=$WhichPal3$,Volume=$PreNaOHVolume$,Source=NaOHVial,SourceIndex=1,Target=$SL.Tray$,TargetIndex=$SL.Vial$,ForceTool=$NaOHTool$,CleanCount1=$NaOHClean1$,CleanCount2=$NaOHClean2$,CleanWithSample=$NaOHCleanSample$,FillStrokeCount=$NaOHStrokeCount$,FillSpeed=$NaOHGetSpeed$,AddDeep=15,MovedVial=True)
+        EndRepeat()
+        If($NaOHAgiTime$>0)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=True,Speed=$NaOHAgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=True,Speed=$NaOHAgiSpeed$rpm)
+            $WhichPal3$.Wait(Time=$NaOHAgiTime$min)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=False,Speed=$NaOHAgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=False,Speed=$NaOHAgiSpeed$rpm)
+        EndIf()
+    EndIf()
+
+   
+
+    If('$Pre_IfAddAA$'=='True')
+        Repeat(@@All)
+            System.PrintMessage(Message="$SL.Tray$:$SL.Vial$添加AA",FCColor=Blue,BGColor=White)
+            Call(Name=Pal3_SmartTranseLiquid,Pal3Name=$WhichPal3$,Volume=$PreAAVolume$,Source=AAVial,SourceIndex=1,Target=$SL.Tray$,TargetIndex=$SL.Vial$,ForceTool=$AATool$,CleanCount1=$AAClean1$,CleanCount2=$AAClean2$,CleanWithSample=$AACleanSample$,FillStrokeCount=$AAStrokeCount$,FillSpeed=$AAGetSpeed$,AddDeep=15,MovedVial=True)
+        EndRepeat()
+        If($AAAgiTime$>0)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=True,Speed=$AAAgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=True,Speed=$AAAgiSpeed$rpm)
+            $WhichPal3$.Wait(Time=$AAAgiTime$min)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 1,State=False,Speed=$AAAgiSpeed$rpm)
+            $WhichPal3$.SetAgitator(Agitator=Agitator 2,State=False,Speed=$AAAgiSpeed$rpm)
+        EndIf()
+    EndIf()
+
+   
+
+   
+
+    Repeat(@@All)
+        $WhichPal3$.TransportVialHome(Vial=$SL.Tray$:$SL.Vial$)
+    EndRepeat()
+EndIf()
+// vim: nowrap tw=0 ft=prepmacro fdm=marker
