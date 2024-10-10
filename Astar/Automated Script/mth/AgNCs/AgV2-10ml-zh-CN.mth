@@ -137,7 +137,7 @@ If('$Pre_IfAddPVP$'=='True')
 EndIf()
 
 If('$Pre_IfAddCF3Ag$'=='True')
-    Call(Name=Pal3_SmartTranseLiquid,Pal3Name=$WhichPal3$,Volume=$PreCF3AgVolume$,Source=CF3Ag1Vial,SourceIndex=1,Target=$SL.Tray$,TargetIndex=$SL.Vial$,ForceTool=$CF3AgTool$,CleanCount1=$CF3AgClean1$,CleanCount2=$CF3AgClean2$,CleanWithSample=$CF3AgCleanSample$,FillStrokeCount=$CF3AgStrokeCount$,FillSpeed=$CF3AgGetSpeed$,AddDeep=15,MovedVial=True)
+    Call(Name=Pal3_SmartTranseLiquid,Pal3Name=$WhichPal3$,Volume=$PreCF3AgVolume$,Source=CF3AgVial,SourceIndex=1,Target=$SL.Tray$,TargetIndex=$SL.Vial$,ForceTool=$CF3AgTool$,CleanCount1=$CF3AgClean1$,CleanCount2=$CF3AgClean2$,CleanWithSample=$CF3AgCleanSample$,FillStrokeCount=$CF3AgStrokeCount$,FillSpeed=$CF3AgGetSpeed$,AddDeep=15,MovedVial=True)
     $WhichPal3$.SetAgitator(Agitator=$Pre_Agitator$,State=True,Speed=$CF3AgAgiSpeed$rpm)
     System.Wait(Time={$CF3AgAgiTime$*60},Info="振摇")
     //$WhichPal3$.SetAgitator(Agitator=$Pre_Agitator$,State=False,Speed=$CF3AgAgiSpeed$rpm)
