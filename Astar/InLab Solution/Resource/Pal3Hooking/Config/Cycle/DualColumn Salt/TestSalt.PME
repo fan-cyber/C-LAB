@@ -1,0 +1,17 @@
+syringe:Pal3Tool
+Dual Column Salt V2(30,3,3,3,2,10,100,100,3,3,1)
+[MACRO Dual Column Salt V2]
+PreLC Time (s);30;1;180
+Air Volume (µl);3;0;20
+Front Volume (µl);3;0;20
+Rear Volume (µl);3;0;20
+Get Speed (µl/s);2;1;50
+Inj Speed (µl/s);10;1;100
+Post Valve Clean1 (µl);100;0;600
+Post Valve Clean2 (µl);100;0;600
+Post Clean1 ();3;1;10
+Post Clean2 ();3;1;10
+Pump File ();1;1;10
+SET_ILMV(SLTray,SL.tray,SLVial,SL.Index,SLVolume,SL.Volume,PreLCTime,PreLC Time,AirVol,Air Volume,FrontVol,Front Volume,RearVol,Rear Volume,GetSpeed,Get Speed,InjSpeed,Inj Speed,PostVlvClean1,Post Valve Clean1,PostVlvClean2,Post Valve Clean2,PostClean1,Post Clean1,PostClean2,Post Clean2,PumpFile,Pump File,)
+SET_ILVN(RunMth,1,)
+SET_INJECTED()

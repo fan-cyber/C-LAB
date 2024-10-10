@@ -1,0 +1,3259 @@
+<LATESTPAL>
+	<LISTS>
+		<LIST>
+			<Index>0</Index>
+			<Param><![CDATA[]]></Param>
+		</LIST>
+		<LIST>
+			<Index>1</Index>
+			<Param><![CDATA[X;Y;Z;Plg;AUX1;AUX2;Pe]]></Param>
+		</LIST>
+		<LIST>
+			<Index>2</Index>
+			<Param><![CDATA[Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec]]></Param>
+		</LIST>
+		<LIST>
+			<Index>3</Index>
+			<Param><![CDATA[Immediat;TTL-In1;TTL-In2;TTL-In3;Opto-In1;Opto-In2]]></Param>
+		</LIST>
+		<LIST>
+			<Index>4</Index>
+			<Param><![CDATA[Off;TTL-Out1;TTL-Out2;TTL-Out3;SW-Out1;SW-Out2;Pwr-Out1;Pwr-Out2;FlushVlv;Vlv-MV0;Vlv-MV1;Vlv-MV2;Vlv-MV3;Vlv-MV4;Vlv-MV5;Vlv-MV6;Vlv-MV7;Vlv-MV8;Vlv-MV9;Vlv-MV*;OutExp01;OutExp02;OutExp03;OutExp04;OutExp05;OutExp06;OutExp07;OutExp08;OutExp09;OutExp10;OutExp11;OutExp12;OutExp13;OutExp14;OutExp15;OutExp16]]></Param>
+		</LIST>
+		<LIST>
+			<Index>5</Index>
+			<Param><![CDATA[Low;High]]></Param>
+		</LIST>
+		<LIST>
+			<Index>6</Index>
+			<Param><![CDATA[Off;On]]></Param>
+		</LIST>
+		<LIST>
+			<Index>7</Index>
+			<Param><![CDATA[Neg;Pos]]></Param>
+		</LIST>
+		<LIST>
+			<Index>8</Index>
+			<Param><![CDATA[Load;Inject]]></Param>
+		</LIST>
+		<LIST>
+			<Index>9</Index>
+			<Param><![CDATA[No;Yes]]></Param>
+		</LIST>
+		<LIST>
+			<Index>10</Index>
+			<Param><![CDATA[OK]]></Param>
+		</LIST>
+		<LIST>
+			<Index>11</Index>
+			<Param><![CDATA[Regular;Staggrd+;Staggrd-]]></Param>
+		</LIST>
+		<LIST>
+			<Index>12</Index>
+			<Param><![CDATA[LC-Inj;GC-Inj;GC-Dual;HS-Inj;SPME;GC-InjS;LC-Cut]]></Param>
+		</LIST>
+		<LIST>
+			<Index>13</Index>
+			<Param><![CDATA[Standard;Pulse;Flow;DLW;Active]]></Param>
+		</LIST>
+		<LIST>
+			<Index>14</Index>
+			<Param><![CDATA[None;AutoFix]]></Param>
+		</LIST>
+		<LIST>
+			<Index>15</Index>
+			<Param><![CDATA[1,2,3...;A1,B1...;A1,A2...]]></Param>
+		</LIST>
+		<LIST>
+			<Index>16</Index>
+			<Param><![CDATA[Sequ;Zone]]></Param>
+		</LIST>
+		<LIST>
+			<Index>17</Index>
+			<Param><![CDATA[Auto;Sample]]></Param>
+		</LIST>
+		<LIST>
+			<Index>18</Index>
+			<Param><![CDATA[Continue;Sample;Job;JobQueue]]></Param>
+		</LIST>
+		<LIST>
+			<Index>19</Index>
+			<Param><![CDATA[Off;TTL-In1;TTL-In2;TTL-In3;Opto-In1;Opto-In2]]></Param>
+		</LIST>
+		<LIST>
+			<Index>20</Index>
+			<Param><![CDATA[Retry;Ignore;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>21</Index>
+			<Param><![CDATA[Rectang;XY-Simul;Retract]]></Param>
+		</LIST>
+		<LIST>
+			<Index>22</Index>
+			<Param><![CDATA[None;Remote;Terminal;Printer;Barcode;ExtDev;VICI-Vlv]]></Param>
+		</LIST>
+		<LIST>
+			<Index>23</Index>
+			<Param><![CDATA[µm;m°]]></Param>
+		</LIST>
+		<LIST>
+			<Index>24</Index>
+			<Param><![CDATA[AUX1;AUX2;Syringe]]></Param>
+		</LIST>
+		<LIST>
+			<Index>25</Index>
+			<Param><![CDATA[None;Magnet;Needle]]></Param>
+		</LIST>
+		<LIST>
+			<Index>26</Index>
+			<Param><![CDATA[Continue]]></Param>
+		</LIST>
+		<LIST>
+			<Index>27</Index>
+			<Param><![CDATA[Append;Insert;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>28</Index>
+			<Param><![CDATA[All;Selected;Resume;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>29</Index>
+			<Param><![CDATA[Selected;All;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>30</Index>
+			<Param><![CDATA[X;Y;Z;X,Y,Z;Penetr;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>31</Index>
+			<Param><![CDATA[ChgSyr;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>32</Index>
+			<Param><![CDATA[Continue;ChgSyr]]></Param>
+		</LIST>
+		<LIST>
+			<Index>33</Index>
+			<Param><![CDATA[1;2;3;4;5;6;7;8;9;Abort]]></Param>
+		</LIST>
+		<LIST>
+			<Index>34</Index>
+			<Param><![CDATA[Standby;Active;Toggle]]></Param>
+		</LIST>
+		<LIST>
+			<Index>35</Index>
+			<Param><![CDATA[Continue;Job;JobQueue]]></Param>
+		</LIST>
+		<LIST>
+			<Index>36</Index>
+			<Param><![CDATA[Home;Waste]]></Param>
+		</LIST>
+		<LIST>
+			<Index>37</Index>
+			<Param><![CDATA[PlgDown;PlgUp;ValveSw;PreInj]]></Param>
+		</LIST>
+		<LIST>
+			<Index>38</Index>
+			<Param><![CDATA[1ml;2.5ml;5ml;10ml]]></Param>
+		</LIST>
+		<LIST>
+			<Index>39</Index>
+			<Param><![CDATA[Stop;Prepare;Collect;ChgVial]]></Param>
+		</LIST>
+		<LIST>
+			<Index>40</Index>
+			<Param><![CDATA[Start;Dilute;Stop;Flush;Cont]]></Param>
+		</LIST>
+		<LIST>
+			<Index>41</Index>
+			<Param><![CDATA[Off;On;Pos1;Pos2;Pos3;Pos4;Pos5;Pos6;Pos7;Pos8;Pos9;Pos10;Pos11;Pos12;Pos13;Pos14;Pos15;Pos16;Pos17;Pos18;Pos19;Pos20;Pos21;Pos22;Pos23;Pos24]]></Param>
+		</LIST>
+		<LIST>
+			<Index>42</Index>
+			<Param><![CDATA[Absolute;Relative]]></Param>
+		</LIST>
+		<LIST>
+			<Index>43</Index>
+			<Param><![CDATA[CondStrt;Start;Wait;Clear]]></Param>
+		</LIST>
+		<LIST>
+			<Index>44</Index>
+			<Param><![CDATA[Aspirate;Dispense]]></Param>
+		</LIST>
+		<LIST>
+			<Index>45</Index>
+			<Param><![CDATA[SER1;LAN]]></Param>
+		</LIST>
+		<LIST>
+			<Index>46</Index>
+			<Param><![CDATA[HSpeed;HTorque;Unknown]]></Param>
+		</LIST>
+		<LIST>
+			<Index>47</Index>
+			<Param><![CDATA[]]></Param>
+		</LIST>
+	</LISTS>
+	<CLASSES>
+		<CLASS>
+			<CLASSName>SYRINGE</CLASSName>
+			<Property><![CDATA[Syringe Id;0;99;0;1;E]]></Property>
+			<Property><![CDATA[Min Volume;0;10000000;100;10;nl]]></Property>
+			<Property><![CDATA[Max Volume;10;10000000;10000;10;nl]]></Property>
+			<Property><![CDATA[Scale Length;1000;80000;60000;100;µm]]></Property>
+			<Property><![CDATA[Standby Pos;0;80000;0;100;µm]]></Property>
+			<Property><![CDATA[Min Speed;10;10000000;10;10;nl/s]]></Property>
+			<Property><![CDATA[Max Speed;10;10000000;10000000;10;nl/s]]></Property>
+			<Property><![CDATA[Fill Volume;0;10000000;0;10;nl]]></Property>
+			<Property><![CDATA[Fill Strokes;0;99;5;1;E]]></Property>
+			<Property><![CDATA[Overfill;0;10;0;1;%]]></Property>
+			<Property><![CDATA[Pullup Del;0;99900;500;100;ms]]></Property>
+			<Property><![CDATA[Fill Speed;10;10000000;10;10;nl/s]]></Property>
+			<Property><![CDATA[Eject Speed;10;10000000;10;10;nl/s]]></Property>
+			<Property><![CDATA[Inject Speed;10;10000000;10;10;nl/s]]></Property>
+			<Property><![CDATA[Motor Drive;MOTOR_DRIVE]]></Property>
+			<Property><![CDATA[Heater;HEATER]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>VIAL</CLASSName>
+			<Property><![CDATA[Position X;-950000;950000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Y;0;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Z;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Z Tolerance ±;0;60000;5000;100;µm]]></Property>
+			<Property><![CDATA[Z Retract;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Max Penetrat;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Needle Penetr;0;150000;0;100;µm]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>TRAY_TYPE</CLASSName>
+			<Property><![CDATA[Row Length X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Row Length Y;-301000;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Col Length X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Col Length Y;-301000;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Spl Per Row;1;99;1;1;E]]></Property>
+			<Property><![CDATA[Spl Per Col;1;99;1;1;E]]></Property>
+			<Property><![CDATA[#Pattern;0;2;0;11]]></Property>
+			<Property><![CDATA[&TrayTypeGroup]]></Property>
+			<Property><![CDATA[Plate Thickn;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Vial Height;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[#Vial Trnsprt;0;2;0;25]]></Property>
+			<Property><![CDATA[ZSlideOffRetr;0;50000;4000;100;µm]]></Property>
+			<Property><![CDATA[YSlideOffDist;0;150000;40000;100;µm]]></Property>
+			<Property><![CDATA[#Barcode;0;1;0;14]]></Property>
+			<Property><![CDATA[Z Tolerance ±;0;60000;5000;100;µm]]></Property>
+			<Property><![CDATA[Z Retract;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Max Penetrat;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Needle Penetr;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Spl1 Offset X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Spl1 Offset Y;-301000;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Spl1 Offset Z;-300000;300000;0;100;µm]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>TRAY_HOLDER</CLASSName>
+			<Property><![CDATA[Position X;-950000;950000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Y;0;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Z;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Access Path;PATH]]></Property>
+			<Property><![CDATA[Restore Path;PATH]]></Property>
+			<Property><![CDATA[#Restore Mode;0;1;0;17]]></Property>
+			<Property><![CDATA[Heater;HEATER]]></Property>
+			<Property><![CDATA[Agitator;AGITATOR]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>TRAY</CLASSName>
+			<Property><![CDATA[Tray Holder;TRAY_HOLDER]]></Property>
+			<Property><![CDATA[&TrayTypeGroup]]></Property>
+			<Property><![CDATA[Tray Type;TRAY_TYPE]]></Property>
+			<Property><![CDATA[Offset X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Offset Y;-602000;602000;0;100;µm]]></Property>
+			<Property><![CDATA[Offset Z;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Path Offset X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Path Offset Y;-301000;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Path Offset Z;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[dxRow;-5000;5000;0;100;µm]]></Property>
+			<Property><![CDATA[dyRow;-5000;5000;0;100;µm]]></Property>
+			<Property><![CDATA[dzRow;-5000;5000;0;100;µm]]></Property>
+			<Property><![CDATA[dxCol;-5000;5000;0;100;µm]]></Property>
+			<Property><![CDATA[dyCol;-5000;5000;0;100;µm]]></Property>
+			<Property><![CDATA[dzCol;-5000;5000;0;100;µm]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>WASH_STATION</CLASSName>
+			<Property><![CDATA[Position X;-950000;950000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Y;0;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Z;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Z Tolerance ±;0;60000;5000;100;µm]]></Property>
+			<Property><![CDATA[Z Retract;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Max Penetrat;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Needle Penetr;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[#Type;0;4;0;13]]></Property>
+			<Property><![CDATA[#Flow Control;0;35;0;4]]></Property>
+			<Property><![CDATA[Ndl Cln Path;PATH]]></Property>
+			<Property><![CDATA[Waste to;INJECTOR]]></Property>
+			<Property><![CDATA[Clean Volume;0;100;100;1;%]]></Property>
+			<Property><![CDATA[Clean Count;0;99;0;1;E]]></Property>
+			<Property><![CDATA[Max Fill Spd;10;10000000;10000000;10;nl/s]]></Property>
+			<Property><![CDATA[Max Eject Spd;10;10000000;10000000;10;nl/s]]></Property>
+			<Property><![CDATA[Rinse Time;0;100;0;1;s]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>INJECTOR</CLASSName>
+			<Property><![CDATA[Position X;-950000;950000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Y;0;301000;0;100;µm]]></Property>
+			<Property><![CDATA[Position Z;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Z Tolerance ±;0;60000;5000;100;µm]]></Property>
+			<Property><![CDATA[Z Retract;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Max Penetrat;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Needle Penetr;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Valve;VALVE;OUT_SIGNAL]]></Property>
+			<Property><![CDATA[Heater;HEATER]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>VALVE</CLASSName>
+			<Property><![CDATA[Motor Drive;MOTOR_DRIVE]]></Property>
+			<Property><![CDATA[Active;-1990000;1990000;0;100;m°]]></Property>
+			<Property><![CDATA[Standby;-1990000;1990000;0;100;m°]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>AGITATOR</CLASSName>
+			<Property><![CDATA[Motor Drive;MOTOR_DRIVE]]></Property>
+			<Property><![CDATA[Min Speed;100;750;100;10;rpm]]></Property>
+			<Property><![CDATA[Max Speed;100;750;750;10;rpm]]></Property>
+			<Property><![CDATA[Speed;100;750;500;10;rpm]]></Property>
+			<Property><![CDATA[Agi On Time;0;99;0;1;s]]></Property>
+			<Property><![CDATA[Agi Off Time;0;99;0;1;s]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>MOTOR_DRIVE</CLASSName>
+			<Property><![CDATA[#Motor;3;5;3;1]]></Property>
+			<Property><![CDATA[Units P MStep;0;100000;3125;1;nU]]></Property>
+			<Property><![CDATA[Low Limit;-1990000;1990000;0;100;µU]]></Property>
+			<Property><![CDATA[High Limit;-1990000;1990000;80000;100;µU]]></Property>
+			<Property><![CDATA[Min Speed;1;1999999;10;1;µU/s]]></Property>
+			<Property><![CDATA[Max Speed;1;1999999;560000;1;µU/s]]></Property>
+			<Property><![CDATA[Acceleration;1;100000;1000;1;E]]></Property>
+			<Property><![CDATA[Min Current;0;2047;600;10;mA]]></Property>
+			<Property><![CDATA[Max Current;0;2047;1800;10;mA]]></Property>
+			<Property><![CDATA[Hold Current;0;2047;400;10;mA]]></Property>
+			<Property><![CDATA[Min Cur Spd;10;560000;12000;1;µU/s]]></Property>
+			<Property><![CDATA[Max Cur Spd;10;560000;500000;1;µU/s]]></Property>
+			<Property><![CDATA[Reset Speed;10;560000;12000;1;µU/s]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>HEATER</CLASSName>
+			<Property><![CDATA[#Temp Control;0;2;0;24]]></Property>
+			<Property><![CDATA[Min Temp;-199900;850000;30000;100;m°C]]></Property>
+			<Property><![CDATA[Max Temp;-199900;850000;30000;100;m°C]]></Property>
+			<Property><![CDATA[Standby Temp;30000;850000;30000;100;m°C]]></Property>
+			<Property><![CDATA[Kp;0;100000;150;1;E]]></Property>
+			<Property><![CDATA[Ki;0;100000;1;1;E]]></Property>
+			<Property><![CDATA[Kd;0;100000;0;1;E]]></Property>
+			<Property><![CDATA[Corr Offset;-30000;30000;0;100;m°C]]></Property>
+			<Property><![CDATA[Corr Factor;800;1200;1000;1;x]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>POSITION</CLASSName>
+			<Property><![CDATA[Reference;VIAL;TRAY_HOLDER;WASH_STATION;INJECTOR;TOOL]]></Property>
+			<Property><![CDATA[Offset X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[Offset Y;-602000;602000;0;100;µm]]></Property>
+			<Property><![CDATA[Offset Z;-300000;300000;0;100;µm]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>PATH</CLASSName>
+			<Property><![CDATA[Step1;POSITION]]></Property>
+			<Property><![CDATA[Step2;POSITION]]></Property>
+			<Property><![CDATA[Step3;POSITION]]></Property>
+			<Property><![CDATA[Step4;POSITION]]></Property>
+			<Property><![CDATA[Step5;POSITION]]></Property>
+			<Property><![CDATA[Step6;POSITION]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>SYNC_SIGNAL</CLASSName>
+			<Property><![CDATA[#Source;0;5;0;3]]></Property>
+			<Property><![CDATA[Blocking Time;0;9999;0;1;s]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>OUT_SIGNAL</CLASSName>
+			<Property><![CDATA[#Destination;0;35;0;4]]></Property>
+			<Property><![CDATA[Pulse Time;0;9900;1000;100;ms]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>IN_EVENT</CLASSName>
+			<Property><![CDATA[#Active State;0;1;0;5]]></Property>
+			<Property><![CDATA[Debounce Time;0;1000;20;10;ms]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>OUT_EVENT</CLASSName>
+			<Property><![CDATA[#Active State;0;1;0;5]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>SW_EVENT</CLASSName>
+			<Property><![CDATA[#Active State;0;1;1;6]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>PWR_EVENT</CLASSName>
+			<Property><![CDATA[#Active State;0;1;1;6]]></Property>
+			<Property><![CDATA[#Polarity;0;1;1;7]]></Property>
+			<Property><![CDATA[Low Current;0;400;50;1;mA]]></Property>
+			<Property><![CDATA[High Current;0;400;150;1;mA]]></Property>
+			<Property><![CDATA[High Cur Time;0;1000;100;10;ms]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>RS232</CLASSName>
+			<Property><![CDATA[#Function;0;6;1;22]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>MOTOR_X</CLASSName>
+			<Property><![CDATA[Units P MStep;0;100000;6381;1;nU]]></Property>
+			<Property><![CDATA[Low Limit;-1990000;1990000;-950000;100;µU]]></Property>
+			<Property><![CDATA[High Limit;-1990000;1990000;950000;100;µU]]></Property>
+			<Property><![CDATA[Min Speed;1;1999999;100;1;µU/s]]></Property>
+			<Property><![CDATA[Max Speed;1;1999999;600000;1;µU/s]]></Property>
+			<Property><![CDATA[Max. XY Speed;1;1999999;300000;1;µU/s]]></Property>
+			<Property><![CDATA[Acceleration;1;100000;180;1;E]]></Property>
+			<Property><![CDATA[XY Acceler;1;100000;60;1;E]]></Property>
+			<Property><![CDATA[Min Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Max Current;0;2047;2047;10;mA]]></Property>
+			<Property><![CDATA[Hold Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Min Cur Spd;100;600000;25000;1;µU/s]]></Property>
+			<Property><![CDATA[Max Cur Spd;100;600000;100000;1;µU/s]]></Property>
+			<Property><![CDATA[Reset Speed;100;600000;25000;1;µU/s]]></Property>
+			<Property><![CDATA[Ref Tolerance;0;1990000;700;100;µU]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>MOTOR_Y</CLASSName>
+			<Property><![CDATA[Units P MStep;0;100000;4466;1;nU]]></Property>
+			<Property><![CDATA[Low Limit;-1990000;1990000;0;100;µU]]></Property>
+			<Property><![CDATA[High Limit;-1990000;1990000;301000;100;µU]]></Property>
+			<Property><![CDATA[Min Speed;1;1999999;100;1;µU/s]]></Property>
+			<Property><![CDATA[Max Speed;1;1999999;600000;1;µU/s]]></Property>
+			<Property><![CDATA[Max. XY Speed;1;1999999;300000;1;µU/s]]></Property>
+			<Property><![CDATA[Acceleration;1;100000;180;1;E]]></Property>
+			<Property><![CDATA[XY Acceler;1;100000;60;1;E]]></Property>
+			<Property><![CDATA[Min Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Max Current;0;2047;2047;10;mA]]></Property>
+			<Property><![CDATA[Hold Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Min Cur Spd;100;600000;25000;1;µU/s]]></Property>
+			<Property><![CDATA[Max Cur Spd;100;600000;100000;1;µU/s]]></Property>
+			<Property><![CDATA[Reset Speed;100;600000;25000;1;µU/s]]></Property>
+			<Property><![CDATA[#Strategy;0;2;0;21]]></Property>
+			<Property><![CDATA[Path Speed;100;600000;200000;1;µU/s]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>MOTOR_Z</CLASSName>
+			<Property><![CDATA[Units P MStep;0;100000;4466;1;nU]]></Property>
+			<Property><![CDATA[Low Limit;-1990000;1990000;0;100;µU]]></Property>
+			<Property><![CDATA[High Limit;-1990000;1990000;300000;100;µU]]></Property>
+			<Property><![CDATA[Min Speed;1;1999999;10;1;µU/s]]></Property>
+			<Property><![CDATA[Max Speed;1;1999999;400000;1;µU/s]]></Property>
+			<Property><![CDATA[Acceleration;1;100000;500;1;E]]></Property>
+			<Property><![CDATA[Min Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Max Current;0;2047;1600;10;mA]]></Property>
+			<Property><![CDATA[Hold Current;0;2047;1000;10;mA]]></Property>
+			<Property><![CDATA[Min Cur Spd;10;400000;30000;1;µU/s]]></Property>
+			<Property><![CDATA[Max Cur Spd;10;400000;100000;1;µU/s]]></Property>
+			<Property><![CDATA[Reset Speed;10;400000;50000;1;µU/s]]></Property>
+			<Property><![CDATA[Down Speed;1;1999999;300000;1;µU/s]]></Property>
+			<Property><![CDATA[Detect Speed;1;1999999;12000;1;µU/s]]></Property>
+			<Property><![CDATA[Penetr Speed;1;1999999;100000;1;µU/s]]></Property>
+			<Property><![CDATA[Inj Penet Spd;1;1999999;400000;1;µU/s]]></Property>
+			<Property><![CDATA[Inj Retr Spd;1;1999999;100000;1;µU/s]]></Property>
+			<Property><![CDATA[Penetr Cur;0;2047;1600;10;mA]]></Property>
+			<Property><![CDATA[PenetrHoldCur;0;2047;1000;10;mA]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>CHKMOTOR</CLASSName>
+			<Property><![CDATA[Start Pos;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Stop Pos;0;300000;10000;100;µm]]></Property>
+			<Property><![CDATA[Current;0;2047;1600;10;mA]]></Property>
+			<Property><![CDATA[Speed;1;1999999;50000;1;µU/s]]></Property>
+			<Property><![CDATA[Acceleration;1;100000;500;1;E]]></Property>
+			<Property><![CDATA[Pause;0;10000;0;10;ms]]></Property>
+			<Property><![CDATA[Cycle Limit;1;9000000;9000000;1;x]]></Property>
+			<Property><![CDATA[Act Cycle Cnt;0;9000000;0;1;x]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>USER</CLASSName>
+			<Property><![CDATA[&Name 1]]></Property>
+			<Property><![CDATA[&Name 2]]></Property>
+			<Property><![CDATA[&Name 3]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>DILUTOR</CLASSName>
+			<Property><![CDATA[Syringe;SYRINGE]]></Property>
+			<Property><![CDATA[Syr Dilut Pos;0;80000;58500;100;µm]]></Property>
+			<Property><![CDATA[#Dilutor Syr;0;3;1;38]]></Property>
+			<Property><![CDATA[Scale Length;10000;80000;60000;100;µm]]></Property>
+			<Property><![CDATA[Min Speed;1000;300000;10000;10;nl/s]]></Property>
+			<Property><![CDATA[Max Fill Spd;1000;500000;300000;10;nl/s]]></Property>
+			<Property><![CDATA[Max Eject Spd;1000;200000;100000;10;nl/s]]></Property>
+			<Property><![CDATA[Pullup Del;0;9900;500;100;ms]]></Property>
+			<Property><![CDATA[Fill Speed;1000;500000;300000;10;nl/s]]></Property>
+			<Property><![CDATA[Eject Speed;1000;200000;100000;10;nl/s]]></Property>
+			<Property><![CDATA[Eject Delay;0;9900;1000;100;ms]]></Property>
+			<Property><![CDATA[Motor Drive;MOTOR_DRIVE]]></Property>
+			<Property><![CDATA[Tube Volume;100000;10000000;1000000;100;nl]]></Property>
+			<Property><![CDATA[Prime Volume;1000000;10000000;5000000;100;nl]]></Property>
+			<Property><![CDATA[Waste to;INJECTOR]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>SER_VALVE</CLASSName>
+			<Property><![CDATA[MaxPosition;1;24;12;1;E]]></Property>
+			<Property><![CDATA[OffPosition;1;24;2;1;E]]></Property>
+			<Property><![CDATA[OnPosition;1;24;12;1;E]]></Property>
+			<Property><![CDATA[#Mode;0;1;0;46]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>OUT_EXP</CLASSName>
+			<Property><![CDATA[#Active State;0;1;1;6]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>TOOL</CLASSName>
+			<Property><![CDATA[ParkingPos X;-950000;950000;0;100;µm]]></Property>
+			<Property><![CDATA[ParkingPos Y;0;301000;0;100;µm]]></Property>
+			<Property><![CDATA[ParkingPos Z;0;300000;0;100;µm]]></Property>
+			<Property><![CDATA[Teach Point;VIAL;TRAY;INJECTOR;POSITION]]></Property>
+			<Property><![CDATA[ToolOffset X;-1900000;1900000;0;100;µm]]></Property>
+			<Property><![CDATA[ToolOffset Y;-602000;602000;0;100;µm]]></Property>
+			<Property><![CDATA[ToolOffset Z;-300000;300000;0;100;µm]]></Property>
+			<Property><![CDATA[#Move With Z;0;1;1;9]]></Property>
+			<Property><![CDATA[Motor Drive;MOTOR_DRIVE]]></Property>
+			<Property><![CDATA[Max Penetrat;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Tool Penetr;0;150000;0;100;µm]]></Property>
+			<Property><![CDATA[Access Path;PATH]]></Property>
+			<Property><![CDATA[Restore Path;PATH]]></Property>
+		</CLASS>
+		<CLASS>
+			<CLASSName>SETTINGS</CLASSName>
+			<Property><![CDATA[#Syr Detect;0;1;0;6]]></Property>
+			<Property><![CDATA[#Start Ref;0;1;1;6]]></Property>
+			<Property><![CDATA[#Stop XY Error;0;1;1;6]]></Property>
+			<Property><![CDATA[#PlgPathCheck;0;1;1;6]]></Property>
+			<Property><![CDATA[#AskSyrAtPwrOn;0;1;1;6]]></Property>
+			<Property><![CDATA[Plg Chnge Pos;0;80000;18000;100;µm]]></Property>
+			<Property><![CDATA[#Init Syr at;0;1;1;36]]></Property>
+			<Property><![CDATA[#Inj Signal;0;3;0;37]]></Property>
+			<Property><![CDATA[#Vial PrePress;0;1;0;6]]></Property>
+			<Property><![CDATA[#LC-Inj;0;1;1;6]]></Property>
+			<Property><![CDATA[#LC-Cut;0;1;0;6]]></Property>
+			<Property><![CDATA[#GC-Inj;0;1;1;6]]></Property>
+			<Property><![CDATA[#GC-InjS;0;1;0;6]]></Property>
+			<Property><![CDATA[#GC-Dual;0;1;0;6]]></Property>
+			<Property><![CDATA[#HS-Inj;0;1;1;6]]></Property>
+			<Property><![CDATA[#SPME;0;1;0;6]]></Property>
+		</CLASS>
+	</CLASSES>
+	<OBJECTS>
+		<OBJECT>
+			<ObjectType>MOTOR_X</ObjectType>
+			<ObjectName>Motor X</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Units P MStep]]></PropertyName>
+				<PropertyValue><![CDATA[6381]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Limit]]></PropertyName>
+				<PropertyValue><![CDATA[-555000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Limit]]></PropertyName>
+				<PropertyValue><![CDATA[515000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[100]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[500000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max. XY Speed]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Acceleration]]></PropertyName>
+				<PropertyValue><![CDATA[60]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[XY Acceler]]></PropertyName>
+				<PropertyValue><![CDATA[40]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Current]]></PropertyName>
+				<PropertyValue><![CDATA[1600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Hold Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Reset Speed]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Ref Tolerance]]></PropertyName>
+				<PropertyValue><![CDATA[700]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>MOTOR_Y</ObjectType>
+			<ObjectName>Motor Y</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Units P MStep]]></PropertyName>
+				<PropertyValue><![CDATA[4467]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Limit]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Limit]]></PropertyName>
+				<PropertyValue><![CDATA[212000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[100]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[400000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max. XY Speed]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Acceleration]]></PropertyName>
+				<PropertyValue><![CDATA[60]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[XY Acceler]]></PropertyName>
+				<PropertyValue><![CDATA[40]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Current]]></PropertyName>
+				<PropertyValue><![CDATA[1600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Hold Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Reset Speed]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Strategy]]></PropertyName>
+				<PropertyValue><![CDATA[Rectang]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Speed]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>MOTOR_Z</ObjectType>
+			<ObjectName>Motor Z</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Units P MStep]]></PropertyName>
+				<PropertyValue><![CDATA[4467]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Limit]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Limit]]></PropertyName>
+				<PropertyValue><![CDATA[300000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[10]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[320000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Acceleration]]></PropertyName>
+				<PropertyValue><![CDATA[250]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Current]]></PropertyName>
+				<PropertyValue><![CDATA[1600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Hold Current]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[30000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Reset Speed]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Down Speed]]></PropertyName>
+				<PropertyValue><![CDATA[300000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Detect Speed]]></PropertyName>
+				<PropertyValue><![CDATA[12000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Penetr Speed]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Inj Penet Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Inj Retr Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Penetr Cur]]></PropertyName>
+				<PropertyValue><![CDATA[1700]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[PenetrHoldCur]]></PropertyName>
+				<PropertyValue><![CDATA[1200]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>MOTOR_DRIVE</ObjectType>
+			<ObjectName>MPlgMed</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Motor]]></PropertyName>
+				<PropertyValue><![CDATA[Plg]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Units P MStep]]></PropertyName>
+				<PropertyValue><![CDATA[3125]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Limit]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Limit]]></PropertyName>
+				<PropertyValue><![CDATA[80000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[10]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[300000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Acceleration]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Current]]></PropertyName>
+				<PropertyValue><![CDATA[1300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Current]]></PropertyName>
+				<PropertyValue><![CDATA[1900]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Hold Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[40000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[150000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Reset Speed]]></PropertyName>
+				<PropertyValue><![CDATA[12000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>MOTOR_DRIVE</ObjectType>
+			<ObjectName>MVlv-1-C</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Motor]]></PropertyName>
+				<PropertyValue><![CDATA[AUX1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Units P MStep]]></PropertyName>
+				<PropertyValue><![CDATA[11794]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Limit]]></PropertyName>
+				<PropertyValue><![CDATA[-200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Limit]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[50]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[600000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Acceleration]]></PropertyName>
+				<PropertyValue><![CDATA[2500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Current]]></PropertyName>
+				<PropertyValue><![CDATA[2047]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Current]]></PropertyName>
+				<PropertyValue><![CDATA[2047]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Hold Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[15000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Cur Spd]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Reset Speed]]></PropertyName>
+				<PropertyValue><![CDATA[25000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>HEATER</ObjectType>
+			<ObjectName>HDLW</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Temp Control]]></PropertyName>
+				<PropertyValue><![CDATA[Syringe]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Temp]]></PropertyName>
+				<PropertyValue><![CDATA[30000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Temp]]></PropertyName>
+				<PropertyValue><![CDATA[150000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Standby Temp]]></PropertyName>
+				<PropertyValue><![CDATA[35000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Kp]]></PropertyName>
+				<PropertyValue><![CDATA[350]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Ki]]></PropertyName>
+				<PropertyValue><![CDATA[10]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Kd]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Corr Offset]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Corr Factor]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VALVE</ObjectType>
+			<ObjectName>C2V-06-1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Motor Drive]]></PropertyName>
+				<PropertyValue><![CDATA[MVlv-1-C]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Active]]></PropertyName>
+				<PropertyValue><![CDATA[-60000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Standby]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>Home</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>ChgSyr</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[10000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[80000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>CStk1.A</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[48000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-125900]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[6400]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>CStk1.B</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[81500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-125900]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[6400]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>CStk1.C</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[81500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[82200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[6400]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>CStk1.D</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[48000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[82200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[6400]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>POSITION</ObjectType>
+			<ObjectName>CStk1.E</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Reference]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[48000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[82200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[-105000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>PATH</ObjectType>
+			<ObjectName>OpnCStk1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Step1]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.A]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step2]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.B]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step3]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.C]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step4]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.D]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step5]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.E]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step6]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>PATH</ObjectType>
+			<ObjectName>ClsCStk1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Step1]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.E]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step2]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.D]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step3]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.C]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step4]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.B]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step5]]></PropertyName>
+				<PropertyValue><![CDATA[CStk1.A]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Step6]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY_TYPE</ObjectType>
+			<ObjectName>DW96</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Row Length X]]></PropertyName>
+				<PropertyValue><![CDATA[99000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Row Length Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Col Length X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Col Length Y]]></PropertyName>
+				<PropertyValue><![CDATA[63000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl Per Row]]></PropertyName>
+				<PropertyValue><![CDATA[12]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl Per Col]]></PropertyName>
+				<PropertyValue><![CDATA[8]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Pattern]]></PropertyName>
+				<PropertyValue><![CDATA[Regular]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[H]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Plate Thickn]]></PropertyName>
+				<PropertyValue><![CDATA[41000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Vial Height]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Vial Trnsprt]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[ZSlideOffRetr]]></PropertyName>
+				<PropertyValue><![CDATA[4000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[YSlideOffDist]]></PropertyName>
+				<PropertyValue><![CDATA[40000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Barcode]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[-10000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[37000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[32200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[15000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[11000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY_TYPE</ObjectType>
+			<ObjectName>MT96</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Row Length X]]></PropertyName>
+				<PropertyValue><![CDATA[99000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Row Length Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Col Length X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Col Length Y]]></PropertyName>
+				<PropertyValue><![CDATA[63000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl Per Row]]></PropertyName>
+				<PropertyValue><![CDATA[12]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl Per Col]]></PropertyName>
+				<PropertyValue><![CDATA[8]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Pattern]]></PropertyName>
+				<PropertyValue><![CDATA[Regular]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[H]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Plate Thickn]]></PropertyName>
+				<PropertyValue><![CDATA[41000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Vial Height]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Vial Trnsprt]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[ZSlideOffRetr]]></PropertyName>
+				<PropertyValue><![CDATA[4000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[YSlideOffDist]]></PropertyName>
+				<PropertyValue><![CDATA[40000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Barcode]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[-10000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[37000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[32200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[15000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[11000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Spl1 Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY_HOLDER</ObjectType>
+			<ObjectName>CStack1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[304600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[127200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[83000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Access Path]]></PropertyName>
+				<PropertyValue><![CDATA[OpnCStk1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Restore Path]]></PropertyName>
+				<PropertyValue><![CDATA[ClsCStk1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Restore Mode]]></PropertyName>
+				<PropertyValue><![CDATA[Sample]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Heater]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Agitator]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY_HOLDER</ObjectType>
+			<ObjectName>CStack2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[60800]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[127500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[82600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Access Path]]></PropertyName>
+				<PropertyValue><![CDATA[OpnCStk2]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Restore Path]]></PropertyName>
+				<PropertyValue><![CDATA[ClsCStk2]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Restore Mode]]></PropertyName>
+				<PropertyValue><![CDATA[Sample]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Heater]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Agitator]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-01</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[FGHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-46000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[-2000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-02</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[GHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-134500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[-2000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-03</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[FGHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-46000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[63300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[65300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-04</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[GHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-134500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[63300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[65300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-05</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[FGHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-46000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[128600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[130600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>TRAY</ObjectType>
+			<ObjectName>CStk1-06</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Tray Holder]]></PropertyName>
+				<PropertyValue><![CDATA[CStack1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[&TrayTypeGroup]]></PropertyName>
+				<PropertyValue><![CDATA[GHI]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Tray Type]]></PropertyName>
+				<PropertyValue><![CDATA[DW96]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[-64400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[-134500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[128600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Path Offset Z]]></PropertyName>
+				<PropertyValue><![CDATA[130600]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzRow]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dxCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dyCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[dzCol]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYRINGE</ObjectType>
+			<ObjectName>Pal3Tool</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Syringe Id]]></PropertyName>
+				<PropertyValue><![CDATA[10]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Volume]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Volume]]></PropertyName>
+				<PropertyValue><![CDATA[100000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Scale Length]]></PropertyName>
+				<PropertyValue><![CDATA[60000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Standby Pos]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Min Speed]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Speed]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Fill Volume]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Fill Strokes]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Overfill]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pullup Del]]></PropertyName>
+				<PropertyValue><![CDATA[3000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Fill Speed]]></PropertyName>
+				<PropertyValue><![CDATA[10000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Eject Speed]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Inject Speed]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Motor Drive]]></PropertyName>
+				<PropertyValue><![CDATA[MPlgMed]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Heater]]></PropertyName>
+				<PropertyValue><![CDATA[HDLW]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>WASH_STATION</ObjectType>
+			<ObjectName>Wash1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[437200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[5800]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[61400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[43000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Type]]></PropertyName>
+				<PropertyValue><![CDATA[DLW]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Flow Control]]></PropertyName>
+				<PropertyValue><![CDATA[Pwr-Out1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Ndl Cln Path]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Waste to]]></PropertyName>
+				<PropertyValue><![CDATA[Waste]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Clean Volume]]></PropertyName>
+				<PropertyValue><![CDATA[70]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Clean Count]]></PropertyName>
+				<PropertyValue><![CDATA[3]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Fill Spd]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Eject Spd]]></PropertyName>
+				<PropertyValue><![CDATA[150000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Rinse Time]]></PropertyName>
+				<PropertyValue><![CDATA[10]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>WASH_STATION</ObjectType>
+			<ObjectName>Wash2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[437200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[31700]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[61400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[43000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Type]]></PropertyName>
+				<PropertyValue><![CDATA[DLW]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Flow Control]]></PropertyName>
+				<PropertyValue><![CDATA[Pwr-Out2]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Ndl Cln Path]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Waste to]]></PropertyName>
+				<PropertyValue><![CDATA[Waste]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Clean Volume]]></PropertyName>
+				<PropertyValue><![CDATA[70]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Clean Count]]></PropertyName>
+				<PropertyValue><![CDATA[3]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Fill Spd]]></PropertyName>
+				<PropertyValue><![CDATA[200000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Eject Spd]]></PropertyName>
+				<PropertyValue><![CDATA[150000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Rinse Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>INJECTOR</ObjectType>
+			<ObjectName>Waste</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[437200]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[18900]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[61300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[20000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[18000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Valve]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Heater]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>INJECTOR</ObjectType>
+			<ObjectName>LC Vlv1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[491300]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[28500]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[61700]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[48000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[22000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Valve]]></PropertyName>
+				<PropertyValue><![CDATA[C2V-06-1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Heater]]></PropertyName>
+				<PropertyValue><![CDATA[None]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>SLTray</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>SLVial</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>SLVolume</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PreLCTime</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>AirVol</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>FrontVol</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>RearVol</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>GetSpeed</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>InjSpeed</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PostVlvClean1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PostVlvClean2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PostClean1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PostClean2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>RunMth</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>VIAL</ObjectType>
+			<ObjectName>PumpFile</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[Position X]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Y]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Position Z]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Tolerance ±]]></PropertyName>
+				<PropertyValue><![CDATA[5000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Z Retract]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Max Penetrat]]></PropertyName>
+				<PropertyValue><![CDATA[45000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Needle Penetr]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>StJobQue</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>Start</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>Start2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>Inject</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>Inject2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SYNC_SIGNAL</ObjectType>
+			<ObjectName>Pause</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Source]]></PropertyName>
+				<PropertyValue><![CDATA[Immediat]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Blocking Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_SIGNAL</ObjectType>
+			<ObjectName>Injected</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Destination]]></PropertyName>
+				<PropertyValue><![CDATA[SW-Out1]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pulse Time]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_SIGNAL</ObjectType>
+			<ObjectName>Injectd2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Destination]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pulse Time]]></PropertyName>
+				<PropertyValue><![CDATA[1000]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_SIGNAL</ObjectType>
+			<ObjectName>Running</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Destination]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pulse Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_SIGNAL</ObjectType>
+			<ObjectName>CCRuning</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Destination]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pulse Time]]></PropertyName>
+				<PropertyValue><![CDATA[0]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_SIGNAL</ObjectType>
+			<ObjectName>Error</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Destination]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Pulse Time]]></PropertyName>
+				<PropertyValue><![CDATA[9900]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>IN_EVENT</ObjectType>
+			<ObjectName>TTL-In1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Debounce Time]]></PropertyName>
+				<PropertyValue><![CDATA[20]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>IN_EVENT</ObjectType>
+			<ObjectName>TTL-In2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Debounce Time]]></PropertyName>
+				<PropertyValue><![CDATA[20]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>IN_EVENT</ObjectType>
+			<ObjectName>TTL-In3</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Debounce Time]]></PropertyName>
+				<PropertyValue><![CDATA[20]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>IN_EVENT</ObjectType>
+			<ObjectName>Opto-In1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Debounce Time]]></PropertyName>
+				<PropertyValue><![CDATA[20]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>IN_EVENT</ObjectType>
+			<ObjectName>Opto-In2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Debounce Time]]></PropertyName>
+				<PropertyValue><![CDATA[20]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_EVENT</ObjectType>
+			<ObjectName>TTL-Out1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_EVENT</ObjectType>
+			<ObjectName>TTL-Out2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>OUT_EVENT</ObjectType>
+			<ObjectName>TTL-Out3</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[Low]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SW_EVENT</ObjectType>
+			<ObjectName>SW-Out1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SW_EVENT</ObjectType>
+			<ObjectName>SW-Out2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SW_EVENT</ObjectType>
+			<ObjectName>FlushVlv</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>PWR_EVENT</ObjectType>
+			<ObjectName>Pwr-Out1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Polarity]]></PropertyName>
+				<PropertyValue><![CDATA[Pos]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Cur Time]]></PropertyName>
+				<PropertyValue><![CDATA[100]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>PWR_EVENT</ObjectType>
+			<ObjectName>Pwr-Out2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Active State]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Polarity]]></PropertyName>
+				<PropertyValue><![CDATA[Pos]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Low Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Current]]></PropertyName>
+				<PropertyValue><![CDATA[400]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[High Cur Time]]></PropertyName>
+				<PropertyValue><![CDATA[100]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>RS232</ObjectType>
+			<ObjectName>SER1</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Function]]></PropertyName>
+				<PropertyValue><![CDATA[Remote]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>RS232</ObjectType>
+			<ObjectName>SER2</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Function]]></PropertyName>
+				<PropertyValue><![CDATA[Printer]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>RS232</ObjectType>
+			<ObjectName>SER3</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Function]]></PropertyName>
+				<PropertyValue><![CDATA[Terminal]]></PropertyValue>
+			</Property>
+		</OBJECT>
+		<OBJECT>
+			<ObjectType>SETTINGS</ObjectType>
+			<ObjectName>Settings</ObjectName>
+			<Property>
+				<PropertyName><![CDATA[#Syr Detect]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Start Ref]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Stop XY Error]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#PlgPathCheck]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#AskSyrAtPwrOn]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[Plg Chnge Pos]]></PropertyName>
+				<PropertyValue><![CDATA[18000]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Init Syr at]]></PropertyName>
+				<PropertyValue><![CDATA[Home]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Inj Signal]]></PropertyName>
+				<PropertyValue><![CDATA[ValveSw]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#Vial PrePress]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#LC-Inj]]></PropertyName>
+				<PropertyValue><![CDATA[On]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#LC-Cut]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#GC-Inj]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#GC-InjS]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#GC-Dual]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#HS-Inj]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+			<Property>
+				<PropertyName><![CDATA[#SPME]]></PropertyName>
+				<PropertyValue><![CDATA[Off]]></PropertyValue>
+			</Property>
+		</OBJECT>
+	</OBJECTS>
+	<ATOMS>
+		<ATOM>
+			<AtomName><![CDATA[!GET_SAMPLE]]></AtomName>
+			<Param><![CDATA[Source;VIAL;WASH_STATION;TRAY]]></Param>
+			<Param><![CDATA[Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[Sample Volume;SYR.Min Volume;SYR.Max Volume;SYR.Max Volume;10;nl]]></Param>
+			<Param><![CDATA[?Air Volume;0;SYR.Max Volume;0;10;nl]]></Param>
+			<Param><![CDATA[?Penetration;0;Source.Max Penetrat;Source.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Fill Volume;0;SYR.Max Volume;0;10;nl]]></Param>
+			<Param><![CDATA[?Fill Speed;SYR.Min Speed;SYR.Max Speed;SYR.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;SYR.Pullup Del;100;ms]]></Param>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Fill Strokes;0;99;SYR.Fill Strokes;1;E]]></Param>
+			<Param><![CDATA[?#Needle Blocking;0;1;0;6]]></Param>
+			<Param><![CDATA[?Wait for Timer;0;11;0;1;E]]></Param>
+			<Param><![CDATA[?Wait Time;0;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!INJ_SAMPLE]]></AtomName>
+			<Param><![CDATA[Injector;INJECTOR]]></Param>
+			<Param><![CDATA[Sync Signal;SYNC_SIGNAL]]></Param>
+			<Param><![CDATA[Injected Signal;OUT_SIGNAL]]></Param>
+			<Param><![CDATA[?Penetration;0;Injector.Max Penetrat;Injector.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Sample Volume;SYR.Min Volume;SYR.Max Volume;SYR.Max Volume;10;nl]]></Param>
+			<Param><![CDATA[?Pre Inject Delay;0;99000;500;100;ms]]></Param>
+			<Param><![CDATA[?Inject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Inject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Post Inject Delay;0;99000;500;100;ms]]></Param>
+			<Param><![CDATA[?Start Timer;0;11;0;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!PUT_SAMPLE]]></AtomName>
+			<Param><![CDATA[Destination;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Penetration;0;Destination.Max Penetrat;Destination.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Volume;SYR.Min Volume;SYR.Max Volume;10;10;nl]]></Param>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Start Timer;0;11;0;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!ASPIRATE_SYR]]></AtomName>
+			<Param><![CDATA[Volume;SYR.Min Volume;SYR.Max Volume;10;10;nl]]></Param>
+			<Param><![CDATA[?Overfill Rate;0;10;SYR.Overfill;1;%]]></Param>
+			<Param><![CDATA[?Fill Speed;SYR.Min Speed;SYR.Max Speed;SYR.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;SYR.Pullup Del;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!DISPENSE_SYR]]></AtomName>
+			<Param><![CDATA[Volume;SYR.Min Volume;SYR.Max Volume;10;10;nl]]></Param>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!EJECT_SYR]]></AtomName>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!CLEAN_SYR]]></AtomName>
+			<Param><![CDATA[Wash Station;WASH_STATION]]></Param>
+			<Param><![CDATA[?Clean Cycles;0;99;Wash Station.Clean Count;1;E]]></Param>
+			<Param><![CDATA[?Clean Volume;0;100;Wash Station.Clean Volume;1;%]]></Param>
+			<Param><![CDATA[?Wash Penetration;0;Wash Station.Max Penetrat;Wash Station.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Fill Speed;SYR.Min Speed;SYR.Max Speed;SYR.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;SYR.Pullup Del;100;ms]]></Param>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Rinse Time;0;100;Wash Station.Rinse Time;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!CLEAN_INJ]]></AtomName>
+			<Param><![CDATA[Wash Station;WASH_STATION]]></Param>
+			<Param><![CDATA[Injector;INJECTOR]]></Param>
+			<Param><![CDATA[?Clean Cycles;0;99;Wash Station.Clean Count;1;E]]></Param>
+			<Param><![CDATA[?Clean Volume;0;100;Wash Station.Clean Volume;1;%]]></Param>
+			<Param><![CDATA[?Wash Penetration;0;Wash Station.Max Penetrat;Wash Station.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Fill Speed;SYR.Min Speed;SYR.Max Speed;SYR.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;SYR.Pullup Del;100;ms]]></Param>
+			<Param><![CDATA[?Eject Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Rinse Time;0;100;Wash Station.Rinse Time;1;s]]></Param>
+			<Param><![CDATA[?Inject Penetration;0;Injector.Max Penetrat;Injector.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Injection Speed;SYR.Min Speed;SYR.Max Speed;SYR.Inject Speed;10;nl/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!RINSE_INJ]]></AtomName>
+			<Param><![CDATA[Wash Station;WASH_STATION]]></Param>
+			<Param><![CDATA[Injector;INJECTOR]]></Param>
+			<Param><![CDATA[?Needle Gap;0;35000;3000;100;µm]]></Param>
+			<Param><![CDATA[?Rinse Time;0;100;2;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SWITCH_INJ]]></AtomName>
+			<Param><![CDATA[Injector;INJECTOR]]></Param>
+			<Param><![CDATA[?#Position;0;1;2;34]]></Param>
+			<Param><![CDATA[?Start Timer;0;11;0;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!DILUTE]]></AtomName>
+			<Param><![CDATA[Dilutor;DILUTOR]]></Param>
+			<Param><![CDATA[Volume;1000;100000000;1000;1000;nl]]></Param>
+			<Param><![CDATA[#Mode;0;4;0;40]]></Param>
+			<Param><![CDATA[?Fill Speed;Dilutor.Min Speed;Dilutor.Max Fill Spd;Dilutor.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Eject Speed;Dilutor.Min Speed;Dilutor.Max Eject Spd;Dilutor.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;Dilutor.Pullup Del;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!ASPIRATE_DIL]]></AtomName>
+			<Param><![CDATA[Dilutor;DILUTOR]]></Param>
+			<Param><![CDATA[Volume;1000;100000000;1000;1000;nl]]></Param>
+			<Param><![CDATA[?Overfill Rate;0;10;0;1;%]]></Param>
+			<Param><![CDATA[?Fill Speed;Dilutor.Min Speed;Dilutor.Max Fill Spd;Dilutor.Fill Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Pullup Delay;0;10000;Dilutor.Pullup Del;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!DISPENSE_DIL]]></AtomName>
+			<Param><![CDATA[Dilutor;DILUTOR]]></Param>
+			<Param><![CDATA[Volume;1000;100000000;1000;1000;nl]]></Param>
+			<Param><![CDATA[?Eject Speed;Dilutor.Min Speed;Dilutor.Max Eject Spd;Dilutor.Eject Speed;10;nl/s]]></Param>
+			<Param><![CDATA[?Dispense Delay;0;10000;0;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SWITCH_DIL_VLV]]></AtomName>
+			<Param><![CDATA[Dilutor;DILUTOR]]></Param>
+			<Param><![CDATA[#Position;0;1;0;44]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!FRACT_COLLECT]]></AtomName>
+			<Param><![CDATA[Object Name;TRAY]]></Param>
+			<Param><![CDATA[Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[#Mode;0;3;0;39]]></Param>
+			<Param><![CDATA[?Penetration;0;Object Name.Max Penetrat;Object Name.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Speed;SYR.Min Speed;SYR.Max Speed;SYR.Eject Speed;10;nl/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!TRANSP_VIAL]]></AtomName>
+			<Param><![CDATA[From Tray;TRAY]]></Param>
+			<Param><![CDATA[From Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[To Tray;TRAY]]></Param>
+			<Param><![CDATA[To Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Start Timer;0;11;0;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVETO_OBJECT]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Penetration;0;Object Name.Max Penetrat;Object Name.Needle Penetr;100;µm]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILMV]]></AtomName>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;0;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Time;-86399;86399;0;1;s]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?FlowSpeed;0;1000000;100;100;nl/s]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?FlowSpeed;0;1000000;100;100;nl/s]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Volume;1000;100000;100000;10;nl]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;0;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;0;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;0;9999;1;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILVO]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILVN]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;0;9999;1;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILVV]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[Volume;1000;100000;100000;10;nl]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILVT]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[Time;-86399;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_ILVF]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[FlowSpeed;0;1000000;100;100;nl/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVETO_OBJ_S]]></AtomName>
+			<Param><![CDATA[Object Name;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Penetration;0;Object Name.Max Penetrat;Object Name.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Z Speed;500;300000;100000;100;µm/s]]></Param>
+			<Param><![CDATA[?Penetr Speed;500;300000;5000;100;µm/s]]></Param>
+			<Param><![CDATA[?#Stop Signal;0;5;0;19]]></Param>
+			<Param><![CDATA[?Offset X;-398000;398000;0;100;µm]]></Param>
+			<Param><![CDATA[?Offset Y;-212000;212000;0;100;µm]]></Param>
+			<Param><![CDATA[?Offset Z;-300000;300000;0;100;µm]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVE_TOOL]]></AtomName>
+			<Param><![CDATA[Tool;TOOL]]></Param>
+			<Param><![CDATA[Target;POSITION;VIAL;WASH_STATION;INJECTOR;TRAY]]></Param>
+			<Param><![CDATA[?Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?Penetration;0;Target.Max Penetrat;Target.Needle Penetr;100;µm]]></Param>
+			<Param><![CDATA[?Tool Penetr;0;Tool.Max Penetrat;Tool.Tool Penetr;100;µm]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVE_PATH]]></AtomName>
+			<Param><![CDATA[Object Name;PATH]]></Param>
+			<Param><![CDATA[?Offset Ref;TRAY]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVE_ABS]]></AtomName>
+			<Param><![CDATA[?AbsX;-205000;193000;0;100;µm]]></Param>
+			<Param><![CDATA[?AbsY;0;212000;0;100;µm]]></Param>
+			<Param><![CDATA[?AbsZ;0;300000;0;100;µm]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOVE_REL]]></AtomName>
+			<Param><![CDATA[?RelX;-398000;398000;0;100;µm]]></Param>
+			<Param><![CDATA[?RelY;-212000;212000;0;100;µm]]></Param>
+			<Param><![CDATA[?RelZ;-300000;300000;0;100;µm]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOT_ABS]]></AtomName>
+			<Param><![CDATA[Motor Drive;MOTOR_DRIVE;MOTOR_X;MOTOR_Y;MOTOR_Z]]></Param>
+			<Param><![CDATA[?Position;-205000;300000;0;100;µm]]></Param>
+			<Param><![CDATA[?Speed;1;999999999;1000;100;µm/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOT_REL]]></AtomName>
+			<Param><![CDATA[Motor Drive;MOTOR_DRIVE;MOTOR_X;MOTOR_Y;MOTOR_Z]]></Param>
+			<Param><![CDATA[?Amount;-505000;505000;0;100;µm]]></Param>
+			<Param><![CDATA[?Speed;1;999999999;1000;100;µm/s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!MOT_REF]]></AtomName>
+			<Param><![CDATA[Motor Drive;MOTOR_DRIVE;MOTOR_X;MOTOR_Y;MOTOR_Z]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!READ_BARCODE]]></AtomName>
+			<Param><![CDATA[Tray;TRAY]]></Param>
+			<Param><![CDATA[?Index;1;9999;1;1;E]]></Param>
+			<Param><![CDATA[?#Stop after Read;0;1;0;6]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!START_TIMER]]></AtomName>
+			<Param><![CDATA[Timer;0;11;1;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!WAIT_TIMER]]></AtomName>
+			<Param><![CDATA[Timer;0;11;0;1;E]]></Param>
+			<Param><![CDATA[Time;-86399;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!WAIT_TIMER_TOL]]></AtomName>
+			<Param><![CDATA[Timer;0;11;0;1;E]]></Param>
+			<Param><![CDATA[Time;-86399;86399;0;1;s]]></Param>
+			<Param><![CDATA[?Tolerance;0;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_TIMETABLE]]></AtomName>
+			<Param><![CDATA[Time;0;86399;1;1;s]]></Param>
+			<Param><![CDATA[Object;OUT_SIGNAL]]></Param>
+			<Param><![CDATA[?#Signal State;0;25;0;41]]></Param>
+			<Param><![CDATA[?Duration;0;9900;0;100;ms]]></Param>
+			<Param><![CDATA[?#Mode;0;1;0;42]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!TIMETABLE]]></AtomName>
+			<Param><![CDATA[#Mode;0;3;0;43]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!WAIT_SYNC_SIG]]></AtomName>
+			<Param><![CDATA[Sync Signal;SYNC_SIGNAL]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!WAIT_EVENT]]></AtomName>
+			<Param><![CDATA[#Event;0;5;1;19]]></Param>
+			<Param><![CDATA[?#Signal State;0;1;0;6]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!WAIT]]></AtomName>
+			<Param><![CDATA[Time;-86399;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!BLOCK_NDLG]]></AtomName>
+			<Param><![CDATA[?#Block NdlGuide;0;1;0;6]]></Param>
+			<Param><![CDATA[?#Check Released;0;1;0;6]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!START_FLUSH]]></AtomName>
+			<Param><![CDATA[Flush Time;0;86399;0;1;s]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!STOP_FLUSH]]></AtomName>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_TEMP]]></AtomName>
+			<Param><![CDATA[Object Name;TRAY;SYRINGE;INJECTOR;HEATER]]></Param>
+			<Param><![CDATA[Temperature;Object Name.Min Temp;Object Name.Max Temp;Object Name.Standby Temp;100;m°C]]></Param>
+			<Param><![CDATA[?Accuracy +-;0;10000;1000;100;m°C]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_AGI]]></AtomName>
+			<Param><![CDATA[Agitator;TRAY]]></Param>
+			<Param><![CDATA[?#State;0;1;0;6]]></Param>
+			<Param><![CDATA[?Speed;Agitator.Min Speed;Agitator.Max Speed;Agitator.Speed;10;rpm]]></Param>
+			<Param><![CDATA[?On Time;0;99;0;1;s]]></Param>
+			<Param><![CDATA[?Off Time;0;99;0;1;s]]></Param>
+			<Param><![CDATA[?Start Timer;0;11;0;1;E]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SET_OUT_SIG]]></AtomName>
+			<Param><![CDATA[Output Signal;OUT_SIGNAL]]></Param>
+			<Param><![CDATA[?#Signal State;0;25;0;41]]></Param>
+			<Param><![CDATA[?Pulse Time;0;9900;0;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!SWITCH_EVENT]]></AtomName>
+			<Param><![CDATA[Event;OUT_EVENT;SW_EVENT;PWR_EVENT;SER_VALVE;OUT_EXP]]></Param>
+			<Param><![CDATA[?#Signal State;0;25;0;41]]></Param>
+			<Param><![CDATA[?Pulse Time;0;9900;0;100;ms]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!CLEANUP]]></AtomName>
+			<Param><![CDATA[Wash Station;WASH_STATION]]></Param>
+			<Param><![CDATA[?#Reset Injectors;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Reset Temperatures;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Reset X, Y, Z;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Reset Needle Guide;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Reset Syringe;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Close Tray;0;1;1;6]]></Param>
+			<Param><![CDATA[?#Go Home;0;1;1;6]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!LOCK_TERMINAL]]></AtomName>
+			<Param><![CDATA[?#Terminal Locking;0;1;0;6]]></Param>
+		</ATOM>
+		<ATOM>
+			<AtomName><![CDATA[!BEEP]]></AtomName>
+			<Param><![CDATA[?Frequency;100;12000;1000;1;Hz]]></Param>
+			<Param><![CDATA[?Duration;10;5000;100;1;ms]]></Param>
+			<Param><![CDATA[?Pause;10;5000;100;1;ms]]></Param>
+			<Param><![CDATA[?Count;1;10;1;1;E]]></Param>
+		</ATOM>
+	</ATOMS>
+</LATESTPAL>

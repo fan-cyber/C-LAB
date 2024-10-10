@@ -1,0 +1,5 @@
+syringe:Pal3Tool
+Dual Column Salt Standby()
+[MACRO Dual Column Salt Standby]
+SET_ILVN(RunMth,0,)
+SET_INJECTED()

@@ -1,0 +1,18 @@
+Tray holders     X        Y        Z
+
+CStack1     304.60   127.20    83.00
+CStack2      60.80   127.50    82.60
+
+Tray types RowLenX  RowLenY  ColLenX  ColLenY Vial/Row Vial/Col     RefX     RefY     RefZ
+
+DW96         99.00     0.00     0.00    63.00    12.00     8.00     0.00     0.00     0.00
+MT96         99.00     0.00     0.00    63.00    12.00     8.00     0.00     0.00     0.00
+
+Trays       Holder     Type        X        Y        Z   Path X   Path Y   Path Z
+
+CStk1-01   CStack1     DW96   -64.40   -46.00    -2.00     0.00     0.00     0.00
+CStk1-02   CStack1     DW96   -64.40  -134.50    -2.00     0.00     0.00     0.00
+CStk1-03   CStack1     DW96   -64.40   -46.00    63.30     0.00     0.00    65.30
+CStk1-04   CStack1     DW96   -64.40  -134.50    63.30     0.00     0.00    65.30
+CStk1-05   CStack1     DW96   -64.40   -46.00   128.60     0.00     0.00   130.60
+CStk1-06   CStack1     DW96   -64.40  -134.50   128.60     0.00     0.00   130.60

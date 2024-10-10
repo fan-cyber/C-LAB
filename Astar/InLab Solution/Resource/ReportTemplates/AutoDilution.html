@@ -1,0 +1,39 @@
+<Html>
+    <Head>
+        <meta charset="UTF-8">
+    </Head>
+    <style>
+        table { width: 750px; min-height: 25px; line-height: 25px; text-align: left; border-width:1px; border-color:#000000; border-collapse: collapse;}   
+    </style>
+    <Body>
+        <H3 style="text-align:center;width:900px;">自动稀释报告</H3>
+        <ol style="font-size:16pt">
+            <!--
+            <li>日期:2020-10-20</li>
+            <li>操作员:</li>
+            <li>调香位置:</li>
+            <li>调香体积:</li>
+            <li>方法名称:</li>
+            <li>仪器型号:</li>
+            <li>天平型号:</li>
+            <li>序列号:</li>
+            -->
+$ReportHeader$
+        </ol>
+        <table>
+        <tr>
+          <th>行号</th>
+          <th>内容</th>
+          <th>开始时间</th>
+          <th>结束时间</th>
+          <th>备注</th>
+        </tr>
+        <tr>
+$ReportCompound$
+            <!--
+          <th>1</th><th>CAS 1</th><th>CAS 1</th> <th>Tray Holder 1:Slot1:1</th><th>1200</th><th>100</th><th>0.990</th>
+          -->
+        </tr>
+        </table>
+    </Body>
+</Html>
