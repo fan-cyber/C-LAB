@@ -1,19 +1,33 @@
 import argparse
-
+import json
+import openai
 from summary_module import SummaryModule
 from query_module import QueryModule
+
+
+def get_proxy():
+    import os
+    proxy_url = 'http://127.0.0.1:9981'
+    os.environ["http_proxy"] = proxy_url
+    os.environ["https_proxy"] = proxy_url
 
 
 def argparser():
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', choices=['summary', 'query_localize', 'query_extract'], required=True)
-    parser.add_argument('--dataset_paper', default='./dataset_paper')
-    parser.add_argument('--dataset_summary', default='./dataset_summary')
+    parser.add_argument('--dataset_paper', default='./chempapers_all')
+    parser.add_argument('--dataset_summary', default='./chempapers_summary')
     parser.add_argument('--query_text', default='Au NRs')
     parser.add_argument('--similarity_top_k', default=3, help='filter paper number')
     parser.add_argument('--similarity_cutoff', default=0.7, help='similarity threshold')
     parser.add_argument('--extract_pdf_path', default='')
     return parser.parse_args()
+
+
+def get_api_key():
+    with open('./api_config.json', encoding='utf-8') as f:
+        api_config = json.load(f)
+    return api_config['api']
 
 
 def print_info(scores, files, texts):
@@ -36,8 +50,10 @@ def print_info(scores, files, texts):
 
 
 if __name__ == '__main__':
+    get_proxy()
     args = argparser()
     mode = args.mode
+    openai.api_key = get_api_key()
     if mode == 'summary':
         summary_module = SummaryModule(args.dataset_paper, args.dataset_summary)
         summary_module.summarize()
