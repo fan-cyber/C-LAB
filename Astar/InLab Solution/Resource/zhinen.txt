@@ -1,0 +1,119 @@
+./System Method/PAL2/Include/AgitatorMix-Short-en.inc
+./System Method/PAL2/Include/Common Head-en.inc
+./System Method/PAL2/Include/DataSystem Header-en.inc
+./System Method/PAL2/Include/eTrap-en.inc
+./System Method/PAL2/Include/OpticPTVParamters-en.inc
+./System Method/PAL2/Include/SyringeMix-Short-en.inc
+./System Method/PAL3/Include/AgitatorMix-en.inc
+./System Method/PAL3/Include/AgitatorMix-Short-en.inc
+./System Method/PAL3/Include/AutoAdd1-en.inc
+./System Method/PAL3/Include/AutoAdd2-en.inc
+./System Method/PAL3/Include/Common Head-en.inc
+./System Method/PAL3/Include/DataSystem Header-en.inc
+./System Method/PAL3/Include/eTrap-en.inc
+./System Method/PAL3/Include/OpticPTVParamters-en.inc
+./System Method/PAL3/Include/SyringeMix-Short-en.inc
+./System Method/PAL3/Include/VortexMix-Short-en.inc
+
+
+./System Method/AutoSamplerPlugin/HeadSpace-en.mth
+./System Method/AutoSamplerPlugin/HeadSpace-PAL2-en.mth
+./System Method/AutoSamplerPlugin/Liquid-en.mth
+./System Method/PAL2/BackupMethod/Liquid Standard Curve Auto Make-en.mth
+            System.ErrorExit(ErrorInfo="单标总体积大于设定的混标体积，不能实现")
+            System.ErrorExit(ErrorInfo="单标$SampleList.MultiMinID$[$SampleList.MultiMinVial$] 移取的体积 $SampleList.MultiMinVol$ 小于针的最小体积 $SampleList.SyringeGetMinVol$")
+        System.ErrorExit(ErrorInfo="读取单标数据文件出错，请检查CSV文件格式是否正确")
+        System.PrintMessage(Message="移取单标{DicGetVarByIndex('StockDataDic',$RepeatLoopCount$,2)}/{DicGetVarByIndex('StockDataDic',$RepeatLoopCount$,1)}/{InsGetField('SampleList','MultiStock#$RepeatLoopCount$#GetVol')}uL",FCColor=Red,BGColor=White)
+    System.PrintMessage(Message="添加混标溶剂$SampleList.TotalMultiStockVol$uL",FCColor=Red,BGColor=White)
+./System Method/PAL2/GC Liquid Injection-en.mth
+./System Method/PAL2/HeadSpace Injection-en.mth
+./System Method/PAL2/LCMS Self-Standard Positive Injection-en.mth
+#Column(ValueList="预制单标#标准品#样品",Token=$SL.SampleType$,DisplayName=Sample Type,Type=List,DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default="#2")
+#Column(Max=600,Min=0,Default=,Token=$SL.SingleRTTime$,DisplayName=Keep Time(min),Type=Double,DisableCondition="'$SL.SampleType$'!='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition=True)
+#Column(Default=0,CheckCondition='Z#this#'!='Z',CheckErrorMsg="输入Filter",Token=$SL.SingleFilterDes$,DisplayName=MS Filter,Type=String,DisableCondition="'$SL.SampleType$'!='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition=True)
+#Column(Max=5,Min=1,Default=1,Token=$SL.SingleVolFactor$,DisplayName=Volume Factor,Type=Double,DisableCondition="'$SL.SampleType$'!='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition=True)
+#Column(Max=600,Min=0,Default=,Token=$SL.SingleCon$,DisplayName=Concentration(ppb),Type=Double,DisableCondition="'$SL.SampleType$'=='样品'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition=True)
+#Column(Max={StrToDouble(InsGetField('$WhichPal2$','$InjTool$.Max Volume'))*0.001},Min={StrToDouble(InsGetField('$WhichPal2$','$InjTool$.Min Volume'))*0.001},Token=$SL.Volume$,DisplayName=Injection Volume(uL),Type=Double,DisableCondition="'$SL.SampleType$'=='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="{StrToDouble(InsGetField('$WhichPal2$','$InjTool$.Max Volume'))*0.001*0.1}")
+#Column(CheckCondition='#this#'!='',CheckErrorMsg="Can't Be Empty",Token=$OutputFile$,DisplayName="Xcalibur DataFile",Type=String,DisableCondition="'$SL.SampleType$'=='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=True,SameCondition=False,VisableCondition="'$System.DataSystem$'=='Xcalibur'",Default="")
+#Column(FullPath=True,MustExist=True,InitPath=C:\\Xcalibur\\data|D:\\Xcalibur\\data,Token=$OutputFolder$,DisplayName="Xcalibur Data Dir",Type=DirName,DisableCondition="'$SL.SampleType$'=='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition="'$System.DataSystem$'=='Xcalibur'",Default="")
+#Column(FullPath=True,MustExist=True,Extension=meth,InitPath=C:\\Xcalibur\\methods|D:\\Xcalibur\\methods,Token=$AcqMethod$,DisplayName="Xcalibur Instrument Method",Type=FileName,DisableCondition="'$SL.SampleType$'=='预制单标'",RefreshKey=$SL.SampleType$,UniqueCondition=False,SameCondition=False,VisableCondition="'$System.DataSystem$'=='Xcalibur'",Default=)
+    System.AutoISFindAllIS(SampleType="预制单标",ResultDir=$ResultDir$)
+    System.AutoISCreateStdLineDic(SampleType="标准品")
+    If('$SL.SampleType$'!='预制单标')
+If('$SL.SampleType$'!='预制单标')
+        If('$SL.SampleType$'=='标准品')
+        If('$SL.SampleType$'=='样品')
+        If('$SL.SampleType$'=='标准品' || '$SL.SampleType$'=='样品')
+./System Method/PAL2/LINEX Thermal Desorption-en.mth
+./System Method/PAL2/Liquid-Liquid Extraction And Injection-en.mth
+AddOverlappingTaskSection(Id=#1,TimeLength=35,ActionType=PalDo,Color=Blue,Description=移入,Enable=True)
+AddOverlappingTaskSection(Id=#2,TimeLength={$Pre_VortexMixTime$*60},ActionType=Wait,Color=Red,Description=萃取,Enable=True)
+AddOverlappingTaskSection(Id=#3,TimeLength={$Pre_LLEGetWaitTime$*60+35},ActionType=PalDo,Color=Blue,Description=移出静置,Enable=True)
+./System Method/PAL2/Online SPE Double Column In Series-en.mth
+./System Method/PAL2/SPME Injection-en.mth
+./System Method/PAL3/Auto Desorption And Injection-en.mth
+./System Method/PAL3/Customer Method/Auto Add Solvent-Offline-en.mth
+./System Method/PAL3/Customer Method/Auto Desorption Offline-en.mth
+./System Method/PAL3/Customer Method/台湾160RTC/Customize Method-en.mth
+#Method(Name=自定义方法,Overlapping=False)
+./System Method/PAL3/Customer Method/台湾160RTC/Fatty Acid Offline Processing-Dilutor-en.mth
+./System Method/PAL3/Customer Method/台湾160RTC/ITSP SPE Offline Processing-en.mth
+./System Method/PAL3/Customer Method/汕头出入境/Fatty Acid Pretreatment And Injection-en.mth
+#Column(ValueList=直接进样#处理进样,Token=$SL.FAMESampleType$,DisplayName=Sample Type,Type=List,DisableCondition="False",RefreshKey="",UniqueCondition="False",SameCondition="False",VisableCondition="True",Default=处理进样)
+    System.PrintMessage(Message="添加正己烷",FCColor=Blue,BGColor=White)
+        If('$SL.FAMESampleType$'=='处理进样')
+        If('$SL.FAMESampleType$'=='处理进样')
+    System.PrintMessage(Message="添加KOH",FCColor=Blue,BGColor=White)
+        If('$SL.FAMESampleType$'=='处理进样')
+        If('$SL.FAMESampleType$'=='处理进样')
+    System.PrintMessage(Message="添加NaCl",FCColor=Blue,BGColor=White)
+        If('$SL.FAMESampleType$'=='处理进样')
+        If('$SL.FAMESampleType$'=='处理进样')
+./System Method/PAL3/Customer Method/防化学院/Liquid Standard Curve Auto Make-Single Syringe-en.mth
+            System.ErrorExit(ErrorInfo="$SL.TargetConcentration$ 需要移取的次数大于 $ToolMaxTransCount$")
+./System Method/PAL3/Customer Method/雅迪/Headspace Injection Stirrer-en.mth
+./System Method/PAL3/Dithiocarbamate-en.mth
+./System Method/PAL3/GC Liquid Injection-en.mth
+./System Method/PAL3/HeadSpace Injection-en.mth
+./System Method/PAL3/ITEX Injection-en.mth
+./System Method/PAL3/LINEX Thermal Desorption-en.mth
+./System Method/PAL3/LINEX Twice Thermal Desorption-en.mth
+./System Method/PAL3/Liquid Standard Curve Auto Make-en.mth
+./System Method/PAL3/Liquid-Liquid Extraction And Injection-en.mth
+./System Method/PAL3/Online SPE-Dual SPE Column In Series-en.mth
+./System Method/PAL3/Online SPE-Inject Only-en.mth
+./System Method/PAL3/Online SPE-Single SPE Column-en.mth
+./System Method/PAL3/SPDE Injection-en.mth
+./System Method/PAL3/SPME Arrow Injection-en.mth
+./System Method/PAL3/SPME Injection-en.mth
+./System Method/PAL3/TestMethod/SPEAux/AuxPal3 Online SPE-SPE1-en.mth
+./System Method/PAL3/TestMethod/SPEAux/Online SPE-en.mth
+./System Method/PAL3/TestMethod/SPEAux/Online SPE-SPE1-en.mth
+./System Method/PAL3/TestMethod/SPEAux/Online SPE-SPE2-en.mth
+
+
+./System Method/PAL3/Customer Method/南昌疾控/GPC Fraction Collected-en.mbak
+                System.ErrorExit(ErrorInfo="开始时间不能<0")
+                System.ErrorExit(ErrorInfo="时间窗口不能<0")
+                    System.ErrorExit(ErrorInfo="后续点的开始时间不能小于前续点开始时间+窗口时间 $RepeatLoopCount$ {InsGetField('SampleList','GPC#$RepeatLoopCount$#StartTime')} {InsGetField('SampleList','GPC#$PreRepeatLoopCount$#StartTime')}+{InsGetField('SampleList','GPC#$PreRepeatLoopCount$#TimeWin')}")
+        System.ErrorExit(ErrorInfo="读取单标数据文件出错，请检查CSV文件格式是否正确")
+./System Method/PAL3/Customer Method/南昌疾控/Online SPE Fraction Collection-en.mbak
+./System Method/PAL3/Customer Method/南昌疾控/SPDE Custom-en.mbak
+./System Method/PAL3/Customer Method/长春质检/Auto Filtering-en.mbak
+./System Method/PAL3/Customer Method/长春质检/Nitro-Furan Derivatization-en.mbak
+        System.PrintMessage(Message="Sample[$SL.Vial$] 添加溶剂1",FCColor=Blue,BGColor=White)
+        System.PrintMessage(Message="Sample[$SL.Vial$] 添加溶剂2",FCColor=Blue,BGColor=White)
+        System.PrintMessage(Message="Sample[$SL.Vial$] 添加溶剂3",FCColor=Blue,BGColor=White)
+./System Method/PAL3/TestMethod/MTBalance-en.mbak
+./System Method/PAL3/TestMethod/Prolab-en.mbak
+
+
+./Instruments/CTCPal2-en.xml
+./Instruments/CTCPal3-en.xml
+./Instruments/eTrap-en.xml
+./Instruments/KnauerLPGPump-en.xml
+./Instruments/LLELayer-en.xml
+./Instruments/MTBalance-en.xml
+./Instruments/OpticPTV-en.xml
+./Instruments/ProlabPS-en.xml
+./Instruments/VirtualSysInstrument-en.xml

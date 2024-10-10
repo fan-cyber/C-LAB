@@ -1,0 +1,9 @@
+<Solution Lang="zh-CN">
+  <Instruments>
+    <Instrument Name="Pal3" Address="127.0.0.1" DriverDLL="CTCPal3" />
+    <Instrument Name="Pump1" Address="127.0.0.1" DriverDLL="ShimadzuLCW" />
+    <Instrument Name="Pump2" Address="127.0.0.1" DriverDLL="ShimadzuLCW" />
+    <Instrument Name="System" Address="127.0.0.1" DriverDLL="VirtualSysInstrument" />
+  </Instruments>
+  <Settings><![CDATA[R6IWKWAbW3mJI3K4HqFnAjLBtdki7GXUR4arV0/2TgJHe/x+00xvcDvlw8JksrnKZoouJdk9yG27fMJmyDckD8VOSDnyedQwNNBd7TqBE5ZBnED72FULh77xqAIUcbXxH0TNvpMuAn02tSZybXiTnvuA32Nlbg9jQnBqFV4LKgJwpdtn5a1UbrIx8gtAvA2akjyyG7drIRs=]]></Settings>
+</Solution>

@@ -1,0 +1,11 @@
+Beep.exe is an auxiliary utility, that will produce 5 beeps. 
+
+It is intended for use in the Clarity Chromatography Station in the Event Table as a tool providing acoustic signalization of performed action (e.g. exceeded limits, etc.).
+
+Beeps are produced using the onboard speaker, which makes the sound independent on soundcard. 
+
+That means that it will produce the sound even if the soundcard is muted, plugged into the earphones or if it is not installed at all!
+
+It is recommended to test its proper function before using it in the event table (e.g. by double-clicking the beep.exe in any file manager).
+
+Some computers may have the onboard speaker disconnected or redirected to the soundcard.

@@ -1,0 +1,6 @@
+<Solution Lang="zh-CN">
+  <Instruments ICFDir="C:\Program Files (x86)\Agilent Technologies\Instrument Control Framework" LogCfgFile="Libs\NLog-AnalystInLabControl.config">
+    <Instrument Name="Pal3" Address="127.0.0.1" DriverDLL="CTCPal3" />
+    <Instrument Name="System" Address="127.0.0.1" DriverDLL="VirtualSysInstrument" />
+  </Instruments>
+</Solution>

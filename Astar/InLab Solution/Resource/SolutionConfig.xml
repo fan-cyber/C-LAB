@@ -1,0 +1,7 @@
+<Solution Lang="zh-CN">
+  <Instruments>
+    <Instrument Name="Pal3" Address="127.0.0.1" DriverDLL="CTCPal3" />
+    <Instrument Name="System" Address="127.0.0.1" DriverDLL="VirtualSysInstrument" />
+  </Instruments>
+  <Settings><![CDATA[R6IWKWAbW3mJI3K4HqFnAgvCKJ2DuLmP1zMoAPg0XbWvX0V2Zn4VoFfit04NrEQ6]]></Settings>
+</Solution>

@@ -1,0 +1,26 @@
+﻿========================================================================
+    CopyFiles 
+========================================================================
+
+CONSOLE APPLICATION 
+
+Copy files exported from chromatogram with specified file types to specified directory.
+
+Usage:
+CopyFiles.exe <Chromatogram Path> <File Types> <Export Path> [true]
+
+Parameters:
+First 4 parameters are mandatory. The last one is not.
+
+<Chromatogram Path> - full path to chromatogram, i.e. C:\Test\Clarity\DEMO1\Data\Sample Vial_06-2.prm. It is necessary to provide full path with full file name. HINT - use %f in Clarity
+<File Types> - file extensions separated by semicolon - ';' i.e. txt;pdf;asc . All files with specified extension and same name as chromatogram will be copied.
+<Export Path> - full export path. In this path will be files copied. If specified export path does not exists, it will be created.
+[true] - write true as last parameter to move files, the export data will be deleted after copy. So, they will be moved.
+
+Example:
+C:\Clarity\Demo1\export\chromatogram.prm txt;pdf;dat D:\Data\Export\
+
+Program will copy files with specified type. If files already exists in the export path, they will be overwritten.
+If there are a spaces in the paths, then the paths must be encapsulated in quotation marks, i.e. "C:\Clarity\Demo Space\export\chromatogram.prm" or  "%f" in Clarity as a parameter.
+
+Program was developed under Visual Studio 2008 

@@ -1,0 +1,6 @@
+Delay.exe is an auxiliary utility that will wait for specified amount of seconds.
+For example when used in command prompt:
+delay.exe 3
+will wait for three seconds.
+It is intended for use together with Clarity commandline parameters.
+See the Clarity_commandline_example.bat file and reference manual for examples of its use.

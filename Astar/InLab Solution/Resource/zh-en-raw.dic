@@ -1,0 +1,780 @@
+%加热槽设置,%Agitator Setting
+%进样针设置,%Tool Setting
+%托盘设置,%Tray Setting
+->Vial II取样针,-> Vial II Tool
+->Vial I取样针,-> Vial I Tool
+0@大气压#1@真空#2@正压,0@Atmospheric Pressure#1@Vacuum#2@Positive Pressure
+0@大气压#1@真空#2@正压=Atmospheric Pressure@0#Vacuum@1#Positive Pressure@2
+0@氦气#1@氢气#2@氮气,0@Helium#1@Hydrogen#2@Nitrogen
+0@氦气#1@氢气#2@氮气=0@Helium#1@Hydrogen#2@Nitrogen
+2mL瓶编号,2mL VialIndex
+2mL样品盘,2mL SampleTray
+AgitatorMix,AgitatorMix
+AgitatorMix-Short,AgitatorMix-Short
+Agitator混匀,Agitator Mix
+Arrow老化,Arrow Condition
+AutoAdd1,AutoAdd1
+AutoAdd2,AutoAdd2
+AutoSamplerReset,AutoSamplerReset
+AuxPal3在线SPE-SPE1,AuxPal3 Online SPE-SPE1
+Baseline Subtraction Window,Baseline Subtraction Window
+BF3臂,BF3 PAL
+BF3添加体积,BF3 Add Volume
+C4H16臂,C4H16 PAL
+C4H16托盘,C4H16 Tray
+C6H14臂,C6H14 PAL
+C6H14添加体积,C6H14 Add Volume
+CDC Capper,CDC Capper
+CDC Gripper,CDC Gripper
+CDC Slider,CDC Slider
+CDC动作,CDC Action
+CDC控制,CDC Control
+ChemStation-2方法,ChemStation-2 Method
+ChemStation-2数据文件名,ChemStation-2 DataFile
+ChemStation-2数据子目录,ChemStation-2 Data SubDir
+ChemStation方法,ChemStation Method
+ChemStation数据文件名,ChemStation DataFile
+ChemStation数据子目录,ChemStation Data SubDir
+ClearMethod,ClearMethod
+Common Head,Common Head
+Cycle单步模式,Single-Step Mode
+Cycle单步运行,Single-Step Run
+Cycle连续运行,Runs Continuously
+DataFile,DataFile
+DataFile2,DataFile2
+DataSystem Header,DataSystem Header
+eTrap,eTrap
+eTrap设置温度,eTrap Temperature
+eTrap温度,eTrap Temperature
+Fiber老化,Fiber Condition
+FindLayer,FindLayer
+GetParameters,GetParameters
+GPC泵,GPC Pump
+GPC泵条件,GPC Pump Conditions
+GPC进样馏份收集,GPC Fraction Collected
+Gripper动作,Gripper Action
+HeadSpace,HeadSpace
+HeadSpace-PAL2,HeadSpace-PAL2
+Head动作,Head Action
+Inlet File,Inlet File
+Inlet File2,Inlet File2
+Ip 1位,Ip 1Bit
+Ip 2位,Ip 2Bit
+Ip 3位,Ip 3Bit
+Ip 4位,Ip 4Bit
+Ip地址设置,Ip Address
+ITEX Trap,ITEX Trap
+ITEX捕集温度,ITEX Capture Temperature
+ITEX待机温度,ITEX Standby Temperature
+ITEX进样,ITEX Injection
+ITEX老化温度,ITEX Condition Temperature
+ITEX脱附时间,ITEX Desorption Time
+ITEX脱附温度,ITEX Desorption Temperature
+ITSP SPE离线处理,ITSP SPE Offline Processing
+ITSP SPE离线处理By Tool,ITSP SPE Offline Processing By Tool
+ITSP臂,ITSP PAL
+ITSP管柱,ITSP Cartridge
+ITSP管柱盘,ITSP Pipe Cartridge
+ITSP洗脱瓶,ITSP Elution Vial
+KOH臂,KOH PAL
+KOH托盘,KOH Tray
+LCMS自内标较正进样,LCMS Self-Standard Positive Injection
+LCMS自内标较正进样,LCMS自内标较正进样
+LINEX,LINEX
+LINEXGetOut,LINEXGetOut
+LINEXPutIn,LINEXPutIn
+LINEX二次热脱附,LINEX Twice Thermal Desorption
+LINEX热脱附,LINEX Thermal Desorption
+Link设定,Link Setting
+Liquid,Liquid
+MassHunter2方法,MassHunter2 Method
+MassHunter2数据目录,MassHunter2 Data Dir
+MassHunter2数据文件名,MassHunter2 DataFile
+MassHunter方法,MassHunter Method
+MassHunter数据目录,MassHunter Data Dir
+MassHunter数据文件名,MassHunter DataFile
+Master Ready Out,Master Ready Out
+MS Filter,MS Filter
+MS Method,MS Method
+MS Method2,MS Method2
+MS Tune,MS Tune
+MS Tune2,MS Tune2
+MSD2方法,MSD2 Method
+MSD2数据目录,MSD2 Data Dir
+MSD2数据文件名,MSD2 DataFile
+MSD方法,MSD Method
+MSD数据目录,MSD Data Dir
+MSD数据文件名,MSD DataFile
+MTBalance,MTBalance
+MTBalance2,MTBalance2
+NaCl臂,NaCl PAL
+NaCl添加体积,NaCl Added Volume
+NaCl托盘,NaCl Tray
+NaOH臂,NaOH PAL
+NaOH添加体积,NaOH Volume
+Optic4方法,Optic4 Method
+Optic4进样口,Optic4 Injector
+OpticPTVParamters,OpticPTVParamters
+PAL2顶空进样,PAL2 Headspace Injection
+Project名,Project Name
+Prolab,Prolab
+Purge通道比例,Purge Ratio
+RampRate,RampRate
+RampTime,RampTime
+Ready In,Ready In
+Ready Out Polarity AS,Ready Out Polarity AS
+Run Out Timing,Run Out Timing
+Run Out,Run Out
+Slave Ready Out,Slave Ready Out
+Solvent A添加体积,Solvent A Volume
+Solvent A托盘,Solvent A Tray
+Solvent A位置,Solvent A Location
+Solvent B添加体积,Solvent B Volume
+Solvent B托盘,Solvent B Tray
+Solvent B位置,Solvent B Location
+Solvent C添加体积,Solvent C Volume
+Solvent C托盘,Solvent C Tray
+Solvent C位置,Solvent C Location
+SolventD添加体积,Solvent D Volume
+SPDE进样,SPDE Injection
+SPDE自定义,SPDE Custom
+SPE->LC转移Loop,SPE-> LC Transfer Loop
+SPE1->LC时间,SPE1-> LC Time
+SPE1活化时间,SPE1 Condition Time
+SPE1活化条件,SPE1 Condition Pump
+SPE1淋洗1时间,SPE1 Wash 1 Time
+SPE1淋洗1条件,SPE1 Wash 1 Pump
+SPE1淋洗2时间,SPE1 Wash 2 Time
+SPE1淋洗2条件,SPE1 Wash 2 Pump
+SPE1淋洗3时间,SPE1 Wash 3 Time
+SPE1淋洗3条件,SPE1 Wash 3 Pump 
+SPE1平衡时间,SPE1 Balance Time
+SPE1平衡条件,SPE1 Balance Pump
+SPE1上样时间,SPE1 Loading Time
+SPE1上样条件,SPE1 Loading Pump
+SPE1再生,SPE1 Regeneration
+SPE1转移到LC时间,SPE1 Transferred To LC Time
+SPE1转移到SPE2,SPE1 Transferred To SPE2
+SPE1转移到SPE2条件,SPE1 Transferred To SPE2 Pump
+SPE1转移时间,SPE1 Transfer Time
+SPE1转移条件,SPE1 Transfer Pump
+SPE2->LC时间,SPE2->LC Time
+SPE2->LC转移Loop,SPE2-> LC Transfer Loop
+SPE2活化时间,SPE2 Condition Time
+SPE2活化条件,SPE2 Condition Pump
+SPE2淋洗1时间,SPE2 Wash 1 Time
+SPE2淋洗1条件,SPE2 Wash 1 Pump
+SPE2淋洗2时间,SPE2 Wash 2 Time
+SPE2淋洗2条件,SPE2 Wash 2 Pump
+SPE2淋洗3时间,SPE2 Wash 3 Time
+SPE2淋洗3条件,SPE2 Wash 3 Pump
+SPE2平衡时间,SPE2 Balance Time
+SPE2平衡条件,SPE2 Balance Pump
+SPE2上样时间,SPE2 Loading Time
+SPE2上样条件,SPE2 Loading Pump
+SPE2再生,SPE2 Regeneration
+SPE2转移到LC时间,SPE2 Transferred To LC Time
+SPE泵,SPE Pump
+SPE泵经过系统,SPE Pump Through The System
+SPE泵条件,SPE Pump
+SPE活化时间,SPE Condition Time
+SPE活化条件,SPE Condition Pump
+SPE进样方式,SPE Injection Mode
+SPE淋洗1时间,SPE Wash 1 Time
+SPE淋洗1条件,SPE Wash 1 Pump
+SPE淋洗2时间,SPE Wash 2 Time
+SPE淋洗2条件,SPE Wash 2 Pump
+SPE淋洗3时间,SPE Wash 3 Time
+SPE淋洗3条件,SPE Wash 3 Pump
+SPE淋洗时间,SPE Wash Time
+SPE淋洗条件,SPE Wash Pump
+SPE平衡时间,SPE Balance Time
+SPE平衡条件,SPE Balance Pump
+SPE上样时间,SPE Loading Time
+SPE上样条件,SPE Loading Pump
+SPE洗脱时间,SPE Elution Time
+SPE洗脱条件,SPE Elution Pump
+SPE再生,SPE Regeneration
+SPE再生条件,SPE Regeneration Pump
+SPE转移到LC时间,SPE Transferred To LC Time
+SPME Arrow进样,SPME Arrow Injection
+SPME进样,SPME Injection
+Standby温度,Standby Temperature
+Stirr温度,Stirr Temperature
+SyringeMix-Short,SyringeMix-Short
+TotalChrom数据目录,TotalChrom Data Dir
+TotalChrom数据文件名,TotalChrom DataFile
+TotalChrom仪器方法,TotalChrom Instrument Method
+Vail-I,Vial-I
+Vail-II,Vail-II
+Vial-I Tray,Vial-I Tray
+Vial-II Tray,Vial-II Tray
+VortexMix-Short,VortexMix-Short
+wiff文件名,Wiff File Name
+X,X
+Xcalibur Data Dir,Xcalibur Data Dir
+Xcalibur DataFile,Xcalibur DataFile
+Xcalibur Instrument Method,Xcalibur Instrument Method
+Xcalibur数据目录,Xcalibur Data Dir
+Xcalibur数据文件名,Xcalibur DataFile
+Xcalibur仪器方法,Xcalibur Instrument Method
+Y,Y
+Z,Z
+按需混匀#强制混匀,Mix As Needed#Forced Mix
+保存图片,Save The Picture
+保留时间,Keep Time
+保留时间窗口,Retention Time Window
+保温槽,Keep Agitator
+保温时间,Keep Time
+保温温度,keep Temperature
+必须安装进样针,The Syringe Must Be Installed
+标品吸取速度,Get Speed
+标准品来源,Standard Source
+捕集前ITEX老化时间,Pre-Capture ITEX Condition Time
+捕集时间,Capture Time
+捕集温度,Capture Temperature
+采集,Collection
+参考位置,Reference Location
+操作CDC,Operate The CDC
+操作Head和夹子,Operate Head And Gripper
+测试深度,Test Depth
+常用功能,Utilities
+衬管编号,Liner Index
+衬管托盘,Liner Tray
+储备液定容体积,Stock Solution Volume
+储备液基准浓度,Stock Stock Reference Concentration
+储备液浓度,Stock Solution Concentration
+储备液盘,Stock Tray
+储备液瓶号,Stock Vial
+储备液托盘,Stock Tray
+储备液物质2浓度,Stock2 Concentration
+储备液物质3浓度,Stock3 Concentration
+储备液消耗,Stock Consumption
+触发MS运行,Trigger MS Operation
+串行运行#并行运行,Serial#Parallel
+吹扫分流流速,Purge Split Flow
+吹扫时间,Purge Time
+吹扫载气流速,Purge Carrier Gas Flow
+从中心位置退回,Return From Center
+萃取槽,Extraction Agitator
+萃取次数,Extraction Times
+萃取后除水时间,Water Removal Time
+萃取后衍生化,Derivatization Post Extraction
+萃取前老化,Condition Pre Extraction
+萃取前衍生化,Pre-Extraction Derivatization
+萃取深度,Extraction Depth
+萃取时间,Extraction Time
+萃取时振荡,Agitator During Extraction
+萃取速度,Extraction Speed
+萃取体积,Extract Volume
+萃取液臂,Extract PAL
+萃取液体积,Extract Solvent Volume
+萃取液托盘,Extract Solvent Tray
+萃取液位置,Extract Solvent Vial
+萃取液针,Extract Tool
+萃取液自动添加,Auto Add Extract Solvent
+萃取扎入深度,Extraction Depth
+打开盖子,Open Capper
+打开图片,Open Picture
+大气压#真空#正压,Atmospheric Pressure#Vacuum#Positive Pressure
+大气压@0#真空@1#正压@2,Atmospheric Pressure@0#Vacuum@1#Positive Pressure@2
+大液体针,Large Volume Tool
+大针,Large Volume Tool
+大针臂,Large Volume PAL
+大针吸取速度,Large Tool Get Speed
+待机,Standby
+待机Aux1,Standby Aux1
+待机Aux2,Standby Aux2
+待机Aux3,Standby Aux3
+待机Aux4,Standby Aux4
+待机参数设置,Standby Parameter
+待机分流,Standby Split Flow
+待机时间,Standby Time
+待机温度,Standby Temperature
+待取液润针次数,Clean With Solvent Count
+单标,Single Standard
+单标数据表,Single Standard Data Sheet
+单标托盘,Single Standard Tray
+单标总体积大于设定的混标体积，不能实现,The Total Volume Of A Single Standard Is Greater Than The Set Volume Of Mixed Standard Can Not Be Achieved
+单样品模式,Single Sample Mode
+当前状态,Current Status
+低速离心,Low Speed Centrifugation
+顶空进样,HeadSpace Injection
+顶空进样Stirrer,Headspace Injection Stirrer
+定容扣除其他溶剂体积,Decrease Volume
+定容体积,Final Volume
+丢弃管柱,Discard The Cartridge
+读立即数,Read Immediately
+读取Cycle,Read Cycle
+读取参数,Read Parameters
+读取单标数据文件出错，请检查CSV文件格式是否正确,Error Reading Single Data File, Please Check CSV File Format Is Correct
+读取状态,Read Status
+读稳定数,Read Stable Number
+多样品萃取,Multi-Sample Extraction
+二硫代氨基甲酸酯,Dithiocarbamate
+放入衬管,PutIn Liner
+放下工具,Park Tool
+废液工作站,Waste Station
+分流,Split Flow
+分流流速,Split Flow
+分析时间,Analyze Time
+峰分离度,Peak Resolution
+孵化,Incubation
+孵化时间,Incubation Time
+孵化温度,Incubation Temperature
+孵化样品,Incubate Samples
+富集次数,Enrichment Count
+赶气泡次数,FillingStroke Count
+高速离心,High-Speed Centrifugation
+隔垫吹扫,Septum Purge
+隔垫吹扫流量,Septum Purge Flow
+固定时间#溶剂百分比#溶剂阈值,Fixed Time#Solvent Percentage#Solvent Threshold
+固定时间@0#溶剂百分比@1#溶剂阈值@2,Fixed Time@0#Solvent%@1#Solvent Threshold@2
+关闭盖子,Close Capper
+管路清洗,Clean Tubing
+归零,Zero
+过滤Tool,Filter Tool
+过滤瓶,Filter Vial
+过滤套装编号,Filter Kit Index
+过滤体积,Filter Volume
+氦气#氢气#氮气,Helium#Hydrogen#Nitrogen
+氦气@0#氢气@1#氮气@2,Helium@0#Hydrogen@1#Nitrogen@2
+后段样品,Rear Sample
+忽略预运行信号,Ignore Prep-Run Signal
+换针,Change Tool
+换针结束后点击确定,After Changing Tool, Click OK
+换针手臂,Change Tool PAL
+混匀Tool,Mixing Tool
+混匀次数,Mixing Count
+混匀方式,Mix Type
+混匀时间,Mix Time
+混匀体积,Mix Volume
+活化1次数,Condition 1 Count
+活化1工具,Condition 1 Tool
+活化1体积,Condition 1 Volume
+活化2次数,Condition 2 Count
+活化2工具,Condition 2 Tools
+活化2体积,Condition 2 Volumes
+活化时间,Condition Time
+活化速度,Condition Speed
+活化条件,Condition Solvent
+机械臂,PAL
+基准浓度,Reference Concentration
+加热槽,Agitator
+加热温度,Heating Temperature
+加速度,Acceleration
+监测百分比,Monitoring Percentage
+监测阈值,Monitoring Threshold
+剪切瓶子,Clip Vial
+较正中心位置,Calibration Central Point
+解锁成功,Unlock Successfully
+解锁面板,Unlock Terminal
+解锁终端,Unlock Terminal
+解析,Analysis
+解析时间,Desorption Time
+解析针,Desorption Tool
+解析字符,Parse Characters
+进样,Injection
+进样臂,Sample PAL
+进样次数,Injection Count
+进样阀,Injection Valve
+进样后老化,Condition Post Injection
+进样后冷却时间,Cooling Time Post Injection
+进样后升温速率,Heating Rate Post Injection 
+进样后停留,Post Injection Delay
+进样后洗阀次数1,Post Injection Valve Wash1 Count
+进样后洗阀次数2,Post Injection Valve Wash2 Count
+进样后洗针,Clean Post Injection
+进样后洗针次数1,Post Injection Wash1
+进样后洗针次数2,Post Injection Wash2
+进样口,Injector
+进样口保持温度,Injector Temperature
+进样口模式,Injector Mode
+进样前静置时间,Pre-Injection Delay Time
+进样前冷却时间,Pre-Injection Cooling Time
+进样前停留,Pre Injection Delay
+进样前洗针次数1,Pre Injection Wash1
+进样前洗针次数2,Pre Injection Wash2
+进样前自动添加1,Pre Injection Add1
+进样前自动添加2,Pre Injection Add2
+进样深度,Injection Depth
+进样速度,Injection Speed
+进样体积,Injection Volume
+进样温度,Injection Temperature
+进样针,Tool
+进样针温度,Tool Temperature
+禁用密码,Disable Password
+禁用密码成功,Password Disabled Successfully
+经过SPE1,Pass Through SPE1
+经过SPE1柱,Pass Through SPE1
+经过SPE2,Pass Through SPE2
+经过SPE2柱,Pass Through SPE2
+经过样品环,Pass Through Sample Loop
+静置时间,Wait Time
+聚焦时间,Focus On Time
+刻度,Scale
+空瓶编号,Empty Vial
+空瓶托盘,Empty Tray
+空瓶重,Empty Vial Weight
+空气体积,Air Volume
+控温槽,Agitator Temperature
+控温样品盘,Temperature Tray
+控温样品瓶,Temperature Vials
+控制,Control
+扣除体积,Decrease Volume
+老化抽拉次数,Condition FillingStroke Count
+老化进样口,Condition Injector
+老化时间,Condition Time
+老化温度,Condition Temperature
+冷肼捕集温度,Cold Hydrazine Capture Temperature
+冷肼聚焦温度,Cold Hydrazine Focus Temperature
+冷肼升温速率,Hydrazine Heating Rate
+冷肼脱附时间,Cold Hydrazine Desorption Time
+冷肼脱附温度,Cold Hydrazine Desorption Temperature
+冷肼温度,Cold Hydrazine Temperature
+冷聚焦多次进样,Cold Focus Multiple Injections
+冷却温度,Cooling Temperature
+离心时间,Centrifugal Time
+离心速度,Centrifugal Speed
+连续萃取样品数,Continuous Extraction Of Samples
+连续进样次数,Continuous Injection Times
+淋洗1时间,Wash 1 Time
+淋洗1条件,Wash 1 Pump
+淋洗2时间,Wash 2 Time
+淋洗2条件,Wash 2 Pump
+淋洗3时间,Wash 3 Times
+淋洗3条件,Wash 3 Pump
+淋洗吹干次数,Eluent Drying Count
+淋洗次数,Wash Times
+淋洗工具,Wash Tools
+淋洗深度,Wash Depth
+淋洗速度,Wash Speed
+淋洗体积,Wash Volume
+淋洗样品盘,Wash Tray
+淋洗样品瓶,Wash Vial
+命令,Command
+命令文件,Command File
+命名为,Named
+模块,Module
+模块重命名,Rename Module
+模拟进样信号1,Send Signal 1
+模拟进样信号2,Send Signal 2
+默认洗针工作站,Default Wash
+目标,Target
+目标编号,Target Number
+目标浓度$CUnit$,Target Concentration$CUnit$
+目标浓度,Target Concentration
+目标位置,Target Location
+目标物,Target
+目标样品盘,Target Sample Tray
+目标样品瓶,Target Sample Vial
+内标进样口,Internal Standard Inlet
+内标进样速度,Internal Standard Injection Speed
+内标数据目录,Internal Standard Data Directory
+内标体积,IS Volume
+内标添加体积,IS Volume
+内标托盘,IS Tray
+内标位置,IS Vial
+内标重,IS Weight
+内标自动添加,IS Automatically Added
+内较正,IS Calibration
+浓度,Concentration
+浓度单位,Concentration Unit
+排空分流流速,Vent Split Flow
+排空时间,Vent Time
+排空载气流速,Vent Carrier Gas Flow Rate
+排气泡,FillingStroke
+配制标准曲线,Preparation Of Standard Curve
+配制完成后移入控温槽,Moved Into Cooler
+平衡时间,Equilibrium Time
+平衡条件,Equilibrium Conditions
+评估SPE1保留,Evaluate SPE1 Reservation
+评估SPE2保留,Evaluate SPE2 Reservation
+瓶编号,Vial
+启动色谱Link1,Start Link1
+启动色谱Link2,Start Link2
+启用#停用,Enable#Disable
+启用@1#停用@0,Enable@1#Disable@0
+启用冷肼,Enable Cold Hydrazine
+启用密码,Enable Password
+启用密码成功,Enable Password Succeeded
+气相液体进样,GC Liquid Injection
+气相液体进样-Overlapping,GC Liquid Injection-Overlapping
+气相液体进样Overlapping,GC Liquid Injection Overlapping
+前处理,Prepare Sample
+前段样品,Front Sample
+取C4H16速度,Get C4H16 Speed
+取C4H16针,Get C4H16 Tool
+取KOH速度,Get KOH Speed
+取KOH针,Get KOH Tool
+取NaCl速度,Get NaCl Speed
+取NaCl针,Get NaCl Tool
+取Solvent A速度,Get Solvent A Speed
+取Solvent A针,Get Solvent A Tool
+取Solvent B速度,Get Solvent B Speed
+取Solvent B针,Take Solvent B Tool
+取Solvent C速度,Get Solvent C Speed
+取Solvent C针,Get Solvent C Tool
+取萃取液速度,Get Extract Speed
+取萃取液针,Get Extract Tool
+取过滤液Tool,Get Filtrate Tool
+取内标速度,Get IS Speed
+取内标针,Get IS Tool
+取溶剂速度,Get Solvent Speed
+取样臂,Sample PAL
+取样后停留,Post Get Delay
+取样前洗针次数1,Pre Get Wash1 
+取样前洗针次数2,Pre Get Wash2 
+取样深度,Get Depth
+取样速度,Get Speed
+取样体积,Sampling Volume
+取样针,Sampling Tool
+取油品速度,Get Oil Speed
+取油品针,Get Oil Tool
+去皮,Peeled
+热脱附,Thermal Desorption
+溶剂,Solvent
+溶剂1洗针次数,Solvent Wash1
+溶剂2洗针次数,Solvent Wash2
+溶剂比例,Solvent Ratio
+溶剂臂,Solvent PAL
+溶剂排空,Solvent Vent
+溶剂托盘,Solvent Tray
+溶剂位置,Solvent Vial
+溶剂阈值,Solvent Threshold
+如果需要保留这些中间点上机，请适当增加中间点用于消耗,If You Need To Keep These Intermediate Points, Please Increase The Intermediate Point For Consumption
+润针次数,Clean Syringe With Solvent
+色谱1设定,Link1 Setting
+色谱2设定,Link2 Settings
+色谱2运行 ,Chromatography2 Running
+色谱工作站,Chromatography Workstation
+色谱工作站2,Chromatography Workstation 2
+色谱运行 ,Chromatography Running
+删除用户,Delete Users
+上层#下层,Upper#Lower
+上样次数,Loading Sample Times
+上样工具,Loading Tool
+上样后洗针次数1,Post Loading Wash1 Count
+上样后洗针次数2,Post Loading Wash2 Count
+上样时间,Loading Time
+上样体积,Sample Volume
+上样条件,Loading Conditions
+设置,Setting
+设置参数,Setting Parameters
+设置成功,Setting Successfully
+识别,Recognize
+使用冷肼,Use Cold Hydrazine
+使用转移Loop,Use Transfer Loop
+是否保存数据,Save Data
+是否加热,Heat
+是否控温,Control Temperature 
+是否移回,Move Back
+是否振荡,Agitator
+收集后持续时间,Collection Time
+收集瓶号,Collect Vial
+收集起始瓶号,Collect Vial Start Index
+收集时间表,Collectiong Schedule
+收集托盘,Collection Tray
+收集样品盘,Collect Tray
+收集样品瓶,Collect Vial
+手动换针,Manual Change Tool
+数据目录,Data Directory
+双柱串联SPE手动进样,Two-Column Series SPE Manual Injection
+双柱串联SPE手动切换,Two-Column Series SPE Manual Switch
+提示信息,Prompt Information
+体积,Volume
+体积系数,Volume Factor
+添加混标溶剂,Add Mixed Solvent
+添加体积,Add Volume
+停用自动发送,Disable Link
+停止,Stop
+停止运行,Stop Running
+同步模式,Synchronous Mode
+托盘,Tray
+脱附到冷肼时间,Desorption To Cold Hydrazine Time
+脱附管编号,TD Tube Index
+脱附管托盘,TD Tube Tray
+脱附后保持温度,Temperature Post Desorption
+脱附后推出速度,Injection Speed Post Desorption
+脱附时间,Desorption Time
+脱附速度,Desorption Speed
+脱附温度,Desorption Temperature
+维护针,Maintenance Syringe
+位置,Position
+温度,Temperature
+物质2浓度,Substance2 Concentration
+物质3浓度,Substance3 Concentration
+吸取高度,Aspirate Depth
+吸取速度,Aspirate Speed
+吸取体积,Aspirate Volume
+稀释关系,Dilution Relationship
+稀释溶剂盘,Dilution Tray
+稀释溶剂瓶号,Dilute Vail 
+稀释溶剂消耗,Diluted Solvent Consumption
+稀释液体积,Dilution Volume
+洗脱吹干次数,Elution Dry Count
+洗脱次数,Elution Count
+洗脱工具,Elution Tool
+洗脱盘,Elution Tray
+洗脱深度,Elution Depth
+洗脱速度,Elution Speed
+洗脱体积,Elution Volume
+洗脱样品盘,Elute Tray
+洗脱样品瓶,Elution Vials
+洗针,Syringe Wash
+洗针次数,Syringe Wash Count
+洗针工作站,Wash Station
+洗针液体,Syringe Wash Solvent
+系统参数设置,System Parameter Setting
+下探侦测,Detect Object
+下一步,Next Step
+纤维头伸出长度,Fiber Expose Length
+相对位移,Relative Move
+消耗,Consumption
+硝基呋喃衍生化,Nitro-Furan Derivatization
+小液体针,Small Liquid Tool
+小于针的最小体积 ,Less Than The Minimum Volume Of Syringe
+小针,Small Syringe
+小针臂,Small Syringe PAL
+小针吸取速度,Small Syringe Get Speed
+新增用户,New Users
+修改密码,Change Password
+漩涡混匀,Vortex Mix
+漩涡时间,Vortex Time
+漩涡速度,Vortex Speed
+压力,Pressure
+压力单位,Pressure Unit
+盐酸添加体积,Hydrochloric Acid Volume
+衍生化次数,Derivatization Count
+衍生化深度,Derivative Depth
+衍生化时间,Derivation Time
+衍生化试剂添加体积,Derivatizing Reagents Volume
+衍生化试剂托盘,Derivatization Reagent Tray
+衍生化试剂位置,Derivatization Reagent Vail
+衍生化速度,Derivation Speed
+衍生化温度,Derivatization Temperature
+样品,Sample
+样品吹扫方式,Sample Purge Type
+样品进样口,Sample Inlet
+样品类型,Sample Type
+样品名,Sample Name
+样品盘,Sample Tray
+样品瓶,Vials
+样品瓶类型,Vial Type
+样品瓶扎入深度,Vial Penertration
+样品润针次数,Syringe Clean With Sample Count
+样品体积,Sample Volume
+样品转移流速,Sample Transfer Flow
+样品转移时间,Sample Transfer Time
+液面层,Liquid Surface Layer
+液面识别,Liquid Level Find
+液体配置标准曲线,Liquid Standard Curve Auto Make
+液体配置标准曲线-单针,Liquid Standard Curve Auto Make-Single Syringe
+液液萃取自动进样,Liquid-Liquid Extraction And Injection
+移出,Move Out
+移出衬管,Remove Liner
+移动到目标,Move To Target
+移动到目标物,Move To Target
+移动到托盘,Move To Tray
+移动瓶子,Transport Vail
+移后离开,Leave Post Transport
+移回Home位置,Move To Home
+移回瓶子,Transport Vial Back
+移回前等待,Waiting Before Moving Back
+移瓶Tool,Transport Vial Tool
+移取单标,Get Single Standard
+移取的体积 ,Get Volume
+移取时赶气泡次数,FillStroke Count
+移入,Transport In
+移入瓶子,Transport Vial In
+以下中间点将被消耗,The Following Intermediate Points Will Be Consumed
+用户管理,User Management
+油品重量,Oil Weight
+油品自动添加,Oil Added
+预孵化样品,Pre-Incubate Samples
+预运行,Pre-Run
+原油编号,Crude Oil Number
+原油体积,Crude Oil Volume
+原油托盘,Crude Oil Tray
+源,Source
+源位置,Source Location
+源位置编号,Source Location Index
+运行,Run
+运行参数设置,Running Parameter
+运行分流流速,Running Split Flow
+运行命令,Run Command
+运行命令文件,Run Command File
+运行时分流流速,Split Flow
+运行时间,Running Time
+运行梯度,Run Gradient
+运行脱附,Run Desorption
+载气,Carrier Gas
+载气结束流速,Carrier Gas End Flow
+载气开始流速,Carrier Gas Start Flow
+载气流速,Carrier Gas Flow
+在线SPE,Online SPE
+在线SPE-SPE1,Online SPE-SPE1
+在线SPE-SPE2,Online SPE-SPE2
+在线SPE--单SPE柱,Online SPE-Single SPE Column
+在线SPE馏份收集,Online SPE Fraction Collection
+在线SPE--双SPE柱串联,Online SPE-Dual SPE Column In Series
+在线SPE双柱串联,Online SPE Double Column In Series
+在线SPE--只进样,Online SPE-Inject Only
+噪音百分比,Noise Percentage
+扎入深度,Penertration
+针混匀,Mix With Syringe
+针座,Syringe
+针座温度,Syringe Temperature
+振荡槽,Agitator
+振摇后静置,Waiting After Agitator
+振摇速度,Agitator Speed
+只进样#解析进样,Only Injection#Desorption Injection
+只进样,Only Injection
+脂肪酸离线处理Dilutor,Fatty Acid Offline Processing-Dilutor
+脂肪酸前处理及进样,Fatty Acid Pretreatment And Injection
+质谱方法,Mass Spectrometry Method
+中速离心,Medium Speed Centrifugation
+重量输出目录,Weight Output Directory
+重置错误,Reset Error
+重置进样器,Reset PAL
+重置用户数据库,Reset User Database
+重置用户数据库成功,Reset User Database Successfully
+注射后停留,Post Injection Delay
+注射前停留,Pre Injection Delay
+注射前洗针次数1,Pre Injection Wash1
+注射前洗针次数2,Pre Injection Wash2
+注射速度,Injection Speed
+注射针,Tool
+柱出口,Column Outlet
+柱子,Column
+柱子内径,Column Diameter
+柱子长度,Column Length
+转移到2mL瓶,Transfer To 2mL Vial
+转移分流流速,Transfer Split Flow
+转移溶剂臂,Transfer Solvent PAL
+转移溶剂体积,Transfer Solvent Volume
+转移溶剂托盘,Transfer Solvent Tray
+转移溶剂位置,Transfer Solvent Vial
+转移样品分流流速,Sample Transfer Flow
+转移样品量,Transfer Sample Volume
+状态,Status
+自定义方法,Customize Method
+自动感知瓶底,Bottom Sensor
+自动关盖,Auto Close Cover
+自动过滤,Auto Filtering
+自动解析进样,Auto Desorption And Injection
+自动解析离线,Auto Desorption Offline
+自动开盖,Auto Open Cover
+自动离心,Auto Centrifugation
+自动识别液面,Auto Identification Of Liquid Level
+自动添加溶剂-离线,Auto Add Solvent-Offline
+自动脱盖,Auto Decapper
+自动液液萃取自动进样,Auto Liquid-Liquid Extraction And Injection
+自动制作混标,Auto Make Mixed Standard
+自动注射内标,Auto Injection IS
+字符,Character
+字符不能为空,Character Can Not Be Empty
+最大移取次数,The Maximum Number Of Get
+最高温度,Highest Temperature
+最小峰高,Minimum Peak Height
+最小峰宽,Minimum Peak Width

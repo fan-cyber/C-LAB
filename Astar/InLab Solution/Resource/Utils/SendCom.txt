@@ -1,0 +1,3 @@
+The SendCom.exe is a software utility that enables basic control of certain devices such as HPLC pumps, detectors, and switching valves using RS232 serial line communication from Clarity. It enables to send simple text commands to the selected device, using the communications settings specified in the SendCom.ini file.
+
+The exact function of SendCom.exe utility is described in the D026-SendCom.pdf datasheet, availbale in the DOC PDF/DATASHEETS subdirectory of the clarity installation directory, in the DOC PDF/DATASHEETS subdirectory of the clarity installation CD or in the downloads/datasheets section of the DataApex website (www.dataapex.com).
