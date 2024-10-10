@@ -1,0 +1,191 @@
+Name MyReadPeak
+    Parameter readdatafile$
+    Parameter resultfile$
+    Parameter InsNumber$
+    !遍历rootdir$目录下的.D数据文件
+    !读出峰的相关信息存入resultfile!
+
+    local done
+    local position
+    local filelist$
+    local tempdatafile$
+    local tempdatapath$
+    ResultPeakError = 0
+    ResultPeakError_Msg$ = ""
+
+    tempdatafile$ = _datafile$
+    tempdatapath$ = _datapath$
+    LinkInsNumber$ = InsNumber$
+    peakdatafile$ = readdatafile$
+
+    ON Error ReadPeakError
+    Open resultfile$ for output as #100
+
+    !文件存在就读入
+    if FileStat(MODE,peakdatafile$) = 2 then
+        File peakdatafile$
+        ReadDataFilePeak
+    endif
+
+    _datafile$ = tempdatafile$
+    _datapath$ = tempdatapath$
+    Close #100
+    if ResultPeakError <> 1 Then
+        MyResultPeakBack "@@OK:"
+    Else
+        MyResultPeakBack "@@ERROR:"+ ResultPeakError_Msg$
+    EndIf
+    Return
+EndMacro
+
+Name MyReadPeakDir
+    Parameter rootdir$
+    Parameter resultfile$
+    Parameter InsNumber$
+    !遍历rootdir$目录下的.D数据文件
+    !读出峰的相关信息存入resultfile!
+
+    local done
+    local position
+    local filelist$
+    local tempdatafile$
+    local tempdatapath$
+    ResultPeakError = 0
+    ResultPeakError_Msg$ = ""
+
+    tempdatafile$ = _datafile$
+    tempdatapath$ = _datapath$
+    LinkInsNumber$ = InsNumber$
+
+    ON Error ReadPeakError
+    Open resultfile$ for output as #100
+
+    !取得所有的数据文件
+    done=0
+    filelist$ =  findfile$(rootdir$+"\*.d")
+    print "filelist" + filelist$
+    if filelist$ = "" then
+       done=1
+    endif
+
+    while done = 0 do
+        position = instr(filelist$,"|")
+	    if (position = 0) then
+	        done = 1
+            peakdatafile$ = filelist$
+	    else
+	        peakdatafile$ = filelist$[1:position-1]
+	        filelist$ = filelist$[position+1:len(filelist$)]
+        endif
+	    if peakdatafile$="" then
+	        done=1
+	    else
+            !文件存在就读入
+            if FileStat(MODE,rootdir$+"\"+peakdatafile$) = 2 then
+                File rootdir$+"\"+peakdatafile$
+                ReadDataFilePeak
+            endif
+	    endif
+    endwhile
+
+    _datafile$ = tempdatafile$
+    _datapath$ = tempdatapath$
+    Close #100
+    if ResultPeakError <> 1 Then
+        MyResultPeakBack "@@OK:"
+    Else
+        MyResultPeakBack "@@ERROR:"+ ResultPeakError_Msg$
+    EndIf
+    Return
+EndMacro
+
+Name ReadDataFilePeak
+    local peakarea
+    local peakheight 
+    local peakrt
+    local myvail$
+    local myAcqMeth$
+    local mySampleName$
+    local myseqline$
+    local mystart$
+    local myend$
+    local myrawdatafile$
+    ON Error ReadPeakError
+
+    DelReg readReg
+    LoadSignal ,,,readReg 
+    IntegrateObj readReg 
+    if ObjHdrType(readReg[1],"IntResults") = 4
+        npeaks = TabHdrVal(readReg,"IntResults","NumberOfRows")
+
+        myAcqMeth$ = ObjHdrText$(readReg,"MethodFile")
+        mySampleName$ = ObjHdrText$(readReg,"SampleName")
+        myvial$ = val$(ObjHdrVal(readReg,"Vial"))
+        myseqline$ = val$(ObjHdrVal(readReg,"SeqLine"))
+        mystart$ = val$(ObjHdrVal(readReg,"Start"))
+        myend$ = val$(ObjHdrVal(readReg,"End"))
+        myrawdatafile$ = ObjHdrText$(readReg,"RawdataFile")
+        print #100,"%DataFile="+peakdatafile$+",AcqMethod="+myAcqMeth$+",SampleName="+mySampleName$+",Vial="+myvial$+",PeakNum="+val$(npeaks)+",SeqLine="+myseqline$+",Start="+mystart$+",End="+myend$+",RawDataFile="+myrawdatafile$
+        for i = 1 to npeaks
+            peakrt = TabVal(readReg[1],"IntResults",i,"RetTime")
+            peakarea = TabVal(readReg[1],"IntResults",i,"Area")
+            peakheight = TabVal(readReg[1],"IntResults",i,"Height")
+            print #100,val$(i)+","+val$(peakrt)+","+val$(peakarea)+","+val$(peakheight)
+        next i
+    endif
+    Return
+EndMacro
+
+Name MyResultPeakBack
+	Parameter ReMsg$
+	chanel=DDEINITIATE("LinkGCChemStation_"+LinkInsNumber$,"ReturnInfo")
+	If chanel <> 0 Then
+		DDEPoke chanel,"ResultPeak",ReMsg$,CF_TEXT
+	EndIf
+	DDETerminate chanel
+EndMacro
+
+
+Name PrintRegHeader
+    local i
+    local itemname$
+    local itemtype
+    local itemcontent$
+    local myregsize
+
+    Open "c:\2.txt" for output as #99
+    i = 1
+    myregsize = RegSize(readReg)
+    for j = 1 to myregsize
+        print #99,"readReg["+val$(j)+"]"
+        WHILE (ObjHdrName$(readReg[j],i) <> "")
+            itemname$ = ObjHdrName$(readReg[j],i)
+            !0 string 1 double 4 table
+            itemtype = ObjHdrType(readReg[j],itemname$)
+            if itemtype = 0 then
+                itemcontent$ = ObjHdrText$(readReg[j],itemname$)
+            endif
+            if itemtype = 1 then
+                itemcontent$ = val$(ObjHdrVal(readReg[j],itemname$))
+            endif
+            if itemtype = 4 then
+                itemcontent$ = "[Table]"
+            endif
+            print #99,itemname$+","+itemcontent$
+            i = i+1
+        ENDWHILE
+        print #99,""
+    next j
+    Close #99
+EndMacro
+
+Name ReadPeakError
+    ON Error Print "@@"
+    ResultPeakError = 1
+    print #100,"%%Error "+_Errmsg$
+    ResultPeakError_Msg$ = _Errmsg$
+    Close #100
+    Stop
+    Return
+EndMacro
+! vim: nowrap tw=0

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<LinkSetting DataSystem="Analyst" DefaultPort="7600" CanSubmitNow="@@TRUE:Analyst Can Accept Submit Always" CanStopDS="True" CanStopDSDescription="">
+  <AnalystSetting AutoStartSubmit="True" AutoStopSubmit="True" AutoDeleteBatch="True" />
+  <EncodingList><![CDATA[
+]]></EncodingList>
+</LinkSetting>

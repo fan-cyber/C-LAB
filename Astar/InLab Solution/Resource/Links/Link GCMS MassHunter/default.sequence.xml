@@ -1,0 +1,17 @@
+﻿<SequenceTableDataSet SchemaVersion="1.0" SequenceComment="" SequenceOperator="" SequenceSeqPathFileName="" SequencePreSeqAcqCommand="" SequencePostSeqAcqCommand="" SequencePreSeqDACommand="" SequencePostSeqDACommand="" SequenceReProcessing="False" SequenceInjectBarCodeMismatch="OnBarcodeMismatchInjectAnyway" SequenceOverwriteExistingData="True" SequenceModifiedTimeStamp="Wed Apr 01 13:43:17 2015" >
+  <Sequence>
+    <SequenceID>0</SequenceID>
+    <SampleID>0</SampleID>
+    <AcqMethodFileName>default.m</AcqMethodFileName>
+    <AcqMethodPathName>C:\MassHunter\GCMS\1\methods</AcqMethodPathName>
+    <Comment />
+    <DataFileName>Data001</DataFileName>
+    <DataPathName>C:\MassHunter\GCMS\1\data</DataPathName>
+    <Dilution>1</Dilution>
+    <LevelName />
+    <SampleName>Sample 1</SampleName>
+    <SampleType>Sample</SampleType>
+    <Keyword></Keyword>
+    <Vial>1</Vial>
+  </Sequence>
+</SequenceTableDataSet>

@@ -1,0 +1,66 @@
+Name Uni_SubmitSL
+    !startrun 1
+    Uni_SubmitError = 0
+    VarLock off
+    On_Error Uni_ErrorLog
+    Uni_ErrorMsg$=""
+
+    !oldmethfile$ = _methpath$+_methfile$
+    !oldseqfile$ = _seqpath$+_seqfile$
+    !saveseq oldseqfile$  !save current seq table for posterity
+    !loadseq _seqpath$+"default.s"
+    samplelogtable clear
+    samplelogtable start
+    !!samplelogtable getentry
+!!!!@@SubmitBody@@!!!!
+    SampleLogTable position,"1"
+    IF Uni_SubmitError <> 1 Then
+        Uni_SubmitResult "@@OK:"
+        toptitle
+        VarLock off
+        _seqskipacq = 0
+        _OverWrite=1
+        _SeqLine=1
+        !标志着新开始运行
+        SEQRUNCOUNT=1
+        POSITIONED=0
+        StartSeq 1
+    Else
+        Uni_SubmitResult "@@ERROR:"
+        DosRun "NotePad " + """" + _exepath$ + "unisubmit.err" + """" 
+    EndIf
+    VarLock on
+    If _RunMode <> 3 Then
+        Uni_SubmitResult "@@ERROR:MSD ChemStation Can't StartSequence"
+    EndIf
+    Remove Uni_SubmitSL,Uni_SubmitResult,Uni_ErrorLog,Uni_SubmitError,Uni_ErrorMsg$
+    Return
+
+Name Uni_SubmitResult
+	Parameter ReMsg
+	chanel=DDEINITIATE("LinkMSDChemStation","ReturnInfo")
+	If chanel <> 0 Then
+		DDEPoke chanel,"SubmitResult",ReMsg,CF_TEXT
+	EndIf
+	DDETerminate chanel
+	Return
+
+Name Uni_ErrorLog
+    Print "Submit Error"
+    On_Error
+    Uni_SubmitError = 1
+    Uni_ErrorMsg$ = Uni_ErrorMsg$ + "   " + _Errmsg$
+    Open _exepath$ + "unisubmit.err" For Append as #66
+    Print "Submit Error"
+    Print #66, "Error On  : ", Date$(), Time$()
+    Print #66, "Error No  : ", _Error
+    Print #66, "Error Mes : ", _Errmsg$
+    Print #66, "Error InsCtlErrMsg : ", _InsCtlErrMsg$
+    Print #66, ""
+    Close #66
+    Return
+
+Name Uni_StopSL
+    print "Uni_StopSL"
+    Return
+!! vim: ft=asm

@@ -1,0 +1,49 @@
+Name Uni_SubmitSL
+    Uni_SubmitError = 0
+	ON Error Uni_ErrorLog
+    Uni_ErrorMsg$=""
+
+    !SaveSequence _SeqPath$, _SeqFile$
+    !LoadSequence _SeqPath$,"default.s"
+	DelTabRow _Sequence,"SeqTable1",-1
+	DelTabRow _Sequence,"SeqTable2",-1
+!!!!@@SubmitBody@@!!!!
+
+    IF Uni_SubmitError <> 1 Then
+        Uni_SubmitResult "@@OK:"
+        StartSequence
+    Else
+        Uni_SubmitResult "@@ERROR:"
+    EndIf
+    Remove Uni_SubmitSL,Uni_SubmitResult,Uni_ErrorLog,Uni_SubmitError,Uni_ErrorMsg$
+EndMacro
+
+Name Uni_SubmitResult
+	Parameter ReMsg$
+	chanel=DDEINITIATE("LinkGCChemStation_"+UniDDEInsNumber$,"ReturnInfo")
+	If chanel <> 0 Then
+		DDEPoke chanel,"SubmitResult",ReMsg$,CF_TEXT
+	EndIf
+	DDETerminate chanel
+EndMacro
+
+Name Uni_StopSL
+    StopMethod
+EndMacro
+
+Name Uni_ErrorLog
+    Print "Submit Error"
+    ON Error
+    Uni_SubmitError = 1
+    Uni_ErrorMsg$ = Uni_ErrorMsg$ + "   " + _Errmsg$
+    Print Uni_ErrorMsg$
+    Open _exepath$ + "unisubmit.err" For Append as #66
+    Print "Submit Error"
+    Print #66, "Error On  : ", Date$(), Time$()
+    Print #66, "Error No  : ", _Error
+    Print #66, "Error Mes : ", _Errmsg$
+    Print #66, "Error InsCtlErrMsg : ", _InsCtlErrMsg$
+    Print #66, ""
+    Close #66
+EndMacro
+!! vim: ft=asm

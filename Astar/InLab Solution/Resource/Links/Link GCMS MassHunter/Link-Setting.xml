@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<LinkSetting DataSystem="MassHunter" DefaultPort="7600" CheckSubmitByMacro="False" CanSubmitNow="@@TRUE:Check By Macro" CanStopDS="False" CanStopDSDescription="Can't Stop MassHunter Running,Please Stop By Manual!" SeqFile="$PWD$\default.sequence.xml" NewSeqFileDir="%temp%" >
+</LinkSetting>

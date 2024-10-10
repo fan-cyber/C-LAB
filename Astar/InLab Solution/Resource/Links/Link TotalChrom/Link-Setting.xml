@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<LinkSetting
+    DataSystem="TotalChrom"
+    DefaultPort="7600"
+    CheckSubmitByMacro="False"
+    CanSubmitNow="@@TRUE:Don't Check By Macro"
+    CanStopDS="True"
+    CanStopDSDescription=""
+    TcAccessPath="C:\PenExe\TcWS\Ver6.3.1\Bin"
+    SeqPath="d:\gc\seq"
+    DualChannelSeqFile="%PWD%\UniSave.Seq"
+    SingleChannelASeqFile="%PWD%\UniSave.Seq"
+    SingleChannelBSeqFile="%PWD%\UniSave.Seq"
+    StartSeqCmd="Setup,%SeqFile%,%DataPath%,%StartIndex%,%EndIndex%,manager,1,1,1"
+    InsKey="1111"
+    LogonName="manager"
+    LogonPassword="12345678"
+>
+    <EncodingList>
+        <![CDATA[
+        ]]>
+    </EncodingList>
+</LinkSetting>

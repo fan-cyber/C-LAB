@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<LinkSetting DataSystem="Analyst" DefaultPort="7600" CanSubmitNow="@@TRUE:Analyst Can Accept Submit Always" CanStopDS="True" CanStopDSDescription="" SeqPath="C:\Xcalibur\methods" SubmitParam="False,True,,,,,False,False,False,False,False,False,False,False,False,,3,3" AutoStartXcalibur="True" XcaliburPath="C:\Xcalibur\system\programs\HomePage.exe">
+  <!--
+public virtual int SubmitSequence(string userName, ref string sequenceName, short startRow, short stopRow, bool priority, bool startWhenReady, string startUpIM, string shutDownIM, string preAcquisitionP, string postAcquisitionP, bool synchronouslyRunPre, bool synchronouslyRunPost, bool quan, bool qual, bool sampleReports, bool summaryReports, bool programs, bool printMethods, bool createSummary, string deviceNames, short startDevice, short postSequenceOperatingState)
+postSequenceOperatingState On 1 Off 2 Standby 3
+-->
+</LinkSetting>

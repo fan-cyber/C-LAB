@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<LinkSetting
+    DataSystem="CVS"
+    DefaultPort="7600"
+    CanSubmitNow="@@TRUE:Wait Modify ByManual"
+    CanStopDS="False"
+    DefaultDir="D:\"
+    DefaultFileName="InLabCVS.csv"
+>
+</LinkSetting>
