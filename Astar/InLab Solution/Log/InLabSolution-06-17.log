@@ -1,0 +1,101 @@
+06-17 14:34:57|Debug|Show Welcome:False
+06-17 14:34:57|Debug|System Start
+06-17 14:35:10|Error|Start Optic Simulator Error:未能找到文件“C:\Users\admin\AppData\Local\InLab Solution\Resource\Instruments\OpticPTV.Simulator.Config.cfg”。
+06-17 14:35:10|Info|Pal3: Close
+06-17 14:35:10|Info|System: Close
+06-17 14:35:10|Info|System: Load Config
+06-17 14:35:10|Info|System: Back Thread Start,ID:19
+06-17 14:35:10|Info|Pal3: Load Config
+06-17 14:35:10|Info|Pal3: Back Thread Start,ID:20
+06-17 14:35:10|Debug|PAL3 Drive Get Port:54001
+06-17 14:35:17|Debug|RackDescription No Parameter TrayContainerName
+06-17 14:35:17|Info|All Instrument LoadFinish
+06-17 14:35:18|Info|<System:System> System.ExecOSCmd(CmdName="C:\Users\admin\AppData\Local\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+06-17 14:35:18|Info|<Pal3:Pal3>UnLockVT()
+06-17 14:35:18|Info|All Instrument LoadFinish
+06-17 14:35:18|Info|All Instrument LoadFinish
+06-17 14:35:19|Debug|StartPipeServer
+06-17 14:37:08|Debug|Show Welcome:False
+06-17 14:37:08|Debug|System Start
+06-17 14:37:08|Error|Start Optic Simulator Error:未能找到文件“D:\InLab Solution\Resource\Instruments\OpticPTV.Simulator.Config.cfg”。
+06-17 14:37:08|Info|Pal3: Close
+06-17 14:37:08|Info|System: Close
+06-17 14:37:08|Info|System: Load Config
+06-17 14:37:08|Info|System: Back Thread Start,ID:19
+06-17 14:37:09|Info|Pal3: Load Config
+06-17 14:37:09|Info|Pal3: Back Thread Start,ID:20
+06-17 14:37:09|Info|<System:System> System.ExecOSCmd(CmdName="D:\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+06-17 14:37:09|Debug|PAL3 Drive Get Port:54001
+06-17 14:37:11|Debug|StartPipeServer
+06-17 14:37:16|Debug|RackDescription No Parameter TrayContainerName
+06-17 14:37:16|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+06-17 14:37:16|Info|All Instrument LoadFinish
+06-17 14:37:29|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 14:37:29|Info|Before WaitVT: PALSession Is Null Lock:False
+06-17 14:38:32|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 14:38:32|Info|Before WaitVT: PALSession Is Null Lock:True
+06-17 14:38:44|Info|<Pal3:>UnLockVT()
+06-17 14:38:46|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 14:38:46|Info|Before WaitVT: PALSession Is Null Lock:False
+06-17 14:39:27|Info|<Pal3:>UnLockVT()
+06-17 14:39:38|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 14:39:38|Info|Before WaitVT: PALSession Is Null Lock:False
+06-17 14:39:54|Info|<Pal3:>UnLockVT()
+06-17 14:39:55|Info|Pal3: Close
+06-17 14:39:55|Error|Pal3: Back Thread Exit,ID:20
+06-17 14:40:02|Info|Pal3: Load Config
+06-17 14:40:02|Info|Pal3: Back Thread Start,ID:29
+06-17 14:40:02|Debug|PAL3 Drive Get Port:54001
+06-17 14:40:06|Debug|RackDescription No Parameter TrayContainerName
+06-17 14:40:07|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+06-17 14:40:07|Info|All Instrument LoadFinish
+06-17 14:42:48|Info|Pal3: Close
+06-17 14:42:48|Error|Pal3: Back Thread Exit,ID:29
+06-17 14:42:55|Info|System: Close
+06-17 14:42:55|Error|System: Back Thread Exit,ID:19
+06-17 14:42:55|Debug|Pipe Server Exit:Thread was being aborted.
+06-17 14:44:25|Debug|Show Welcome:False
+06-17 14:44:25|Debug|System Start
+06-17 14:44:26|Error|Start Optic Simulator Error:未能找到文件“E:\InLab Solution\Resource\Instruments\OpticPTV.Simulator.Config.cfg”。
+06-17 14:44:26|Info|Pal3: Close
+06-17 14:44:26|Info|System: Close
+06-17 14:44:26|Info|System: Load Config
+06-17 14:44:26|Info|System: Back Thread Start,ID:19
+06-17 14:44:28|Info|Pal3: Load Config
+06-17 14:44:28|Info|Pal3: Back Thread Start,ID:20
+06-17 14:44:28|Debug|PAL3 Drive Get Port:54001
+06-17 14:44:29|Info|<System:System> System.ExecOSCmd(CmdName="E:\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+06-17 14:44:30|Debug|StartPipeServer
+06-17 14:44:31|Debug|RackDescription No Parameter TrayContainerName
+06-17 14:44:31|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+06-17 14:44:31|Info|All Instrument LoadFinish
+06-17 15:37:01|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:37:01|Info|<Pal3:>UnLockVT()
+06-17 15:37:03|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:37:04|Info|Pal3 Control Use Session LeftUniPal3Session1
+06-17 15:37:04|Info|<Pal3:Pal3>MoveToHome()
+06-17 15:37:05|Info|<Pal3:>UnLockVT()
+06-17 15:37:07|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:37:07|Info|<Pal3:>SetSignal(Signal=Output Signal 1,Mode=2)
+06-17 15:37:08|Info|<Pal3:>UnLockVT()
+06-17 15:37:46|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:39:34|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:39:39|Info|<Pal3:>UnLockVT()
+06-17 15:40:59|Info|<Pal3:>WaitLockVT(Timeout=5)
+06-17 15:40:59|Error|<Pal3> ChangeTool Atom's Parameter Tool Can't Be Empty
+06-17 15:41:01|Info|<Pal3:>UnLockVT()
+06-17 15:41:14|Info|Click
+06-17 15:41:15|Info|Click
+06-17 15:41:16|Info|Pal3: Close
+06-17 15:41:16|Error|Pal3: Back Thread Exit,ID:20
+06-17 15:41:16|Info|Pal3: Load Config
+06-17 15:41:16|Info|Pal3: Back Thread Start,ID:26
+06-17 15:41:16|Debug|PAL3 Drive Get Port:54001
+06-17 15:41:17|Debug|RackDescription No Parameter TrayContainerName
+06-17 15:41:17|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+06-17 15:41:17|Info|All Instrument LoadFinish
+06-17 15:43:24|Info|Pal3: Close
+06-17 15:43:24|Error|Pal3: Back Thread Exit,ID:26
+06-17 15:43:24|Info|System: Close
+06-17 15:43:24|Error|System: Back Thread Exit,ID:19
+06-17 15:43:24|Debug|Pipe Server Exit:Thread was being aborted.

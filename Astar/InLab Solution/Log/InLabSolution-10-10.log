@@ -1,0 +1,21 @@
+10-10 14:24:46|Debug|Show Welcome:False
+10-10 14:24:46|Debug|System Start
+10-10 14:24:46|Error|Start Optic Simulator Error:未能找到文件“E:\GraduateLife\课题组\IRIP的故事\2023\20230511-20231026机器化学家\项目开发\Astar\InLab Solution\InLab Solution\Resource\Instruments\OpticPTV.Simulator.Config.cfg”。
+10-10 14:24:46|Info|Pal3: Close
+10-10 14:24:46|Info|System: Close
+10-10 14:24:46|Info|System: Load Config
+10-10 14:24:46|Info|System: Back Thread Start,ID:21
+10-10 14:24:47|Info|Pal3: Load Config
+10-10 14:24:47|Info|Pal3: Back Thread Start,ID:22
+10-10 14:24:47|Info|<System:System> System.ExecOSCmd(CmdName="E:\GraduateLife\课题组\IRIP的故事\2023\20230511-20231026机器化学家\项目开发\Astar\InLab Solution\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+10-10 14:24:47|Debug|PAL3 Drive Get Port:54001
+10-10 14:24:48|Debug|RackDescription No Parameter TrayContainerName
+10-10 14:24:48|Debug|StartPipeServer
+10-10 14:24:48|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+10-10 14:24:48|Info|All Instrument LoadFinish
+10-10 14:25:41|Info|Pal3: Close
+10-10 14:25:41|Error|Pal3: Back Thread Exit,ID:22
+10-10 14:25:41|Info|System: Close
+10-10 14:25:41|Error|System: Back Thread Exit,ID:21
+10-10 14:25:42|Debug|Pipe Server Exit:管道已结束。
+

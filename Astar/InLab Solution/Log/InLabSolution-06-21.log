@@ -1,0 +1,31 @@
+06-21 10:40:49|Debug|Show Welcome:False
+06-21 10:40:49|Debug|System Start
+06-21 10:40:51|Error|Start Optic Simulator Error:未能找到文件“E:\InLab Solution\Resource\Instruments\OpticPTV.Simulator.Config.cfg”。
+06-21 10:40:51|Info|Pal3: Close
+06-21 10:40:51|Info|System: Close
+06-21 10:40:51|Info|System: Load Config
+06-21 10:40:51|Info|System: Back Thread Start,ID:19
+06-21 10:40:53|Info|Pal3: Load Config
+06-21 10:40:53|Info|Pal3: Back Thread Start,ID:20
+06-21 10:40:54|Debug|PAL3 Drive Get Port:54001
+06-21 10:40:54|Info|<System:System> System.ExecOSCmd(CmdName="E:\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+06-21 10:40:55|Debug|StartPipeServer
+06-21 10:40:56|Debug|RackDescription No Parameter TrayContainerName
+06-21 10:40:57|Info|<Pal3:Pal3-CacheLoadBG>UnLockVT()
+06-21 10:40:57|Info|All Instrument LoadFinish
+06-21 10:41:27|Info|Click
+06-21 10:41:28|Info|Click
+06-21 13:41:57|Error|System: Back Thread Exit,ID:19
+06-21 13:41:58|Info|System: Load Config
+06-21 13:41:58|Info|System: Back Thread Start,ID:17
+06-21 13:41:58|Info|All Instrument LoadFinish
+06-21 13:41:58|Info|All Instrument LoadFinish
+06-21 13:41:58|Info|<System:SystemReLoad> System.ExecOSCmd(CmdName="E:\InLab Solution\Resource\Links\Link GCMS MassHunter\Link GCMS MassHunter.exe",Args="-p7600")
+06-21 13:42:00|Info|<System:System> System.SetSaveInsField(InsName=System,VarName=AllOnceTime,VarValue=OneOnceTime)
+06-21 13:42:02|Info|<System:System> System.SetSaveInsField(InsName=System,VarName=OneOnceTime,VarValue=AllOnceTime)
+06-21 13:42:03|Info|<System:System> System.SetSaveInsField(InsName=System,VarName=AllOnceTime,VarValue=OneOnceTime)
+06-21 15:38:55|Info|Pal3: Close
+06-21 15:38:55|Error|Pal3: Back Thread Exit,ID:20
+06-21 15:38:55|Info|System: Close
+06-21 15:38:55|Error|System: Back Thread Exit,ID:17
+06-21 15:38:55|Debug|Pipe Server Exit:Thread was being aborted.

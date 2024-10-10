@@ -1,0 +1,8 @@
+TPS Install Step
+1. Install Microsoftware .Net Framework 4
+2. Install InLab Base Setup.exe
+3. Install Instrumen Driver 
+4. Configure Instrument Address and DataSystem
+5. Edit Mehtod 
+6. Load Method & Edit SampleList
+7. Add Queue & Run Sample
