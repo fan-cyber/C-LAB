@@ -69,9 +69,15 @@ Email: cgx08@scut.edu.cn; zmliu@buaa.edu.cn
 ### Installation
 ```
 git clone https://github.com/Nano-Cheng/C-LAB.git
-cd C-LAB
+cd C-LAB/ChatChemPaper
 pip install -r requirements.txt
 ```
+
+### Dataset
+
+This project uses datasets that were collected and organized by our team. The datasets are available for download at the links provided below:
+
+https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing
 
 ### Astar
 
