@@ -1,4 +1,4 @@
-### 📋 **A chemical autonomous robotic platform for the synthesis of nanoparticles**
+## 📋 **A chemical autonomous robotic platform for the synthesis of nanoparticles**
 
 <div>
 <span class="author-block">
@@ -62,22 +62,51 @@
 
 Email: cgx08@scut.edu.cn; zmliu@buaa.edu.cn
 
+## ⭐Installation
 
+**git clone**
 
-## ⚙️ Usage
-
-### Installation
 ```
 git clone https://github.com/Nano-Cheng/C-LAB.git
 cd C-LAB/ChatChemPaper
+```
+
+**conda env**
+
+```
+conda create --name chatchempaper python=3.8 -y
+conda activate chatchempaper
+```
+
+**pip install**
+
+```
 pip install -r requirements.txt
 ```
 
-### Dataset
+**Dataset**
 
 This project uses datasets that were collected and organized by our team. The datasets are available for download at the links provided below:
 
 https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing
+
+## 🌲Structure
+
+```
+├─Astar
+│  ├─Automated Script
+│  ├─Code
+│  ├─Data
+│  └─InLab Solution
+└─ChatChemPaper
+    ├─main.py
+    ├─paper_analyst.py
+    ├─query_module.py
+    ├─requirements.txt
+    └─summary_module.py
+```
+
+## ⚙️ Usage
 
 ### Astar
 
@@ -115,12 +144,10 @@ cd ChatChemPaper
 python main.py --mode 'query_extract' --query_text 'Au NRs' --extract_pdf_path '{your pdf path}'
 ```
 
-
-
-# 💗 Acknowledgements
+## 💗 Acknowledgements
 We appreciate the financial support from the National Nature Science Foundation of China (21971070), Guangdong Innovative and Entrepreneurial Research Team Program (2019ZT08L075), Guangdong Pearl River Talent Program (2019QN01L159), Science and Technology Program of Guangzhou, China (202103040002). We thank professor Li Xia from South China University of technology for his helpful discussion on the algorithm in this work.
 
-### 🛎 Citation
+## 🛎 Citation
 If you find our work helpful for your research, please cite:
 ```bib
 ```
