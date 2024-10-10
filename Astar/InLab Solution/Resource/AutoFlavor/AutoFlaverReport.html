@@ -1,0 +1,38 @@
+<Html>
+    <style>
+        table { width: 900px; min-height: 25px; line-height: 25px; text-align: left; border-width:1px; border-color:#000000; border-collapse: collapse;}   
+    </style>
+    <Body>
+        <H3 style="text-align:center;width:900px;">自动配香仪器报告</H3>
+        <ol>
+            <!--
+            <li>日期:2020-10-20</li>
+            <li>操作员:</li>
+            <li>调香位置:</li>
+            <li>调香体积:</li>
+            <li>方法名称:</li>
+            <li>仪器型号:</li>
+            <li>天平型号:</li>
+            <li>序列号:</li>
+            -->
+$ReportHeader$
+        </ol>
+        <table>
+        <tr>
+          <th>组份</th>
+          <th>名称</th>
+          <th>CAS号</th>
+          <th>位置</th>
+          <th>剩余体积(uL)</th>
+          <th>移取体积(uL)</th>
+          <th>体积估算重量/实际重量(g)</th>
+        </tr>
+        <tr>
+$ReportCompound$
+            <!--
+          <th>1</th><th>CAS 1</th><th>CAS 1</th> <th>Tray Holder 1:Slot1:1</th><th>1200</th><th>100</th><th>0.990</th>
+          -->
+        </tr>
+        </table>
+    </Body>
+</Html>

@@ -1,0 +1,43 @@
+Block(Name=Pal2_DispatchInjector)
+//::Source SourceIndex Volume
+    //NCacl要求转意$
+    If(StrRegMatch('%Injector%','[$System.DSDispatch$]`$'))
+        SetVar(VarRange=Sample,VarName=$_StartSignal$,VarValue=Start2)
+        SetVar(VarRange=Sample,VarName=$_InjectedSignal$,VarValue=Injectd2)
+        SetVar(VarRange=Sample,VarName=$_GCWAIT$,VarValue=GCWait2)
+        SetVar(VarRange=Sample,VarName=$_SampleIns$,VarValue=2)
+    Else()
+        SetVar(VarRange=Sample,VarName=$_StartSignal$,VarValue=Start)
+        SetVar(VarRange=Sample,VarName=$_InjectedSignal$,VarValue=Injected)
+        SetVar(VarRange=Sample,VarName=$_GCWAIT$,VarValue=GCWait)
+        SetVar(VarRange=Sample,VarName=$_SampleIns$,VarValue=1)
+    EndIf()
+EndBlock()
+
+/*Block(Name=PAL2_CheckDSByInjector)
+    If('$Sample.CheckDSByInjector$'!='True')
+        If(!StrRegMatch('%Injector%','[34]$'))
+            SetVar(VarRange=Sample,VarName=$_StartSignal$,VarValue=Start)
+            SetVar(VarRange=Sample,VarName=$_InjectedSignal$,VarValue=Injected)
+            SetVar(VarRange=Sample,VarName=$_GCWAIT$,VarValue=GCWait)
+        Else()
+            SetVar(VarRange=Sample,VarName=$_StartSignal$,VarValue=Start2)
+            SetVar(VarRange=Sample,VarName=$_InjectedSignal$,VarValue=Injectd2)
+            SetVar(VarRange=Sample,VarName=$_GCWAIT$,VarValue=GCWait2)
+        EndIf()
+        SetVar(VarRange=Sample,VarName=$CheckDSByInjector$,VarValue=True)
+        System.InfoDialog(Message="Sample[$Sample.Index$] $Sample.SL.SampleID$ %Injector% $Sample._GCWAIT$",FCColor=Blue,BGColor=White)
+    EndIf()
+EndBlock()*/
+
+Block(Name=None_SendToDS)
+//占位用的，避免检查Call时报错
+EndBlock()
+
+//Block(Name=PostStopSampleList)
+Block(Name=StopDS)
+    System.StopDS(Ip="$System.DataSystem.Ip1$",Port="$System.DataSystem.Port1$")
+    System.StopDS(Ip="$System.DataSystem.Ip2$",Port="$System.DataSystem.Port2$")
+EndBlock()
+
+// vim: nowrap tw=0 ft=prepmacro

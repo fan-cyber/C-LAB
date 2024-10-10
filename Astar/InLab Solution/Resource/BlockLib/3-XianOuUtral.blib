@@ -1,0 +1,23 @@
+Block(Name=StartUtral,UtralName=Utral,Power=3000,Time=15)
+    //设置频率
+    %UtralName%.Write06(Address=14,Value=%Power%)
+    //设置时间
+    //秒
+    %UtralName%.Write06(Address=10,Value=0)
+    //分
+    %UtralName%.Write06(Address=11,Value={%Time% % 60})
+    If(%Time%>60)
+    //时
+        %UtralName%.Write06(Address=12,Value={(%Time%- (%Time% % 60))/60})
+    Else()
+        %UtralName%.Write06(Address=12,Value=0)
+    EndIf()
+    //开始
+    %UtralName%.Write06(Address=1,Value=1)
+EndBlock()
+
+Block(Name=StopUtral,UtralName=Utral,Power=3000,Time=15)
+    //停止
+    %UtralName%.Write06(Address=1,Value=0)
+EndBlock()
+// vim: nowrap tw=0 ft=prepmacro

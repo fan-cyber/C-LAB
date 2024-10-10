@@ -1,0 +1,188 @@
+Block(Name=Pal2_TransLiquid,Pal2Name=$System.DefaultPal2Name$)
+//::Volume Source SourceIndex Target TargetIndex
+//:::Pal2Name FillSpeed FillStrokeVolume FillStrokeCount AddDeep
+    SetCallParameterDefaultValue(Name=FillSpeed,Value={InsGetField('%Pal2Name%','$_SyringE$.Fill Speed')})
+    SetCallParameterDefaultValue(Name=FillStrokeVolume,Value=%Volume%)
+    SetCallParameterDefaultValue(Name=FillStrokeCount,Value=4)
+    SetCallParameterDefaultValue(Name=AddDeep,Value=15)
+
+    %Pal2Name%.GET_SAMPLE(%Source%,%SourceIndex%,{%Volume%*1000},0,,{%FillStrokeVolume%*1000},{%FillSpeed%*1000},500,,%FillStrokeCount%,0,,,)
+    %Pal2Name%.MOVETO_OBJECT(%Target%,%TargetIndex%,{%AddDeep%*1000})
+    If(%Volume%>0 || (%FillStrokeCount%>0 && %FillStrokeVolume%>0))
+        System.PrintMessage(Message="Pal2_TransLiquid Update Solvent %Pal2Name%.Syringe.Solvent %Source%#%SourceIndex%",FCColor=Blue,BGColor=White)
+        SetVar(VarRange=%Pal2Name%,VarName=Syringe.Solvent,VarValue=%Source%#%SourceIndex%)
+        If(%Volume%>%FillStrokeVolume%)
+            If(InsGetField('%Pal2Name%','Syringe.DirtyVolume')<%Volume%)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue=%Volume%)
+            EndIf()
+        Else()
+            If(InsGetField('%Pal2Name%','Syringe.DirtyVolume')<%FillStrokeVolume%)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue=%FillStrokeVolume%)
+            EndIf()
+        EndIf()
+    EndIf()
+    %Pal2Name%.EJECT_SYR()
+    %Pal2Name%.WAIT(2)
+    %Pal2Name%.MOVETO_OBJECT(Home,1,)
+EndBlock()
+
+Block(Name=Pal2_SmartCleanLiquidSyringe,Pal2Name=$System.DefaultPal2Name$,ForceClean=False,Wash1Index=1,Wash2Index=2,CleanCount1=3,CleanCount2=3,CleanSyringe=2)
+//::Volume Source SourceIndex
+//:::Pal2Name WashSource CleanCount1 CleanCount2 CleanWithSample Waste ForceClean
+    SetCallParameterDefaultValue(Name=WashSource,Value=$%Pal2Name%.DefaultWash$)
+    SetCallParameterDefaultValue(Name=Waste,Value=$%Pal2Name%.DefaultWaste$)
+    SetCallParameterDefaultValue(Name=WasteIndex,Value=$%Pal2Name%.DefaultWasteIndex$)
+
+    System.AddInsMonitor(Ins=%Pal2Name%,Name=Syringe.Solvent,Unit=)
+    InitVarIfNotExist(VarRange=%Pal2Name%,VarName=Syringe.Solvent,VarValue=None)
+    InitVarIfNotExist(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue=0)
+    //Percent在取样时也要用到这个变量
+    SetVar(VarRange=Sample,VarName=$FitToolMaxVolume$,VarValue={StrToDouble(InsGetField('%Pal2Name%',InsGetField('%Pal2Name%','_Syringe')+'.Max Volume'))*0.001})
+    //由于自动分解功能，传进来的洗针%Volume%可能大于针的最大体积
+    If(%Volume%>$Sample.FitToolMaxVolume$)
+        SetVar(VarRange=Sample,VarName=$RealCleanVolume$,VarValue=$Sample.FitToolMaxVolume$)
+    Else()
+        SetVar(VarRange=Sample,VarName=$RealCleanVolume$,VarValue=%Volume%)
+    EndIf()
+    If(InsGetField('%Pal2Name%','Syringe.DirtyVolume')>$Sample.RealCleanVolume$)
+        SetVar(VarRange=Sample,VarName=$FitCleanPercent$,VarValue={Ceiling((100*InsGetField('%Pal2Name%','Syringe.DirtyVolume'))/$FitToolMaxVolume$+5)})
+    Else()
+        SetVar(VarRange=Sample,VarName=$FitCleanPercent$,VarValue={Ceiling((100*$Sample.RealCleanVolume$)/$FitToolMaxVolume$+5)})
+    EndIf()
+    If($FitCleanPercent$>100)
+        SetVar(VarRange=Sample,VarName=$FitCleanPercent$,VarValue=100)
+    EndIf()
+    //同一种溶剂，并且体积小于上一次的体积则不洗针
+    If(InsGetField('%Pal2Name%','Syringe.Solvent')=='%Source%#%SourceIndex%' && InsGetField('%Pal2Name%','Syringe.DirtyVolume')>=$Sample.RealCleanVolume$ && '%ForceClean%'!='True')
+        System.PrintMessage(Message="Syringe Get Solvent Is Same",FCColor=Blue,BGColor=White)
+    Else()
+        If(InsGetField('%Pal2Name%','Syringe.Solvent')=='@WashSolvent@' && '%ForceClean%'!='True')
+            System.PrintMessage(Message="Syringe Is Clean And Wash",FCColor=Blue,BGColor=White)
+        Else()
+            System.PrintMessage(Message="Syringe Is Dirty {InsGetField('%Pal2Name%','Syringe.Solvent')}=>%Source%#%SourceIndex%",FCColor=Blue,BGColor=White)
+            %Pal2Name%.CLEAN_SYR(Wash1,%CleanCount1%,$Sample.FitCleanPercent$,,,,,)
+            If(%CleanCount1%>0)
+                System.PrintMessage(Message="Wash1 Update Solvent Syringe @WashSolvent@",FCColor=Blue,BGColor=White)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.Solvent,VarValue=@WashSolvent@)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue=0)
+            EndIf()
+            %Pal2Name%.CLEAN_SYR(Wash2,%CleanCount2%,$Sample.FitCleanPercent$,,,,,)
+            If(%CleanCount2%>0)
+                System.PrintMessage(Message="Wash2 Update Solvent Syringe @WashSolvent@",FCColor=Blue,BGColor=White)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.Solvent,VarValue=@WashSolvent@)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue=0)
+            EndIf()
+            Repeat(%CleanWithSample%)
+                %Pal2Name%.GET_SAMPLE(%Source%,%SourceIndex%,{$FitCleanPercent$*0.01*$FitToolMaxVolume$*1000},0,,,,500,,0,0,,,)
+                %Pal2Name%.MOVETO_OBJECT(Waste,1,)
+                %Pal2Name%.EJECT_SYR(,1,)
+            EndRepeat()
+            %Pal2Name%.MOVETO_OBJECT(Home,1,)
+            If(%CleanWithSample%>0)
+                System.PrintMessage(Message="CleanWithSample Update %Pal2Name%.Syringe.Solvent  %Source%#%SourceIndex%",FCColor=Blue,BGColor=White)
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.Solvent,VarValue=%Source%#%SourceIndex%)
+                //洗过针了，再吸样品肯定是DirtyVolume
+                SetVar(VarRange=%Pal2Name%,VarName=Syringe.DirtyVolume,VarValue={$FitCleanPercent$*0.01*$FitToolMaxVolume$})
+            EndIf()
+        EndIf()
+    EndIf()
+EndBlock()
+
+Block(Name=Pal2_SmartTranseLiquid,Pal2Name=$System.DefaultPal2Name$,Pal2Name2=$System.DefaultPal2Name$)
+//::Volume Source SourceIndex Target TargetIndex
+//:::Pal2Name WashSource CleanCount1 CleanCount2 CleanWithSample Waste
+//:::FillSpeed FillStrokeCount FillStrokeVolume AddDeep
+
+///////////////////引用Pal2_SmartCleanLiquidSyringe
+//::Volume FitTool  Source SourceIndex
+//:::Pal2Name WashSource CleanCount1 CleanCount2 CleanWithSample Waste 
+
+///////////////////引用Pal2_TransLiquid
+//::Volume FitTool Source SourceIndex Target TargetIndex
+//:::Pal2Name FillSpeed FillStrokeVolume FillStrokeCount AddDeep
+    //:::
+    SetCallParameterDefaultValue(Name=CleanCount1,Value=3)
+    SetCallParameterDefaultValue(Name=CleanCount2,Value=3)
+    SetCallParameterDefaultValue(Name=CleanWithSample,Value=2)
+    //:::
+    SetCallParameterDefaultValue(Name=FillStrokeCount,Value=4)
+    SetCallParameterDefaultValue(Name=FillStrokeVolume,Value=%Volume%)
+    SetCallParameterDefaultValue(Name=AddDeep,Value=15)
+    SetVar(VarRange=Sample,VarName=$FitTool1$,VarValue={InsGetField('%Pal2Name%','_Syringe')})
+    //从双臂中选择一支针
+    SetVar(VarRange=Sample,VarName=$FitTool2$,VarValue=)
+    If('Z%Pal2Name2%'!='Z' && '%Pal2Name%'!='%Pal2Name2%')
+        SetVar(VarRange=Sample,VarName=$FitTool2$,VarValue={InsGetField('%Pal2Name2%','_Syringe')})
+    EndIf()
+    //判断哪个臂更合适
+    SetVar(VarRange=Sample,VarName=$FitTool$,VarValue=$FitTool1$)
+    SetVar(VarRange=Sample,VarName=$FitPal2$,VarValue=%Pal2Name%)
+
+    //两个臂都不能取的小体积
+    If(%Volume%<(StrToDouble(InsGetField('%Pal2Name%',InsGetField('%Pal2Name%','_Syringe')+'.Min Volume'))*0.001) && %Volume%<(StrToDouble(InsGetField('%Pal2Name2%',InsGetField('%Pal2Name2%','_Syringe')+'.Min Volume'))*0.001))
+        System.ErrorExit(ErrorInfo="Can't Chose A PAL2 To Trans Liquid Volume %Volume%, Because It's Samller Then All PAL's Syringe Min Volume")
+    EndIf()
+    If(%Volume%>=(StrToDouble(InsGetField('%Pal2Name%',InsGetField('%Pal2Name%','_Syringe')+'.Min Volume'))*0.001) && %Volume%>=(StrToDouble(InsGetField('%Pal2Name2%',InsGetField('%Pal2Name2%','_Syringe')+'.Min Volume'))*0.001))
+        //两个臂都可以取时，判断最优
+        If('Z$Sample.FitTool2$'!='Z')
+        //判断第二臂是否比第一臂更优
+            System.PrintMessage(Message="DualArm Begin Chose",FCColor=Blue,BGColor=White)
+            SetVar(VarRange=Sample,VarName=$FitRatio1$,VarValue={%Volume%/(StrToDouble(InsGetField('%Pal2Name%',InsGetField('%Pal2Name%','_Syringe')+'.Max Volume'))*0.001)})
+            SetVar(VarRange=Sample,VarName=$FitRatio2$,VarValue={%Volume%/(StrToDouble(InsGetField('%Pal2Name2%',InsGetField('%Pal2Name2%','_Syringe')+'.Max Volume'))*0.001)})
+            System.PrintMessage(Message="Volume %Volume% DualArm Pal1->%Pal2Name% Ration $FitRatio1$ Pal2->%Pal2Name2% Ration $FitRatio2$",FCColor=Blue,BGColor=White)
+            If(($Sample.FitRatio1$<=1) && ($Sample.FitRatio2$<=1))
+                System.PrintMessage(Message="DualArm Two OK,DualArm Need Less Then One",FCColor=Blue,BGColor=White)
+                //两个都能一次取完，选择比较接近1的
+                If((1-$Sample.FitRatio1$) > (1-$Sample.FitRatio2$))
+                    System.PrintMessage(Message="DualArm Two OK,Second Volume Is Fit Better",FCColor=Blue,BGColor=White)
+                    SetVar(VarRange=Sample,VarName=$FitTool$,VarValue=$FitTool2$)
+                    SetVar(VarRange=Sample,VarName=$FitPal2$,VarValue=%Pal2Name2%)
+                EndIf()
+            EndIf()
+            If(($Sample.FitRatio1$>1) && ($Sample.FitRatio2$<=1))
+                System.PrintMessage(Message="DualArm Two OK,First Need More Then One, Second PAL2 Need One",FCColor=Blue,BGColor=White)
+                //第一个臂要多次，第二臂一次
+                SetVar(VarRange=Sample,VarName=$FitTool$,VarValue=$FitTool2$)
+                SetVar(VarRange=Sample,VarName=$FitPal2$,VarValue=%Pal2Name2%)
+            EndIf()
+            If(($Sample.FitRatio1$>1) && ($Sample.FitRatio2$>1))
+                System.PrintMessage(Message="DualArm Two OK,DualArm Need More Then One",FCColor=Blue,BGColor=White)
+                If($Sample.FitRatio1$>$Sample.FitRatio2$)
+                    System.PrintMessage(Message="DualArm Two OK,Second PAL2 Need Less Count",FCColor=Blue,BGColor=White)
+                    //第二个臂需要的次数更少
+                    SetVar(VarRange=Sample,VarName=$FitTool$,VarValue=$FitTool2$)
+                    SetVar(VarRange=Sample,VarName=$FitPal2$,VarValue=%Pal2Name2%)
+                EndIf()
+            EndIf()
+        EndIf()
+    Else()
+        //只有一个臂满足要求
+        //臂2可以取 最小体积小于要取的体积
+        System.PrintMessage(Message="DualArm Only One In Good",FCColor=Blue,BGColor=White)
+        If(%Volume%>=(StrToDouble(InsGetField('%Pal2Name2%',InsGetField('%Pal2Name2%','_Syringe')+'.Min Volume'))*0.001))
+            System.PrintMessage(Message="DualArm Pal1->%Pal2Name% Is Not Good, Chose Pal2",FCColor=Blue,BGColor=White)
+            SetVar(VarRange=Sample,VarName=$FitTool$,VarValue=$FitTool2$)
+            SetVar(VarRange=Sample,VarName=$FitPal2$,VarValue=%Pal2Name2%)
+        EndIf()
+    EndIf()
+    System.PrintMessage(Message="Chose $Sample.FitPal2$'s Tool $Sample.FitTool$",FCColor=Blue,BGColor=White)
+    //先要选定FitTool 才能计算
+    SetCallParameterDefaultValue(Name=FillSpeed,Value={InsGetField('$Sample.FitPal2$','$Sample.FitTool$.Fill Speed')})
+    SetVar(VarRange=Sample,VarName=$FitToolMaxVolume$,VarValue={StrToDouble(InsGetField('$Sample.FitPal2$','$Sample.FitTool$.Max Volume'))*0.001})
+    SetVar(VarRange=Sample,VarName=$FitToolMinVolume$,VarValue={StrToDouble(InsGetField('$Sample.FitPal2$','$Sample.FitTool$.Min Volume'))*0.001})
+    //返回$1$ $2$ $3$
+    System.SplitVolume(TotalVolume=%Volume%,MaxVolume=$FitToolMaxVolume$,MinVolume=$FitToolMinVolume$)
+    SetVar(VarRange=Sample,VarName=$FullCount$,VarValue=$1$)
+    SetVar(VarRange=Sample,VarName=$PreLastVol$,VarValue=$2$)
+    SetVar(VarRange=Sample,VarName=$LastVol$,VarValue=$3$)
+
+    Call(Name=Pal2_SmartCleanLiquidSyringe,Pal2Name=$Sample.FitPal2$,Volume=%Volume%,Source=%Source%,SourceIndex=%SourceIndex%,CleanCount1=%CleanCount1%,CleanCount2=%CleanCount2%,CleanWithSample=%CleanWithSample%)
+    Repeat($FullCount$)
+        Call(Name=Pal2_TransLiquid,Pal2Name=$Sample.FitPal2$,Volume=$FitToolMaxVolume$,Source=%Source%,SourceIndex=%SourceIndex%,Target=%Target%,TargetIndex=%TargetIndex%,FillSpeed=%FillSpeed%,FillStrokeCount=%FillStrokeCount%,AddDeep=%AddDeep%)
+    //满针
+    EndRepeat()
+    Call(Name=Pal2_TransLiquid,Enable=$PreLastVol$>0,Pal2Name=$Sample.FitPal2$,Volume=$PreLastVol$,FitTool=$FitTool$,Source=%Source%,SourceIndex=%SourceIndex%,Target=%Target%,TargetIndex=%TargetIndex%,FillSpeed=%FillSpeed%,FillStrokeCount=%FillStrokeCount%,AddDeep=%AddDeep%)
+    Call(Name=Pal2_TransLiquid,Enable=$LastVol$>0,Pal2Name=$Sample.FitPal2$,Volume=$LastVol$,FitTool=$FitTool$,Source=%Source%,SourceIndex=%SourceIndex%,Target=%Target%,TargetIndex=%TargetIndex%,FillSpeed=%FillSpeed%,FillStrokeCount=%FillStrokeCount%,AddDeep=%AddDeep%)
+    $Sample.FitPal2$.MOVETO_OBJECT(Home,1,)
+EndBlock()
+// vim: nowrap tw=0 ft=prepmacro

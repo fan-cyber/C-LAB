@@ -1,0 +1,17 @@
+#Link(Name=$System._RunDir$\Resource\System Method\AutoSamplerLoop\气相液体进样-zh-CN.pzm)
+#Param(Token=$WhichPal3$,Value=Pal3,SampleList=False)
+#Param(Token=$InjTool$,Value="LS 1",SampleList=False)
+#Param(Token=$AirVol$,Value=0,SampleList=False)
+#Param(Token=$FrontVol$,Value=0,SampleList=False)
+#Param(Token=$RearVol$,Value=0,SampleList=False)
+#Param(Token=$GetSpeed$,Value=5,SampleList=False)
+#Param(Token=$GetDelay$,Value=500,SampleList=False)
+#Param(Token=$InjSpeed$,Value=100,SampleList=False)
+#Param(Token=$PreInjDelay$,Value=500,SampleList=False)
+#Param(Token=$PostInjDelay$,Value=500,SampleList=False)
+#Param(Token=$PostVlvClean1$,Value=100,SampleList=False)
+#Param(Token=$PostVlvClean2$,Value=100,SampleList=False)
+#Param(Token=$PostClean1$,Value=100,SampleList=False)
+#Param(Token=$PostClean2$,Value=100,SampleList=False)
+
+// vim: nowrap tw=0 ft=prepmacro

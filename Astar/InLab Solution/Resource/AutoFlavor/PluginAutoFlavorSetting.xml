@@ -1,0 +1,84 @@
+<!--
+#Param(Token=Decapper,DisplayName=自动开盖,Type=Bool,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=False)
+#Param(ValueList="Syringe#Pipette",Token=UseTool,DisplayName=移液模式,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="Syringe")
+#Param(Token=BalancVeryTime,DisplayName=每次称重,Type=Bool,DisableCondition="False",RefreshKey="",UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=False)
+-->
+<AutoFlavor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultShort="N:" PrimaryKey="Tray#Vial">
+    <TableCommand><![CDATA[create table flavordb(Name TEXT NOT NULL DEFAULT(''),CAS TEXT NOT NULL  DEFAULT(''),Tray TEXT NOT NULL DEFAULT(''),Vial TEXT NOT NULL DEFAULT(''),Volume REAL NOT NULL DEFAULT(0.0),UseTool TEXT NOT NULL  DEFAULT('Syringe'),GetSpeed TEXT NOT NULL  DEFAULT('2'),Density TEXT NOT NULL  DEFAULT('0.0'),CleanCount TEXT NOT NULL  DEFAULT('1'),CleanPosition TEXT NOT NULL  DEFAULT('1'),Decapper TEXT NOT NULL  DEFAULT('False'),SampleCleanCount TEXT NOT NULL  DEFAULT('1'),SampleCleanRatio TEXT NOT NULL  DEFAULT('1.2'),BalancVeryTime TEXT NOT NULL  DEFAULT('False'),Comment TEXT NOT NULL DEFAULT(''),PRIMARY KEY(Tray,Vial))]]></TableCommand>
+    <DBParameters><![CDATA[
+        #Param(CheckCondition="'Z#this#'!='Z'",CheckErrorMsg="名称不能为空",Token=Name,DisplayName=名称,Type=String,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=)
+        #Param(CheckCondition="'Z#this#'!='Z'",CheckErrorMsg="CAS号不能为空",Token=CAS,DisplayName=CAS号,Type=String,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=)
+        #Param(ValueList="{InsGetField('LPal3','IRack')}#Solvent",Token=Tray,DisplayName=托盘,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="Rack 1")
+        #Param(Max=54,Min=0,Token=Vial,DisplayName=托盘位置,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1)
+        #Param(Max=1000000,Min=0,Token=Volume,DisplayName=剩余体积(uL),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1500)
+        #Param(Max=250,Min=0.1,Token=GetSpeed,DisplayName=移液速度(uL),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=2)
+        #Param(Max=2.0,Min=0.1,Token=Density,DisplayName=密度(mg/cm3),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1.0)
+        #Param(Max=10,Min=0,Token=CleanCount,DisplayName=洗针次数,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1)
+        #Param(Max=5,Min=1,Token=CleanPosition,DisplayName=洗针位置,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1)
+        #Param(Max=5,Min=1,Token=SampleCleanCount,DisplayName=润针次数,Type=Int32,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1)
+        #Param(Max=2,Min=1,Token=SampleCleanRatio,DisplayName=润针比例,Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1.2)
+        #Param(CheckCondition="",CheckErrorMsg="",Token=Comment,DisplayName=备注,Type=String,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default=)
+    ]]></DBParameters>
+    <ActionParameters><![CDATA[
+        #Param(Max=120,Min=1,Token=UseTotalMass,DisplayName=配置后总重量(g),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1.0)
+        #Param(Max=100,Min=0,Token=UseAddPercent,DisplayName=原料添加比例(%),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=1.0)
+        #Param(ValueList="AF1#AF2#AF3#AF4#AF5#AF6#AF7#AF8#AF9#AF10#AF11#AF12#AF13#AF14#AF15#MF1#MF2#MF3#MF4#MF5#MF6#MF7#MF8#MF9#MF10#MF11#MF12#MF13#MF14#MF15#LF1#LF2#LF3#LF4#LF5#LF6#LF7#LF8#LF9#LF10#LF11#LF12#LF13#LF14#LF15",Token=UseVial,DisplayName=目标位置,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="AF1")
+
+        #Param(ValueList="0#1#2",Token=SolventChanel1,DisplayName=溶剂1通道,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="2")
+        #Param(Max=10000,Min=0,Token=SolventAddPercent1,DisplayName=溶剂1添(%),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=0)
+
+        #Param(ValueList="0#1#3",Token=SolventChanel2,DisplayName=溶剂2通道,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="3")
+        #Param(Max=10000,Min=0,Token=SolventAddPercent2,DisplayName=溶剂2添加量(%),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=0)
+
+        #Param(ValueList="0#1#4",Token=SolventChanel3,DisplayName=溶剂3通道,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="4")
+        #Param(Max=10000,Min=0,Token=SolventAddPercent3,DisplayName=溶剂3添加量(%),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=0)
+
+        #Param(ValueList="0#1#5",Token=SolventChanel4,DisplayName=溶剂4通道,Type=List,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition=True,Default="5")
+        #Param(Max=10000,Min=0,Token=SolventAddPercent4,DisplayName=溶剂4添加量(%),Type=Double,DisableCondition=False,RefreshKey=,UniqueCondition=False,SameCondition=False,VisableCondition="True",Default=0)
+    ]]></ActionParameters>
+  <Columns>
+    <Column Name="名称" Type="String" DBID="Name" Empty="False" Default="" InDB="True" InAction="True" SLToken="SL.SampleName"/>
+    <Column Name="CAS号" Type="String" DBID="CAS" Empty="False" Default="" InDB="True" InAction="False" SLToken="SL.SampleCAS"/>
+    <Column Name="托盘" Type="String" DBID="Tray" Empty="True" Default="Rack 1" InDB="True" InAction="True" SLToken="SL.Tray"/>
+    <Column Name="托盘位置" Type="String" DBID="Vial" Empty="True" Default="1" InDB="True" InAction="True" SLToken="SL.Vial"/>
+    <Column Name="剩余体积(uL)" Type="String" DBID="Volume" Empty="True" Default="1500" InDB="True" InAction="False" SLToken="SL.TotalVolume"/>
+    <Column Name="移液速度(uL/s)" Type="String" DBID="GetSpeed" Empty="True" Default="1" InDB="True" InAction="False" SLToken="SL.GetSpeed"/>
+    <Column Name="密度(g/mL)" Type="String" DBID="Density" Empty="True" Default="1.0" InDB="True" InAction="False" SLToken="SL.Density"/>
+    <Column Name="洗针次数" Type="String" DBID="CleanCount" Empty="True" Default="3" InDB="True" InAction="False" SLToken="SL.CleanCount"/>
+    <Column Name="洗针位置" Type="String" DBID="CleanPosition" Empty="True" Default="1" InDB="True" InAction="False" SLToken="SL.CleanPosition"/>
+    <Column Name="润针次数" Type="String" DBID="SampleCleanCount" Empty="True" Default="1" InDB="True" InAction="False" SLToken="SL.SampleCleanCount"/>
+    <Column Name="润针比例" Type="String" DBID="SampleCleanRatio" Empty="True" Default="1.2" InDB="True" InAction="False" SLToken="SL.SampleCleanRatio"/>
+    <Column Name="备注" Type="String" DBID="Comment" Empty="True" Default="" InDB="True" InAction="False" SLToken="SL.Comment"/>
+    <!--
+    <Column Name="自动开盖" Type="String" DBID="Decapper" Empty="True" Default="False" InDB="True" InAction="False" SLToken="SL.DeCapper"/>
+    <Column Name="移液模式" Type="String" DBID="UseTool" Empty="True" Default="Syringe" InDB="True" InAction="False" SLToken="SL.Tool"/>
+    <Column Name="每次称重" Type="String" DBID="BalancVeryTime" Empty="True" Default="False" InDB="True" InAction="False" SLToken="SL.BalancVeryTime"/>
+    <Column Name="原料使用体积(uL)" Type="String" DBID="UseVolume" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.Volume"/>
+    -->
+    <Column Name="配香总重量(g)" Type="String" DBID="UseTotalMass" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.UseTotalMass"/>
+    <Column Name="原料添加比例(%)" Type="String" DBID="UseAddPercent" Empty="True" Default="1" InDB="False" InAction="True" SLToken="SL.UseAddPercent"/>
+    <Column Name="目标位置" Type="String" DBID="UseVial" Empty="True" Default="AF1" InDB="False" InAction="True" SLToken="SL.TargetVial"/>
+    <Column Name="溶剂1添加量(%)" Type="String" DBID="SolventAddPercent1" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventAddPercent1"/>
+    <Column Name="溶剂1通道" Type="String" DBID="SolventChanel1" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventChanel1"/>
+    <Column Name="溶剂2添加量(%)" Type="String" DBID="SolventAddPercent2" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventAddPercent2"/>
+    <Column Name="溶剂2通道" Type="String" DBID="SolventChanel2" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventChanel2"/>
+    <Column Name="溶剂3添加量(%)" Type="String" DBID="SolventAddPercent3" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventAddPercent3"/>
+    <Column Name="溶剂3通道" Type="String" DBID="SolventChanel3" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventChanel3"/>
+    <Column Name="溶剂4添加量(%)" Type="String" DBID="SolventAddPercent4" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventAddPercent4"/>
+    <Column Name="溶剂4通道" Type="String" DBID="SolventChanel4" Empty="True" Default="100" InDB="False" InAction="True" SLToken="SL.SolventChanel4"/>
+  </Columns>
+  <Searchs>
+    <Search Short="N:" Key="Name" />
+    <Search Short="C:" Key="CAS" />
+    <Search Short="M:" Key="Comment" />
+    <Search Short="T:" Key="Tray" />
+    <Search Short="I:" Key="Vial" />
+    <Search Short="V:" Key="Volume" />
+    <Search Short="n:" Key="Name" />
+    <Search Short="c:" Key="CAS" />
+    <Search Short="m:" Key="Comment" />
+    <Search Short="t:" Key="Tray" />
+    <Search Short="i:" Key="Vial" />
+    <Search Short="v:" Key="Volume" />
+  </Searchs>
+</AutoFlavor>

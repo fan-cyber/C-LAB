@@ -1,0 +1,25 @@
+﻿Block(Name=OpenAgilentAS,Pal3Name=$System.DefaultPal3Name$)
+    //支架高度，标准支架+11cm 安捷伦进样器宽40cm
+    //现有支架再短
+    //压开
+    %Pal3Name%.MoveToObject(Target=AS1,Index=1,UseTouchDown=False)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=-15mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=60mm,MovementZ=0mm,AccelerationFactor=100%,ForceDirectMovement=True)
+    %Pal3Name%.MoveToObject(Target=AS2,Index=1,UseTouchDown=False)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=-36mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=-15mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    //拉开
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=180mm,MovementZ=0mm,AccelerationFactor=20%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=15mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=28mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveToHome()
+EndBlock()
+
+Block(Name=CloseAgilentAS,Pal3Name=$System.DefaultPal3Name$)
+    %Pal3Name%.MoveToObject(Target=AS3,Index=1,UseTouchDown=False)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=-10mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=-219mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveRelative(MovementX=0mm,MovementY=100mm,MovementZ=0mm,AccelerationFactor=50%,ForceDirectMovement=True)
+    %Pal3Name%.MoveToHome()
+EndBlock()
+// vim: nowrap tw=0 ft=prepmacro fdm=marker

@@ -1,0 +1,78 @@
+Block(Name=ForceChangeTool)
+    If('%Tool%'=='DIL 1')
+        LPal3.ChangeTool(Tool=%Tool%)
+    Else()
+        System.PrintMessage(Message="Manual Park DIL Tool Into Slot3",FCColor=Blue,BGColor=White)
+        SetVar(VarRange=LPal3,VarName=DILToolLocation,VarValue={InsGetProperty('LPal3','DIL 1.Location','True')})
+        //如果再臂上，强制把其放到Slot3
+        If(StrStartWith('$LPal3.DILToolLocation$','RobotArm'))
+            //如果Slot3上有Tool 强制右臂将其换走，这时Slot3肯定是空的
+            SetVar(VarRange=RPal3,VarName=PSlot3Tool,VarValue={InsGetProperty('RPal3','Park Station 1.Slot3.[0].Name','True')})
+            If('$RPal3.PSlot3Tool$'!='')
+                RPal3.ChangeTool(Tool=$RPal3.PSlot3Tool$)
+                RPal3.MoveToHome()
+                LPal3.MoveToObject(Target=PSlot3,Index=1,UseTouchDown=False)
+                LPal3.UnmountTool()
+            EndIf()
+        EndIf()
+        LPal3.ChangeTool(Tool=%Tool%)
+    EndIf()
+    LPal3.MoveToHome()
+EndBlock()
+
+Block(Name=BalanceOpen,Pal3Name=LPal3)
+    If('$Balance.OpenDoorByArm$'=='True')
+        //%Pal3Name%.MoveToObject(Target=Balance_Open1,Index=1,UseTouchDown=False)
+        %Pal3Name%.ApproachObject(Target=Balance_Open1,Index=1,OffsetY=10mm,OffsetZ=0mm)
+        %Pal3Name%.MoveRelative(ReferencePoint=Balance_Open2,MovementY=2mm,AccelerationFactor=50%,DrfOption=1,ForceDirectMovement=True)
+        %Pal3Name%.MoveRelative(MovementY=20mm,MovementZ=0mm,AccelerationFactor=50%,DrfOption=1,ForceDirectMovement=True)
+    EndIf()
+    %Pal3Name%.MoveToHome()
+EndBlock()
+Block(Name=BalanceClose,Pal3Name=LPal3)
+    //%Pal3Name%.MoveToObject(Target=Balance_Close1,Index=1,UseTouchDown=False)
+    If('$Balance.OpenDoorByArm$'=='True')
+        %Pal3Name%.ApproachObject(Target=Balance_Close1,Index=1,OffsetY=-10mm,OffsetZ=0mm)
+        %Pal3Name%.MoveRelative(ReferencePoint=Balance_Close2,MovementY=-2mm,AccelerationFactor=50%,DrfOption=1,ForceDirectMovement=True)
+        %Pal3Name%.MoveRelative(MovementY=-20mm,AccelerationFactor=50%,DrfOption=1,ForceDirectMovement=True)
+    EndIf()
+    %Pal3Name%.MoveToHome()
+EndBlock()
+Block(Name=BalanceZero,BalanceName=Balance)
+    System.PrintMessage(Message="Start Zero",FCColor=Blue,BGColor=White)
+    If('$System.BalanceType$'=='MT')
+    //梅特勒
+        System.PrintMessage(Message="Before Zero Read SI Valve",FCColor=Blue,BGColor=White)
+        Balance.S
+        System.PrintMessage(Message="Before Zero Check Balance $Balance.Value$",FCColor=Blue,BGColor=White)
+        If('$Balance.Value$' == '++' || '$Balance.Value$' == '--')
+            System.PrintMessage(Message="Balance OverLoad",FCColor=Red,BGColor=White)
+            Balance.Z
+        Else()
+            Balance.T
+            Balance.S
+            //If($Balance.Value$ > 0)
+            //    System.PrintMessage(Message="Balance T",FCColor=Blue,BGColor=White)
+            //    Balance.T
+            //Else()
+            //    If($Balance.Value$!=0)
+            //        System.PrintMessage(Message="Balance Z",FCColor=Blue,BGColor=White)
+            //        Balance.Z
+            //    EndIf()
+            //EndIf()
+        EndIf()
+    Else()
+        Balance.V
+    //赛多利斯
+    EndIf()
+EndBlock()
+Block(Name=BalanceWeight,BalanceName=Balance)
+    If('$System.BalanceType$'=='MT')
+        Balance.S
+    Else()
+        Balance.Q
+        Balance.kP_
+        Balance.Q
+    EndIf()
+EndBlock()
+// vim: nowrap tw=0 ft=prepmacro

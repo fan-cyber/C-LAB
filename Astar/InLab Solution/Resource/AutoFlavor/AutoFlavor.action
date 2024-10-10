@@ -1,0 +1,4 @@
+% header=SL.SampleName	SL.SampleCAS	SL.Tray	SL.Vial	SL.TotalVolume	SL.GetSpeed	SL.Density	SL.CleanCount	SL.CleanPosition	SL.SampleCleanCount	SL.SampleCleanRatio	SL.Comment	SL.UseTotalMass	SL.UseAddPercent	SL.TargetVial	SL.SolventAddPercent1	SL.SolventChanel1	SL.SolventAddPercent2	SL.SolventChanel2	SL.SolventAddPercent3	SL.SolventChanel3	SL.SolventAddPercent4	SL.SolventChanel4
+"C3"	"CAS3"	"Rack 4"	"3"	"747.131"	"100"	"0.997"	"2"	"1"	"1"	"1.2"	""	"6.0"	"15"	"AF1"	"55"	"2"	"0"	"3"	"0"	"4"	"0"	"5"
+"C4"	"CAS4"	"Rack 4"	"4"	"1379.639"	"100"	"0.997"	"2"	"1"	"1"	"1.2"	""	"6.0"	"15"	"AF1"	"55"	"2"	"0"	"3"	"0"	"4"	"0"	"5"
+"C5"	"CAS5"	"Rack 4"	"5"	"1500"	"100"	"0.997"	"2"	"1"	"1"	"1.2"	""	"6.0"	"15"	"AF1"	"55"	"2"	"0"	"3"	"0"	"4"	"0"	"5"
