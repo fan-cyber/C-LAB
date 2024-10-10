@@ -98,17 +98,20 @@ This folder contains four parts: automation platform operation software, automat
 ### Summary
 
 ```
+cd ChatChemPaper
 python main.py --mode 'summary' --dataset_paper './dataset_paper' --dataset_summary './dataset_summary'
 ```
 ### Query-Localize
 
 ```
+cd ChatChemPaper
 python main.py --mode 'query_localize' --query_text 'Au NRs' --dataset_summary 'dataset_summary' --similarity_top_k 3 --similarity_cutoff 0.7
 ```
 
 ### Query-Extract
 
 ```
+cd ChatChemPaper
 python main.py --mode 'query_extract' --query_text 'Au NRs' --extract_pdf_path '{your pdf path}'
 ```
 
