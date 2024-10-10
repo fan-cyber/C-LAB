@@ -1,0 +1,226 @@
+<?xml version="1.0"?>
+<Instrument>
+  <!--
+vim: nowrap tw=0
+-->
+  <Vars>
+    <Var Name="$Title$" Value="广州智达实验室科技有限公司 InLab Solution" />
+    <Var Name="$CopyRight$" Value="InLab copyright 2018" />
+    <Var Name="$PopDialog$" Value="True" />
+    <Var Name="$DSList$" Value="None#Analyst#GC ChemStation#GCMS MassHunter#MSD ChemStation#MassLynx#TotalChrom#Xcalibur" />
+    <Var Name="$AnalystDataDir$" Value="E:\Analyst Data" />
+    <Var Name="$DataSystem$" Value="None" />
+    <Var Name="$DataSystem2$" Value="None" />
+    <Var Name="$PreSubmitToDS$" Value="False" />
+    <Var Name="$_ErrorRunNextQueue$" Value="False" />
+    <Var Name="$SampleList.RefreshCellBGColor$" Value="LightGoldenrodYellow" />
+    <Var Name="$SampleList.DisableCellBGColor$" Value="LightGray" />
+    <Var Name="$SampleList.NormalCellBGColor$" Value="White" />
+    <Var Name="$SampleList.ErrorCellBGColor$" Value="Red" />
+    <Var Name="$OverlappingEngin.BGColor$" Value="White" />
+    <Var Name="$OverlappingEngin.RunningLineColor$" Value="Gray" />
+    <Var Name="$OverlappingEngin.ShowGrid$" Value="True" />
+    <Var Name="$OverlappingEngin.ShowDescription$" Value="False" />
+    <Var Name="$OverlappingEngin.ShowTrayInfo$" Value="True" />
+    <Var Name="$SupportInstrumentList$" Value="CTCPal2#XYZAutoSampler#KnauerISOPump#KnauerLPGPump" />
+    <Var Name="$_LastOpenMethod$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\Methods\com.mtl" />
+    <Var Name="$_LastOpenSampleList$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\SampleList\aa.slt" />
+    <Var Name="$BlockLibDir$" Value="$_AppDir$\Resource\BlockLib" />
+    <Var Name="$NirCmd$" Value="$_AppDir$\Resource\Utils\NirCmd\NirCmd.exe" />
+    <Var Name="$ThisDate$" Value="636699744000000000" />
+    <Var Name="$ListColor.Enable$" Value="True" />
+    <Var Name="$ListColor.1$" Value="Blue" />
+    <Var Name="$ListColor.2$" Value="Green" />
+    <Var Name="$ListColor.3$" Value="Gold" />
+    <Var Name="$ListColor.3$" Value="Gold" />
+    <Var Name="$DataSystem.Ip1$" Value="127.0.0.1" />
+    <Var Name="$DataSystem.Port1$" Value="7600" />
+    <Var Name="$DataSystem.Ip2$" Value="127.0.0.1" />
+    <Var Name="$DataSystem.Port2$" Value="6600" />
+    <Var Name="$DSDispatch$" Value="34" />
+    <Var Name="$UseInjectorSignal$" Value="False" />
+    <Var Name="$CanCreateNewMethod$" Value="False" />
+    <Var Name="$GCCoolTime$" Value="0.5" />
+    <Var Name="$DSSendType$" Value="AllOnceTime" />
+    <Var Name="$DebugSubMethodDir$" Value="PAL3" />
+    <Var Name="$Pal3AutoAdd$" Value="False" />
+    <Var Name="$OpticInjectorName$" Value="LNX Injector" />
+    <Var Name="$AutoISPeakDiff$" Value="50" />
+    <Var Name="$ShowFields$" Value="True" />
+    <Var Name="$ShowManualCmd$" Value="True" />
+    <Var Name="$ShowUtilButtons$" Value="True" />
+    <Var Name="$Pal3MultiTool$" Value="True" />
+    <Var Name="$Pal3MultiTool$" Value="False" />
+    <Var Name="$Pal3MultiTool$" Value="False" />
+    <Var Name="$CollapsedSplitor$" Value="False" />
+    <Var Name="$SystemType$" Value="GC" />
+    <Var Name="$OnLineSPEFirstValvePort$" Value="6" />
+    <Var Name="$OnLineSPEPortNumber$" Value="4" />
+    <Var Name="$OnLineSPEMassLynx$" Value="True" />
+    <Var Name="$OnLineSPEWatersUPLCSync$" Value="False" />
+    <Var Name="$MassLynxWatersAutoSampler$" Value="True" />
+    <Var Name="$MassLynxReadyString$" Value="Waiting for inlet start 2" />
+    <Var Name="$OpticTriggerMode$" Value="Aux" />
+    <Var Name="OpticTriggerMode" Value="Aux" />
+    <Var Name="$DisableBlackBox$" Value="True" />
+    <Var Name="$DefaultCamerName$" Value="" />
+    <Var Name="$ShowToolBntText$" Value="False" />
+    <Var Name="$FirstPagePicture$" Value="Picture\rtc-lc.jpg" />
+    <Var Name="$LightFlash$" Value="True" />
+    <Var Name="$AutoRunMethod$" Value="AutoRun.mtl" />
+    <Var Name="$AutoRunSampleCount$" Value="2" />
+    <Var Name="$Plugin_PluginVialMonitor.UIEnable$" Value="False" />
+    <Var Name="$Plugin_PluginGetPeaks.UIEnable$" Value="False" />
+    <Var Name="$Plugin_Camer.UIEnable$" Value="False" />
+    <Var Name="$Plugin_AutoCollect.UIEnable$" Value="False" />
+    <Var Name="$Plugin_SampleHistoryDB.UIEnable$" Value="False" />
+    <Var Name="$FC.ValveRegStr$" Value="(\d).txt$" />
+    <Var Name="$FC.MonitorDir$" Value="D:\1" />
+    <Var Name="$QTreeHeight$" Value="230" />
+    <Var Name="$TrayAddSize$" Value="0#80" />
+    <Var Name="$LoopCount$" Value="5" />
+    <Var Name="$LabelMaxWidthOffset$" Value="30" />
+    <Var Name="$LabelMaxWidthAdd$" Value="0" />
+    <Var Name="$PluginTitle$" Value=" - InLab" />
+    <Var Name="$PALMethodTabName$" Value="PAL进样器" />
+    <Var Name="$EarlyLoadInsMethodPanel$" Value="True" />
+    <Var Name="$AutoStartLink1$" Value="True" />
+    <Var Name="$AutoStartLink2$" Value="False" />
+  </Vars>
+  <MonitorValues>
+  </MonitorValues>
+  <UtilsFunctions>
+    <UtilsFunction DisplayName="_PostLoadWork" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>Call(Name=System_PostLoad)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="启动色谱Link1" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="!('$#this#.DataSystem$'=='None')">
+      <Parameters />
+      <Atoms>
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem$\Link $System.DataSystem$.exe",Args="-p7600")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="启动色谱Link2" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="!('$#this#.DataSystem2$'=='None')">
+      <Parameters />
+      <Atoms>
+        <Atom>If('$System.DataSystem$'!='$System.DataSystem2$')</Atom>
+        <!-- -d表示Link2 -->
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem2$\Link $System.DataSystem2$.exe",Args="-d -p6600 -i1")</Atom>
+        <Atom>Else()</Atom>
+        <Atom>System.Wait(Time=5,Info=)</Atom>
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem2$\Link $System.DataSystem2$.exe",Args="-d -p6600 -i2")</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="停用自动发送" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None' || '$#this#.DataSystem2$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem$,VarValue=None)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem2$,VarValue=None)</Atom>
+        <Atom>System.InfoDialog(Message="$System.SystemSettingOK$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="色谱1设定" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$DSType$" Type="List" ValueList="$#this#.DSList$" DisplayName="色谱工作站" Default="$#this#.DataSystem$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem$,VarValue=$DSType$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="色谱2设定" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$DSType$" Type="List" ValueList="$#this#.DSList$" DisplayName="色谱工作站2" Default="$#this#.DataSystem2$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem2$,VarValue=$DSType$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="启用密码" DisplayClass="用户管理" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>#this#.SetLogon(NeedLogon="True")</Atom>
+        <Atom>System.InfoDialog(Message="$System.TurnOnPasswordOk$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="禁用密码" DisplayClass="用户管理" Range="Manual" Enable="{InsVarExist('System','LogonRule') &amp;&amp; StrContains(InsGetField('System','LogonRule'),'Manager')" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>#this#.SetLogon(NeedLogon="False")</Atom>
+        <Atom>System.InfoDialog(Message="$System.TurnOffPasswordOk$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="删除用户" DisplayClass="用户管理" Range="Manual" Enable="{InsVarExist('System','LogonRule') &amp;&amp; StrContains(InsGetField('System','LogonRule'),'Manager')" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.DeleteUser()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="新增用户" DisplayClass="用户管理" Range="Manual" Enable="{InsVarExist('System','LogonRule') &amp;&amp; StrContains(InsGetField('System','LogonRule'),'Manager')" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.CreateNewUser()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="修改密码" DisplayClass="用户管理" Range="Manual" Enable="{InsVarExist('System','LogonName') &amp;&amp; InsGetField('System','LogonName')!=''}" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.ChangeUser()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="重置用户数据库" DisplayClass="用户管理" Range="Manual" Enable="{InsVarExist('System','LogonRule') &amp;&amp; StrContains(InsGetField('System','LogonRule'),'Super')}" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.ResetUser()</Atom>
+        <Atom>System.InfoDialog(Message="$System.ResetUserDBOk$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="黑匣子设置" DisplayClass="常用功能" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$DisableBB$" Type="Bool" DisplayName="禁用黑匣子" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$CamerName$" Type="List" ValueList="$#this#._CamerList$" DisplayName="相机" Default="$#this#.DefaultCamerName$" DisableCondition="'$DisableBB$'=='True'" RefreshKey="$DisableBB$" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DisableBlackBox$,VarValue=$DisableBB$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultCamerName$,VarValue=$CamerName$)</Atom>
+        <Atom>#this#.InfoDialog(Message="重启软件后生效")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="采集图片" DisplayClass="常用功能" Range="Manual" Enable="'$System._LoadedCamer$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.GetCamerPicture()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="运行命令文件" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$CmdFile$" Type="FileName" DisplayName="命令文件" Default="" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" FullPath="True" InitPath="" Extension="txt" MustExist="True" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.RunCmdFile(FileName="$CmdFile$")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="运行命令" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$NativeCommand$" Type="String" DisplayName="命令" Default="" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.$NativeCommand$</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="解析字符" DisplayClass="常用功能" Range="Manual" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$EvalStr$" Type="String" DisplayName="字符" Default="" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False">
+        </Parameter>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.InfoDialog(Message="{$EvalStr$}")</Atom>
+      </Atoms>
+    </UtilsFunction>
+  </UtilsFunctions>
+  <Commands>
+  </Commands>
+</Instrument>

@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<Instrument>
+  <!--
+vim: nowrap tw=0
+-->
+  <Vars>
+    <Var Name="$Title$" Value="广州智达实验室科技有限公司 InLab Solution" />
+    <Var Name="$Company$" Value="InLab" />
+    <Var Name="$CopyRight$" Value="InLab copyright 2018" />
+    <Var Name="$PopDialog$" Value="True" />
+    <Var Name="$DSList$" Value="None#Analyst#GC ChemStation#GCMS MassHunter#MSD ChemStation#MassLynx#TotalChrom#Xcalibur#OpenLabCDS#CSV" />
+    <Var Name="$AnalystDataDir$" Value="E:\Analyst Data" />
+    <Var Name="$DataSystem$" Value="GCMS MassHunter" />
+    <Var Name="$DataSystem2$" Value="None" />
+    <Var Name="$PreSubmitToDS$" Value="True" />
+    <Var Name="$_ErrorRunNextQueue$" Value="False" />
+    <Var Name="$ShowErrorDialog$" Value="True" />
+    <Var Name="$SampleList.RefreshCellBGColor$" Value="LightGoldenrodYellow" />
+    <Var Name="$SampleList.DisableCellBGColor$" Value="LightGray" />
+    <Var Name="$SampleList.NormalCellBGColor$" Value="White" />
+    <Var Name="$SampleList.ErrorCellBGColor$" Value="Red" />
+    <Var Name="$OverlappingEngin.BGColor$" Value="White" />
+    <Var Name="$OverlappingEngin.RunningLineColor$" Value="Gray" />
+    <Var Name="$OverlappingEngin.ShowGrid$" Value="True" />
+    <Var Name="$OverlappingEngin.ShowDescription$" Value="False" />
+    <Var Name="$OverlappingEngin.ShowTrayInfo$" Value="True" />
+    <Var Name="$SupportInstrumentList$" Value="CTCPal2#XYZAutoSampler#KnauerISOPump#KnauerLPGPump" />
+    <Var Name="$_LastOpenMethod$" Value="D:\myenv\software-dev\InLabSolution 4.0\InLabSolution\bin\Debug\Methods\aaa.mtl" />
+    <Var Name="$_LastOpenSampleList$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\SampleList\fl.slt" />
+    <Var Name="$BlockLibDir$" Value="BlockLib" />
+    <Var Name="$NirCmd$" Value="$_AppDir$\Resource\Utils\NirCmd\NirCmd.exe" />
+    <Var Name="$ThisDate$" Value="636699744000000000" />
+    <Var Name="$ListColor.Enable$" Value="True" />
+    <Var Name="$ListColor.1$" Value="Blue" />
+    <Var Name="$ListColor.2$" Value="Green" />
+    <Var Name="$ListColor.3$" Value="Gold" />
+    <Var Name="$ListColor.3$" Value="Gold" />
+    <Var Name="$DataSystem.Ip1$" Value="127.0.0.1" />
+    <Var Name="$DataSystem.Port1$" Value="7600" />
+    <Var Name="$DataSystem.Ip2$" Value="127.0.0.1" />
+    <Var Name="$DataSystem.Port2$" Value="6600" />
+    <Var Name="$DSDispatch$" Value="34" />
+    <Var Name="$UseInjectorSignal$" Value="False" />
+    <Var Name="$CanCreateNewMethod$" Value="False" />
+    <Var Name="$GCCoolTime$" Value="0.5" />
+    <Var Name="$DSSendType$" Value="OneOnceTime" />
+    <Var Name="$DebugSubMethodDir$" Value="PAL3" />
+    <Var Name="$Pal3AutoAdd$" Value="False" />
+    <Var Name="$OpticInjectorName$" Value="LNX Injector" />
+    <Var Name="$AutoISPeakDiff$" Value="50" />
+    <Var Name="$ShowFields$" Value="True" />
+    <Var Name="$ShowManualCmd$" Value="True" />
+    <Var Name="$ShowUtilButtons$" Value="True" />
+    <Var Name="$ShowRealLog$" Value="True" />
+    <Var Name="$OVRealTimeInterval$" Value="1" />
+    <Var Name="$ShowOVRealTimeLine$" Value="True" />
+    <Var Name="$ShowUtilButtons$" Value="True" />
+    <Var Name="$Pal3MultiTool$" Value="False" />
+    <Var Name="$CollapsedSplitor$" Value="False" />
+    <Var Name="$SystemType$" Value="GC" />
+    <Var Name="$OnLineSPEFirstValvePort$" Value="10" />
+    <Var Name="$OnLineSPEPortNumber$" Value="4" />
+    <Var Name="$OnLineSPEMassLynx$" Value="False" />
+    <Var Name="$OnLineSPEWatersUPLCSync$" Value="False" />
+    <Var Name="$MassLynxWatersAutoSampler$" Value="True" />
+    <Var Name="$WaitMassLynx$" Value="False" />
+    <Var Name="$MassLynxReadyString$" Value="Waiting for inlet start 2" />
+    <Var Name="$OpticTriggerMode$" Value="Aux" />
+    <Var Name="OpticTriggerMode" Value="Aux" />
+    <Var Name="$DisableBlackBox$" Value="False" />
+    <Var Name="$DefaultCamerName$" Value="LG Camera" />
+    <Var Name="$ShowToolBntText$" Value="True" />
+    <Var Name="$FirstPagePicture$" Value="Picture\rtc-lc.jpg" />
+    <Var Name="$LightFlash$" Value="True" />
+    <Var Name="$AutoRunMethod$" Value="AutoRun.mtl" />
+    <Var Name="$AutoRunSampleCount$" Value="2" />
+    <Var Name="$PluginUICount$" Value="0" />
+    <Var Name="$Plugin_PluginVialMonitor.UIEnable$" Value="False" />
+    <Var Name="$Plugin_PluginGetPeaks.UIEnable$" Value="False" />
+    <Var Name="$Plugin_PluginVapValve.UpdateEnable$" Value="False" />
+    <Var Name="$Plugin_Camer.UIEnable$" Value="False" />
+    <Var Name="$Plugin_AutoCollect.UIEnable$" Value="False" />
+    <Var Name="$Plugin_SampleHistoryDB.UIEnable$" Value="False" />
+    <Var Name="$Plugin_AutoFlavor.UIEnable$" Value="False" />
+    <Var Name="$Plugin_PluginVialMonitor.UIIndex$" Value="1" />
+    <Var Name="$Plugin_PluginGetPeaks.UIIndex$" Value="-2" />
+    <Var Name="$Plugin_PluginGetPeaks.UIName$" Value="NO检测器" />
+    <Var Name="$Plugin_Camer.UIIndex$" Value="3" />
+    <Var Name="$Plugin_AutoCollect.UIIndex$" Value="4" />
+    <Var Name="$Plugin_SampleHistoryDB.UIIndex$" Value="5" />
+    <Var Name="$Plugin_AutoFlavor.UIIndex$" Value="-1" />
+    <Var Name="$FC.ValveRegStr$" Value="(\d).txt$" />
+    <Var Name="$FC.MonitorDir$" Value="D:\1" />
+    <Var Name="$QTreeHeight$" Value="230" />
+    <Var Name="$TrayAddSize$" Value="120#80" />
+    <Var Name="$LoopCount$" Value="0" />
+    <Var Name="$LabelMaxWidthOffset$" Value="30" />
+    <Var Name="$LabelMaxWidthAdd$" Value="50" />
+    <Var Name="$PluginTitle$" Value=" - InLab" />
+    <Var Name="$PALMethodTabName$" Value="PAL进样器" />
+    <Var Name="$EarlyLoadInsMethodPanel$" Value="False" />
+    <Var Name="$AutoStartLink1$" Value="True" />
+    <Var Name="$AutoStartLink2$" Value="False" />
+    <Var Name="$ToolOverVolume$" Value="0" />
+    <Var Name="$ToolOverVolumeName$" Value="L1000" />
+    <Var Name="$ShowStackTrace$" Value="True" />
+    <Var Name="$FlavorMethod$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\Methods\fa.mtl" />
+    <Var Name="$FlavorSampleList$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\Resource\AutoFlavor\AutoFlavor.action" />
+    <Var Name="$FlavorGripperXOffset$" Value="7" />
+    <Var Name="$Pal3HookingMethod$" Value="D:\myenv\software-dev\InLabSolution\InLabSolution\bin\Debug\Methods\test-sii.mtl" />
+    <Var Name="$TJYMWashVial$" Value="4" />
+    <Var Name="$TJYMPreGetSampleInfo$" Value="1302,SID:55,35,32@1" />
+    <Var Name="$TJYMLastGetSampleInfo$" Value="1302,SID:67,45,32@2" />
+    <Var Name="$LAMS_ServerIP$" Value="10.115.50.75" />
+    <Var Name="$LAMS_ServerPort$" Value="9000" />
+    <Var Name="$LAMS_ListenPort$" Value="62502" />
+    <Var Name="$LAMS_UserName$" Value="system" />
+    <Var Name="$LAMS_PWD$" Value="manager" />
+    <Var Name="$LAMS_DBName$" Value="Local" />
+    <Var Name="$LAMS_InsName$" Value="DEMO_QDA" />
+    <Var Name="$LAMS_NodeName$" Value="DEMO_QDA:Dlv06cas2848056" />
+    <Var Name="$LAMS_ModeName$" Value="W2998#B17VPD522A" />
+    <Var Name="$LAMS_GetSampleDelay$" Value="13" />
+    <Var Name="$ILBarCode$" Value="False" />
+    <Var Name="$ILBarCodePort$" Value="COM9" />
+    <Var Name="$LAMSTestVialStartIndex$" Value="1" />
+    <Var Name="$LAMSTestVialCount$" Value="2" />
+    <Var Name="$ILValveControlPort$" Value="COM14" />
+    <Var Name="$ILStirPort$" Value="COM17" />
+    <Var Name="$ILStirShow$" Value="False" />
+    <Var Name="$InLabUltraPort$" Value="COM4" />
+    <Var Name="$ILDaLongCoolerPort$" Value="COM1" />
+    <Var Name="$ILDaLongCoolWaitTimeMin$" Value="0" />
+    <Var Name="$InLabUltraShow$" Value="False" />
+    <Var Name="$OpenLabCDSHostName$" Value="http://192.168.1.25:7600" />
+    <Var Name="$OpenLabCDSUser$" Value="Admin" />
+    <Var Name="$OpenLabCDSPassWord$" Value="123456" />
+    <Var Name="$OpenLabCDSHostName2$" Value="http://192.168.1.25:81" />
+    <Var Name="$OpenLabCDSUser2$" Value="Admin" />
+    <Var Name="$OpenLabCDSPassWord2$" Value="123456" />
+    <Var Name="$EmailHost$" Value="smtp.163.com" />
+    <Var Name="$EmailPort$" Value="25" />
+    <Var Name="$EmailCert$" Value="MTXSOODFLZCKHOSB" />
+    <Var Name="$FlowCell20mLVialIndex$" Value="54" />
+    <Var Name="$FlowCell20mLLLEVialIndex$" Value="54" />
+    <Var Name="$FlowCell2mLVialIndex$" Value="25" />
+    <Var Name="$FlowCell2mLCoolVialIndex$" Value="12" />
+    <Var Name="$FlowCellStdControlTray1$" Value="Drawer 1:Slot1" />
+    <Var Name="$FlowCellStdControlTray2$" Value="Drawer 1:Slot1" />
+    <Var Name="$FlowCellStdControlTray3$" Value="Drawer 1:Slot1" />
+    <Var Name="$FlowCellStdControlTray4$" Value="Drawer 1:Slot1" />
+    <Var Name="$FlowCellStdControlTray5$" Value="Drawer 1:Slot1" />
+    <Var Name="$FlowCellStdControlVial1$" Value="10" />
+    <Var Name="$FlowCellStdControlVial2$" Value="11" />
+    <Var Name="$FlowCellStdControlVial3$" Value="7" />
+    <Var Name="$FlowCellStdControlVial4$" Value="8" />
+    <Var Name="$FlowCellStdControlVial5$" Value="9" />
+    <Var Name="$ScheduleRun$" Value="False" />
+    <Var Name="$_CmdFile$" Value="" />
+    <Var Name="$_NativeCommand$" Value="" />
+    <Var Name="$OpenLabCDSCurrentInstrument$" Value="TestGC-8890" />
+    <Var Name="$OpenLabCDSCurrentProject$" Value="Project2" />
+    <Var Name="$OpenLabCDSCurrentInjectionSource$" Value="Standard" />
+    <Var Name="$BalanceType$" Value="MT" />
+    <Var Name="$BalanceID$" Value="梅特勒ML 204T" />
+    <Var Name="$8890GCIP$" Value="192.168.254.11" />
+    <Var Name="$ShowUsePassWord$" Value="True" />
+    <Var Name="$%UserCountValidDay$" Value="90" />
+    <Var Name="$FlowCellControlValve$" Value="False" />
+    <Var Name="$ExpecTechServiceEnable$" Value="False" />
+    <Var Name="$ExpecTechServicePort$" Value="19201" />
+    <Var Name="$CSVLinkStopDir$" Value="D:" />
+    <Var Name="$FlowCellBackFlushMin$" Value="1" />
+    <Var Name="$FlowCellGetWaitMin$" Value="0" />
+    <Var Name="$ILTranseLinePort$" Value="COM18" />
+    <Var Name="$Plugin_PluginTranseLine.UpdateEnable$" Value="False" />
+  </Vars>
+  <MonitorValues>
+  </MonitorValues>
+  <UtilsFunctions>
+    <UtilsFunction DisplayName="_PostLoadWork" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>Call(Name=System_PostLoad)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="单样品发送" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DSSendType$,VarValue=OneOnceTime)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="批量发送" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DSSendType$,VarValue=AllOnceTime)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="启动色谱Link1" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem$\Link $System.DataSystem$.exe",Args="-p7600")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="读取OpenLab参数" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'=='OpenLabCDS'">
+      <Parameters />
+      <Atoms>
+        <Atom>Call(Name=OpenLabSetting)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="读取OpenLab 2参数" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem2$'=='OpenLabCDS'">
+      <Parameters />
+      <Atoms>
+        <Atom>Call(Name=OpenLabSetting,WhichOpenLab=2)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <!--
+    <UtilsFunction DisplayName="启动色谱Link2" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None' &amp;&amp; '$#this#.DataSystem$'!='OpenLabCDS'">
+    -->
+    <UtilsFunction DisplayName="启动色谱Link2" DisplayClass="Link设定" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>If('$System.DataSystem$'!='$System.DataSystem2$')</Atom>
+        <!-- -d表示Link2 -->
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem2$\Link $System.DataSystem2$.exe",Args="-d -p6600 -i1")</Atom>
+        <Atom>Else()</Atom>
+        <Atom>System.Wait(Time=5,Info=)</Atom>
+        <Atom>System.ExecOSCmd(CmdName="$System._RunDir$\Resource\Links\Link $System.DataSystem2$\Link $System.DataSystem2$.exe",Args="-d -p6600 -i2")</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="停用自动发送" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Filter="ShortPanel" Enable="'$#this#.DataSystem$'!='None' || '$#this#.DataSystem2$'!='None'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem$,VarValue=None)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem2$,VarValue=None)</Atom>
+        <Atom>System.InfoDialog(Message="$System.SystemSettingOK$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="色谱1设定" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$DSType$" Type="List" ValueList="$#this#.DSList$" DisplayName="色谱工作站" Default="$#this#.DataSystem$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem$,VarValue=$DSType$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="色谱2设定" DisplayClass="Link设定" IsLongTime="False" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$DSType$" Type="List" ValueList="$#this#.DSList$" DisplayName="色谱工作站2" Default="$#this#.DataSystem2$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DataSystem2$,VarValue=$DSType$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="性能设置" DisplayClass="常用功能" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$ShowLog$" Type="Bool" DisplayName="显示实时日志" Default="{InsGetField('System','ShowRealLog')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="True" />
+        <Parameter Token="$ShowOV$" Type="Bool" DisplayName="显示实时重叠图" Default="{InsGetField('System','ShowOVRealTimeLine')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="True" />
+        <Parameter Token="$OVInterval$" Type="Int32" DisplayName="重叠图刷新间隔(s)" Default="{StrToInt('$System.OVRealTimeInterval$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="120" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$ShowRealLog$,VarValue=$ShowLog$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$ShowOVRealTimeLine$,VarValue=$ShowOV$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$OVRealTimeInterval$,VarValue=$OVInterval$)</Atom>
+        <Atom>#this#.InfoDialog(Message="重启软件后生效")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="黑匣子设置" DisplayClass="常用功能" Range="Manual" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$DisableBB$" Type="Bool" DisplayName="禁用黑匣子" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$CamerName$" Type="List" ValueList="$#this#._CamerList$" DisplayName="相机" Default="$#this#.DefaultCamerName$" DisableCondition="'$DisableBB$'=='True'" RefreshKey="$DisableBB$" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DisableBlackBox$,VarValue=$DisableBB$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultCamerName$,VarValue=$CamerName$)</Atom>
+        <Atom>#this#.InfoDialog(Message="重启软件后生效")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="采集图片" DisplayClass="常用功能" Range="Manual" Enable="'$System._LoadedCamer$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.GetCamerPicture()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="开启旋转" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+        <Parameter Token="$OnSpeed$" Type="Int32" DisplayName="转速" Default="50" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="255" Min="10" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="MotorGo id=1 Speed=$OnSpeed$")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="停止旋转" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="MotorStop id=1;")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="关闭LED灯" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="LED Mode=Close;")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="打开LED灯" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="LED Mode=open;")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="扫码" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,ReadValue=True,Cmd="ILBarCode action=scan;")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="扫码器重置" DisplayClass="扫描装置" Range="Manual" Enable="'$System.ILBarCode$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="ILBarCode action=Reset;")</Atom>
+        <Atom>System.Wait(Time=10)</Atom>
+        <Atom>System.SerialPortWrite(Port=$System.ILBarCodePort$,BaudRate=115200,Cmd="ILBarCode action=CHANGEMODE Mode=CMD;")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="启动超声" DisplayClass="超声波" Range="Manual" Enable="'$System.InLabUltraShow$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.InLabUltraStart()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="停止超声" DisplayClass="超声波" Range="Manual" Enable="'$System.InLabUltraShow$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.InLabUltraStop()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="超声功率" DisplayClass="超声波" Range="Manual" Enable="'$System.InLabUltraShow$'=='True'">
+      <Parameters>
+        <Parameter Token="$Power$" Type="Int32" DisplayName="功率(%)" Default="60" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="100" Min="50" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.InLabUltraSet(Power=$Power$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="超声时间" DisplayClass="超声波" Range="Manual" Enable="'$System.InLabUltraShow$'=='True'">
+      <Parameters>
+        <Parameter Token="$RunTime$" Type="Int32" DisplayName="运行时间(min)" Default="10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="180" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.InLabUltraSet(RunTime=$RunTime$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="开启加热搅拌" DisplayClass="加热搅拌" Range="Manual" Enable="'$System.ILStirShow$'=='True'">
+      <Parameters>
+        <Parameter Token="$Temp$" Type="Double" DisplayName="温度(°C)" Default="30" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="80" Min="30" SameCondition="False" />
+        <Parameter Token="$TempOn$" Type="List" ValueList="On#Off" DisplayName="是否加热" Default="On" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$Speed$" Type="Int32" DisplayName="速度(rmp)" Default="500" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="1500" Min="0" SameCondition="False" />
+        <Parameter Token="$MotOn$" Type="List" ValueList="On#Off" DisplayName="是否搅拌" Default="On" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.ILStirTemp(Temperature=$Temp$,Mode=$TempOn$)</Atom>
+        <Atom>System.ILStirMot(Speed=$Speed$,Mode=$MotOn$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="读取状态" DisplayClass="加热搅拌" Range="Manual" Enable="'$System.ILStirShow$'=='True'">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.ILStirState()</Atom>
+        <Atom>System.ILStirInfo()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <!--
+    <UtilsFunction DisplayName="SPME-K值测定" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="True">
+      <Parameters>
+        <Parameter Token="$SPMEKDir$" Type="DirName" DisplayName="K值测定目录" InitPath="$System._RunDir$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" FullPath="True" MustExist="True" Default="D:\SPMEK" />
+        <Parameter Token="$SPMEKDataDir$" Type="DirName" DisplayName="数据目录" InitPath="$System._RunDir$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" FullPath="True" MustExist="True" Default="D:\SPMEKData" />
+      </Parameters>
+      <Atoms>
+        <Atom>Call(Name=SPMEK_BatchRun,SPMEKDir=$SPMEKDir$,SPMEKDataDir=$SPMEKDataDir$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="运行命令文件" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.DebugMode$'=='True'">
+    -->
+    <UtilsFunction DisplayName="运行命令文件" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="True" IsEnableWhenRun="True">
+      <Parameters>
+        <Parameter Token="$CmdFile$" Type="FileName" DisplayName="命令文件" Default="$#this#._CmdFile$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" FullPath="True" InitPath="" Extension="txt" MustExist="True" />
+        <Parameter Token="$StepMode$" Type="Bool" DisplayName="单步模式" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>SetVar(VarRange=#this#,VarName=_CmdFile,VarValue=$CmdFile$)</Atom>
+        <Atom>#this#.RunCmdFile(FileName="$CmdFile$",Step=$StepMode$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="运行命令" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$NativeCommand$" Type="String" DisplayName="命令" Default="$#this#._NativeCommand$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>
+        </Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=_NativeCommand,VarValue="$NativeCommand$")</Atom>
+        <Atom>#this#.$NativeCommand$</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="%显示完整面板" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.PluginUICount$'!='0'">
+      <Parameters />
+      <Atoms>
+        <Atom>ToggleFullPanel</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="解析字符" DisplayClass="常用功能" Range="Manual" Enable="'$System.DebugMode$'=='True'">
+      <Parameters>
+        <Parameter Token="$EvalStr$" Type="String" DisplayName="字符" Default="" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False">
+        </Parameter>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.InfoDialog(Message="{$EvalStr$}")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="LMAS参数设置" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters>
+        <!--
+        <Parameter Token="$SIP$" Type="String" DisplayName="LAMS服务器IP" Default="10.115.50.74" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$SPort$" Type="String" DisplayName="LAMS服务器端口" Default="9000" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$LPort$" Type="String" DisplayName="LAMS服务器监听端口" Default="62502" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$UserName$" Type="String" DisplayName="Empower用户名" Default="system" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$PWD$" Type="String" DisplayName="密码" Default="manager" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$DBName$" Type="String" DisplayName="数据库名称" Default="Local" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$InsName$" Type="String" DisplayName="仪器名称" Default="DEMO_QDA" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$NodeName$" Type="String" DisplayName="节点名称" Default="DEMO_QDA:Dlv06cas2848056" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$ModeName$" Type="String" DisplayName="模块名称" Default="W2998#B17VPD522A" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$GetDelay$" Type="String" DisplayName="读取样品信息间隔" Default="15" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        -->
+        <Parameter Token="$SIP$" Type="String" DisplayName="LAMS服务器IP" Default="$#this#.LAMS_ServerIP$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$SPort$" Type="String" DisplayName="LAMS服务器端口" Default="$#this#.LAMS_ServerPort$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$LPort$" Type="String" DisplayName="LAMS服务器监听端口" Default="$#this#.LAMS_ListenPort$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$UserName$" Type="String" DisplayName="Empower用户名" Default="$#this#.LAMS_UserName$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$PWD$" Type="String" DisplayName="密码" Default="$#this#.LAMS_PWD$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$DBName$" Type="String" DisplayName="数据库名称" Default="$#this#.LAMS_DBName$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$InsName$" Type="String" DisplayName="仪器名称" Default="$#this#.LAMS_InsName$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$NodeName$" Type="String" DisplayName="节点名称" Default="$#this#.LAMS_NodeName$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$ModeName$" Type="String" DisplayName="模块名称" Default="$#this#.LAMS_ModeName$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+        <Parameter Token="$GetDelay$" Type="String" DisplayName="读取样品信息间隔" Default="$#this#.LAMS_GetSampleDelay$" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="'A'=='A'" CheckErrorMsg="" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_ServerIP$,VarValue=$SIP$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_ServerPort$,VarValue=$SPort$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_ListenPort$,VarValue=$LPort$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_UserName$,VarValue=$UserName$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_PWD$,VarValue=$PWD$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_DBName$,VarValue=$DBName$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_InsName$,VarValue=$InsName$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_NodeName$,VarValue=$NodeName$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_ModeName$,VarValue=$ModeName$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMS_GetSampleDelay$,VarValue=$GetDelay$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_ServerIP$,VarValue=$SIP$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_ServerPort$,VarValue=$SPort$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_ListenPort$,VarValue=$LPort$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_UserName$,VarValue=$UserName$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_PWD$,VarValue=$PWD$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_DBName$,VarValue=$DBName$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_InsName$,VarValue=$InsName$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_NodeName$,VarValue=$NodeName$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_ModeName$,VarValue=$ModeName$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMS_GetSampleDelay$,VarValue=$GetDelay$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="检查Empower就绪状态" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.LAMSCheckEMReady(UserName=$System.LAMS_UserName$,PWD=$System.LAMS_PWD$,DataBase=$System.LAMS_DBName$,InsName=$System.LAMS_InsName$,NodeName=$System.LAMS_NodeName$,ModeName=$System.LAMS_ModeName$,TimeOut=1)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="读取Empower数据库" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.LAMSGetEMDataBaseList()</Atom>
+        <Atom>System.InfoDialog(Message="$System.LAMS_DataBaseList$")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="取样试管位置检查" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters>
+        <Parameter Token="$StartIndex$" Type="Int32" DisplayName="开始瓶号" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="70" Min="1" SameCondition="False" />
+        <Parameter Token="$TestCount$" Type="Int32" DisplayName="数量" Default="70" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="70" Min="1" SameCondition="False" />
+        <Parameter Token="$TestDepth$" Type="Int32" DisplayName="扎入深度" Default="100" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="160" Min="1" SameCondition="False" />
+        <Parameter Token="$TestXOffset$" Type="Int32" DisplayName="X偏移" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="5" Min="-3" SameCondition="False" />
+        <Parameter Token="$TestYOffset$" Type="Int32" DisplayName="Y偏移" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="5" Min="-3" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMSTestVialStartIndex$,VarValue=$StartIndex$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMSTestVialCount$,VarValue=$TestCount$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestVialStartIndex$,VarValue=$StartIndex$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestVialCount$,VarValue=$TestCount$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestPos$,VarValue=GetVial)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestDepth$,VarValue=$TestDepth$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSNldOffsetX$,VarValue=$TestXOffset$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSNldOffsetY$,VarValue=$TestYOffset$)</Atom>
+        <Atom>System.RunCmdFile(FileName="$System._RunDir$\Resource\Instruments\SpecialScript\LAMSVialTest.txt")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="左臂洗针" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.RunCmdFile(FileName="$System._RunDir$\Resource\Instruments\SpecialScript\LAMSWash.txt")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="重置进样瓶号" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters />
+      <Atoms>
+        <Atom>System.InfoDialog(Message="当前瓶号是:$System.TJYMWashVial$,是否重置？",ShowCancel=True)</Atom>
+        <Atom>If('$System._DialogResult$'=='OK')</Atom>
+        <Atom>System.SetSaveInsField(InsName=System,VarName=TJYMWashVial,VarValue=1)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="进样瓶位置检查" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'">
+      <Parameters>
+        <Parameter Token="$StartIndex$" Type="Int32" DisplayName="开始瓶号" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="162" Min="1" SameCondition="False" />
+        <Parameter Token="$TestCount$" Type="Int32" DisplayName="数量" Default="162" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="162" Min="1" SameCondition="False" />
+        <Parameter Token="$TestDepth$" Type="Int32" DisplayName="扎入深度" Default="28" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="32" Min="1" SameCondition="False" />
+        <Parameter Token="$TestXOffset$" Type="Int32" DisplayName="X偏移" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="5" Min="-5" SameCondition="False" />
+        <Parameter Token="$TestYOffset$" Type="Int32" DisplayName="Y偏移" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="5" Min="-5" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMSTestVialStartIndex$,VarValue=$StartIndex$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$LAMSTestVialCount$,VarValue=$TestCount$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestVialStartIndex$,VarValue=$StartIndex$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestVialCount$,VarValue=$TestCount$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestPos$,VarValue=WashVial)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSTestDepth$,VarValue=$TestDepth$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSNldOffsetX$,VarValue=$TestXOffset$)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$LAMSNldOffsetY$,VarValue=$TestYOffset$)</Atom>
+        <Atom>System.RunCmdFile(FileName="$System._RunDir$\Resource\Instruments\SpecialScript\LAMSVialTest.txt")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="暂停读取LAMS样品" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'" IsEnableWhenRun="True">
+      <Parameters />
+      <Atoms>
+        <Atom>SetVar(VarRange=System,VarName=$LAMSPauseGet$,VarValue=True)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="继续读取LAMS样品" DisplayClass="LAMS常用功能" Range="Manual" Filter="ShortPanel" Enable="'$System.SystemType$'=='LAMS'" IsEnableWhenRun="True">
+      <Parameters />
+      <Atoms>
+        <Atom>SetVar(VarRange=System,VarName=$LAMSPauseGet$,VarValue=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+  </UtilsFunctions>
+  <Commands>
+  </Commands>
+</Instrument>

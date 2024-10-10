@@ -1,0 +1,654 @@
+<?xml version="1.0"?>
+<Instrument>
+  <!--
+vim: nowrap tw=0
+-->
+  <MonitorValues>
+    <!--
+    <MonitorValue DisplayName="加热槽" Token="$Agitator 1.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetField('#this#','ITemperatureControl'),'Agitator 1')" />
+    <MonitorValue DisplayName="针座" Token="$SyringeHeater.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetField('#this#','ITemperatureControl'),'SyringeHeater')" />
+    <MonitorValue DisplayName="Fiber老化" Token="$SPMECondModule1.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetField('#this#','ITemperatureControl'),'SPMECondModule1')" />
+    <MonitorValue DisplayName="ITEX Trap" Token="$TrapHeater.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetProperty('#this#','ITemperatureControl'),'SPMECondModule1')" />
+    <MonitorValue DisplayName="Stirr温度" Token="$Heatex Stirrer 1.Heater.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetField('#this#','ITemperatureControl'),'Heatex Stirrer 1.Heater')" />
+    <MonitorValue DisplayName="Arrow老化" Token="$SPMEArrowCond 1.ActualTemperature$" Unit="%1#°C" Enable="ListContains(InsGetField('#this#','ITemperatureControl'),'SPMEArrowCond 1')" />
+    -->
+  </MonitorValues>
+  <Vars>
+    <Var Name="$ArmSlowSpeed$" Value="50%" />
+    <Var Name="$Parameters$" Value="85%" />
+    <Var Name="$SmallToolFactor$" Value="0.1" />
+    <Var Name="$AtomReturnInfo$" Value="True" />
+    <Var Name="$Agitator 1.20mLPos$" Value="1#2" />
+    <Var Name="$Agitator 1.20mLPos.Count$" Value="2" />
+    <Var Name="$SendPrep$" Value="False" />
+    <Var Name="$FastInjection$" Value="False" />
+    <Var Name="$DilutorPrimeVolumemL$" Value="3" />
+    <Var Name="$PreDilutorSolventChanel$" Value="0" />
+    <Var Name="$DefaultWash$" Value="Standard Wash 1" />
+    <Var Name="$DefaultWaste$" Value="HF Fast Wash 1" />
+    <Var Name="$DefaultWasteIndex$" Value="3" />
+    <Var Name="$IIncubator$" Value="Agitator 1" />
+    <Var Name="$OnHeadTool$" Value="L1000" />
+    <Var Name="$DefaultLargeWashVolume$" Value="100" />
+    <Var Name="$DefaultLargeWash$" Value="HF Fast Wash 1" />
+    <Var Name="$DefaultLargeWaste$" Value="HF Fast Wash 1" />
+    <Var Name="$DefaultLargeWasteIndex$" Value="3" />
+    <Var Name="$ForceCleanPercent$" Value="70" />
+    <Var Name="$ForceSampleCleanAddPercent$" Value="5" />
+    <Var Name="$ForceSampleCleanPercent$" Value="-1" />
+    <Var Name="$GCInjFillStrokeExtraVol$" Value="3" />
+    <Var Name="$DefaultDispenseMaxRatio$" Value="0.5" />
+    <Var Name="$DefaultAspirateMaxRatio$" Value="1" />
+    <Var Name="$DefaultPullDelayRatio$" Value="3" />
+    <Var Name="$LS1.SyringeVolume$" Value="10" />
+    <Var Name="$KeepDrawerOpen$" Value="True" />
+    <Var Name="$AutoRestoreVial$" Value="True" />
+    <Var Name="$AgitatorPos1Vial$" Value="None" />
+    <Var Name="$AgitatorPos1VialTime$" Value="0" />
+    <Var Name="$IToolLiquidMagn20mL$" Value="LS 2#LS 1" />
+    <Var Name="$ITSPFlushHeight$" Value="15" />
+    <Var Name="$CLineFinalMin$" Value="100" />
+    <Var Name="$CLineFinalMax$" Value="1500" />
+    <Var Name="$Agitator 1.ActualTemperature$" Value="32" />
+    <Var Name="$CheckReadySignalDouble$" Value="False" />
+    <Var Name="$CheckReadySignalDoubleTime$" Value="20" />
+    <Var Name="$GetSetTemp$" Value="False" />
+    <Var Name="$IObjectContainer$" Value="Agitator 1#Rack 1#Rack 2#Rack 3#Rack 4#Rack 5#Rack 6#InLabRMPort" />
+    <Var Name="$WaitSyncTimeout$" Value="0" />
+    <Var Name="$SPMEV2AgitorPos$" Value="3" />
+    <Var Name="$HeadSpaceV2Agitator$" Value="Agitator 1" />
+    <Var Name="$HeadSpaceV2AgitatorPosList$" Value="1#2#3" />
+    <Var Name="$UnLockVTAfterLoad$" Value="True" />
+    <Var Name="$IgnoreDeCapperError$" Value="True" />
+    <Var Name="$IgnorePreRunSampleWork$" Value="False" />
+    <Var Name="$IgnorePostRunSampleWork$" Value="False" />
+    <Var Name="$Agitator 1.2mLPos$" Value="2" />
+    <Var Name="$IToolLiquid$" Value="LS 1" />
+    <Var Name="$SimulatorIns$" Value="False" />
+  </Vars>
+  <UtilsFunctions>
+    <!--
+           //读取配置前、后运行
+           _PreLoadWork
+           _PostLoadWork
+           //开始运行方法、方法结束后运行
+           _PreRunSampleWork
+           _PostRunSampleWork
+        -->
+    <UtilsFunction DisplayName="AutoSamplerReset" Enable="False">
+      <Atoms>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.ResetAfterSample()</Atom>
+        <Atom>#this#.RestoreMovedVial()</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=Agitator 1.InVialsCount,VarValue=0)</Atom>
+        <Atom>#this#.Reset()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="AutoSamplerBeginChangeToolStart" Enable="False">
+      <Atoms>
+        <Atom>#this#.MoveToEjectPositionUtility(machineObject=$#this#.IRobotArm$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="AutoSamplerBeginChangeToolEnd" Enable="False">
+      <Atoms>
+        <Atom>#this#.MoveToHomeUtility(machineObject=$#this#.IRobotArm$)</Atom>
+        <Atom>#this#.Reset()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PreRunSampleWork" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>If(InsGetField('#this#','IgnorePreRunSampleWork')=='True')</Atom>
+        <Atom>System.PrintMessage(Message="Ignore PreRunSampleWork",FCColor=Blue,BGColor=White)</Atom>
+        <Atom>Else()</Atom>
+        <Atom>If('$System.OnLineSPEWatersUPLCSync$'=='True')</Atom>
+        <Atom>#this#.SetSignal(SignalName=UPLCInjHold,Mode=0)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If(InsGetField('#this#','RobotType')=='Dual Head' &amp;&amp; ListCount('$System._Instrument.CTCPal3$')&gt;1)</Atom>
+        <Atom>If(InsGetField('#this#','AuxPal3')=='True')</Atom>
+        <Atom>System.WaitSoftSignal(SignalName=DualPreResetDone,Info=)</Atom>
+        <Atom>Else()</Atom>
+        <Atom>#this#.Reset()</Atom>
+        <Atom>#this#.Wait(Time=0s)</Atom>
+        <Atom>System.SetSoftSignal(SignalName=DualPreResetDone,Info=)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>Else()</Atom>
+        <Atom>#this#.Reset()</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PostRunSampleWork" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>If(InsGetField('#this#','IgnorePostRunSampleWork')=='True')</Atom>
+        <Atom>System.PrintMessage(Message="Ignore PostRunSampleWork",FCColor=Blue,BGColor=White)</Atom>
+        <Atom>Else()</Atom>
+        <Atom>If('$System.OnLineSPEWatersUPLCSync$'=='True')</Atom>
+        <Atom>#this#.SetSignal(SignalName=UPLCInjHold,Mode=0)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If(InsGetField('#this#','RobotType')=='Dual Head' &amp;&amp; ListCount('$System._Instrument.CTCPal3$')&gt;1)</Atom>
+        <Atom>If(InsGetField('#this#','AuxPal3')=='True')</Atom>
+        <!--
+                    <Atom>#this#.ResetAfterSample()</Atom>
+                    -->
+        <Atom>#this#.RestoreMovedVial()</Atom>
+        <Atom>System.SetSoftSignal(SignalName=DualPostResetDone)</Atom>
+        <Atom>Else()</Atom>
+        <Atom>System.WaitSoftSignal(SignalName=DualPostResetDone,Info=)</Atom>
+        <!--
+                    <Atom>#this#.ResetAfterSample()</Atom>
+                    <Atom>#this#.RestoreMovedVial()</Atom>
+                    -->
+        <Atom>#this#.Reset()</Atom>
+        <Atom>#this#.Wait(Time=0s)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>Else()</Atom>
+        <Atom>If(InsGetField('#this#','AutoRestoreVial')=='True')</Atom>
+        <Atom>#this#.ResetAfterSample()</Atom>
+        <Atom>#this#.RestoreMovedVial()</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>#this#.Reset()</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If('$#this#.UnLockVTAfterLoad$'=='True')</Atom>
+        <Atom>#this#.UnLockVT()</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PreLoadWork" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>SetVar(VarRange=#this#,VarName=$PostWorkDone$,VarValue=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PreRunFunction" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>#this#.WaitLockVT(Timeout=5)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PostRunFunction" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>#this#.UnLockVT()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_PostLoadWorkCache" Range="Manual" Enable="True">
+      <Parameters />
+      <Atoms>
+        <Atom>SetVar(VarRange=#this#,VarName=$SolventRack.MaxIndex$,VarValue=15)</Atom>
+        <!--
+        <Atom>Call(Name=Pal3_AddTempMonitor,Pal3Name=#this#)</Atom>
+        -->
+        <Atom>Call(Name=Pal3_FindWashStation,Pal3Name=#this#)</Atom>
+        <Atom>Call(Name=Pal3_CheckSimulatorIns,Pal3Name=#this#)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$PostWorkDone$,VarValue=True)</Atom>
+        <Atom>If('$System.OnLineSPEWatersUPLCSync$'=='True')</Atom>
+        <Atom>#this#.SetSignal(SignalName=UPLCInjHold,Mode=0)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If('$#this#.UnLockVTAfterLoad$'=='True')</Atom>
+        <Atom>#this#.UnLockVT()</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="SIIStandby" Range="Manual" Enable="False" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>Pal3.SetSignal(Signal=Output Signal 1,Mode=2)</Atom>
+        <Atom>Pump1.StopSeq()</Atom>
+        <Atom>Pump2.StopSeq()</Atom>
+        <Atom>Pal3.Reset()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="_ErrorRetry" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>#this#.GetAxisPosition(Axis=3)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=_Z,VarValue={StrToDouble(StrReplace('$#this#.AtomReturnInfo$',' m',''))*1000})</Atom>
+        <Atom>#this#.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=-$#this#._Z$mm,AccelerationFactor=45%,ForceDirectMovement=True)</Atom>
+        <Atom>#this#.Wait(Time=3s)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="%解锁终端" DisplayClass="常用功能" Filter="ShortPanel" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <!--
+        <Atom>#this#.UnLockVT()</Atom>
+        -->
+        <Atom>ForceUnLockVT</Atom>
+        <Atom>System.InfoDialog(Message="$System.Pal3UnLockOk$",ShowCancel=False)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="重置进样器" DisplayClass="常用功能" Range="Manual" Filter="ShortPanel" Enable="true">
+      <Atoms>
+        <Atom>If('$#this#.OnHeadTool$'!='None')</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.ResetAfterSample()</Atom>
+        <Atom>#this#.RestoreMovedVial()</Atom>
+        <Atom>#this#.Reset()</Atom>
+        <Atom>Else()</Atom>
+        <Atom>System.InfoDialog(Message="请换上一个进样工具",ShowCancel=False)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="放下工具" DisplayClass="常用功能" Filter="ShortPanel" Enable="'$#this#.ToolHandlingBehavior$'=='Automatic'">
+      <Atoms>
+        <Atom>#this#.ParkTool()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="换针" DisplayClass="常用功能" Filter="ShortPanel" Enable="'$#this#.ToolHandlingBehavior$'=='Automatic'">
+      <Parameters>
+        <Parameter Token="$Tool$" Type="List" DisplayName="换针" Default="LS 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="$#this#.ITool$" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$Tool$)</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="HF排气泡" DisplayClass="常用功能" Filter="ShortPanel" Enable="ListContains(InsGetField('#this#','IMoveTarget'),'VapLiner1')">
+      <Parameters>
+        <Parameter Token="$PumpChanel$" Type="List" DisplayName="通道" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="1#2" SameCondition="False" />
+        <Parameter Token="$PurgeTime$" Type="Int32" DisplayName="排气泡时间(s)" Default="15" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="60" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.SetPump(Target=HF Fast Wash 1,PumpIndex=$PumpChanel$,State=True,FlowFactor=100%)</Atom>
+        <Atom>#this#.Wait(Time=$PurgeTime$s)</Atom>
+        <Atom>#this#.SetPump(Target=HF Fast Wash 1,PumpIndex=$PumpChanel$,State=False,FlowFactor=100%)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="流量计控制" DisplayClass="常用功能" Filter="ShortPanel" Enable="ListContains(InsGetField('#this#','IMoveTarget'),'VapLiner1')">
+      <Parameters>
+        <Parameter Token="$GasControl$" Type="List" DisplayName="状态" Default="Close" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="Close#Open" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.SwitchGasValve(Target=PWMOut,Position={StrToListValue('$GasControl$','Open@1#Close@0')})</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="手动换针" DisplayClass="常用功能" Filter="ShortPanel" Enable="'$#this#.ToolHandlingBehavior$'!='Automatic'">
+      <Atoms>
+        <Atom>If(InsVarExist('#this#','IRobotArm') &amp;&amp; ListCount('$#this#.IRobotArm$')&gt;1)</Atom>
+        <Atom>System.InputDialog(Prompt="$System.Pal3ChangeArm$",Default="$#this#.IRobotArm$",Type=List)</Atom>
+        <Atom>If('$System._DialogResult$'=='OK')</Atom>
+        <Atom>#this#.MoveToEjectPositionUtility(machineObject=$System._InputDialogResult$)</Atom>
+        <Atom>System.InfoDialog(Message="$System.Pal3ChangeAfterOK$",ShowCancel=False)</Atom>
+        <Atom>#this#.MoveToHomeUtility(machineObject=$System._InputDialogResult$)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If(InsVarExist('#this#','IRobotArm') &amp;&amp;ListCount('$#this#.IRobotArm$')==1)</Atom>
+        <Atom>#this#.MoveToEjectPositionUtility(machineObject=$#this#.IRobotArm$)</Atom>
+        <Atom>System.InfoDialog(Message="$System.Pal3ChangeAfterOK$",ShowCancel=False)</Atom>
+        <Atom>#this#.MoveToHomeUtility(machineObject=$#this#.IRobotArm$)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>#this#.Reset()</Atom>
+        <Atom>#this#.Wait(Time=2s)</Atom>
+        <Atom>#this#.Reset()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="移回Home位置" DisplayClass="常用功能" Filter="ShortPanel" Enable="True">
+      <Atoms>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <!--
+    <UtilsFunction DisplayName="关机" DisplayClass="扩展功能" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.InfoDialog(Message="是否关闭仪器? 关闭后需手动关闭电源和软件。",ShowCancel=True)</Atom>
+        <Atom>If('$System._DialogResult$'=='OK')</Atom>
+        <Atom>#this#.HackRun(Command=ShutDown)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="重启" DisplayClass="扩展功能" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>System.InfoDialog(Message="是否重启仪器?重启后需要重新读取配置或重开软件。",ShowCancel=True)</Atom>
+        <Atom>If('$System._DialogResult$'=='OK')</Atom>
+        <Atom>#this#.HackRun(Command=Restart)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    -->
+    <UtilsFunction DisplayName="DeCapper释放" DisplayClass="扩展功能" Range="Manual" Enable="ListCount(InsGetField('#this#','IDecapper')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$Tool$" Type="List" DisplayName="进样工具" Default="LS 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="$#this#.ITool$" SameCondition="False" />
+        <Parameter Token="$TargetDeCapper$" Type="List" DisplayName="DeCapper" Default="DeCapper 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetField('#this#','$IDecapper$')}" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$Tool$)</Atom>
+        <Atom>#this#.DeCapperDispose(Target=$TargetDeCapper$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="SPE阀切换" DisplayClass="扩展功能" Enable="'$System.SystemType$'=='OnLineSPE'">
+      <Parameters>
+        <Parameter ValueList="ActiveLoad#StandbyInject" Token="$V1$" DisplayName="Inject Valve" Type="List" DisableCondition="False" RefreshKey="" UniqueCondition="False" SameCondition="False" VisableCondition="True" Default="StandbyInject" />
+        <Parameter ValueList="ActiveLoad#StandbyInject" Token="$V2$" DisplayName="Valve 2" Type="List" DisableCondition="False" RefreshKey="" UniqueCondition="False" SameCondition="False" VisableCondition="True" Default="StandbyInject" />
+        <Parameter ValueList="ActiveLoad#StandbyInject" Token="$V3$" DisplayName="Valve 3" Type="List" DisableCondition="False" RefreshKey="" UniqueCondition="False" SameCondition="False" VisableCondition="True" Default="StandbyInject" />
+        <Parameter ValueList="ActiveLoad#StandbyInject" Token="$V4$" DisplayName="Valve 4" Type="List" DisableCondition="False" RefreshKey="" UniqueCondition="False" SameCondition="False" VisableCondition="$System.OnLineSPEPortNumber$==4" Default="StandbyInject" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.MoveInjectorValve(Target=LcInjectorValve1,Position={StrToListValue('$V1$','ActiveLoad@1#StandbyInject@2')})</Atom>
+        <Atom>#this#.MoveTwoPositionNPortValve(Target=SwitchValve2,Position={StrToListValue('$V2$','ActiveLoad@1#StandbyInject@2')})</Atom>
+        <Atom>#this#.MoveTwoPositionNPortValve(Target=SwitchValve3,Position={StrToListValue('$V3$','ActiveLoad@1#StandbyInject@2')})</Atom>
+        <Atom>If($System.OnLineSPEPortNumber$==4)</Atom>
+        <Atom>#this#.MoveTwoPositionNPortValve(Target=SwitchValve4,Position={StrToListValue('$V4$','ActiveLoad@1#StandbyInject@2')})</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="模拟进样信号1" DisplayClass="扩展功能" Filter="ShortPanel" Enable="ListContains(InsGetField('#this#','IChangeableParamSet'),'Output Signal 1')" IsLongTime="False">
+      <Atoms>
+        <Atom>#this#.SetSignal(Signal=Output Signal 1,Mode=2)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="模拟进样信号2" DisplayClass="扩展功能" Enable="ListContains(InsGetField('#this#','IChangeableParamSet'),'Output Signal 2')" IsLongTime="False">
+      <Atoms>
+        <Atom>#this#.SetSignal(Signal=Output Signal 2,Mode=2)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="%进样针设置" DisplayClass="设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'">
+      <Parameters />
+      <Atoms>
+        <Atom>ExchangeSyringe</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="%托盘设置" DisplayClass="设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'">
+      <Parameters />
+      <Atoms>
+        <Atom>TraySetting</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="%加热槽设置" DisplayClass="设置" Range="Manual" Enable="('Z$#this#.IIncubator$'!='Z') &amp;&amp; ('$System._LogonRule$'=='Manager')" IsLongTime="False">
+      <Parameters />
+      <Atoms>
+        <Atom>AgitatorSetting</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="默认洗针工作站" DisplayClass="设置" Filter="ShortPanel" Range="Manual" Enable="True" IsLongTime="False" IsEnableWhenRun="True">
+      <Parameters>
+        <Parameter Token="$WashSource$" Type="List" DisplayName="洗针工作站" Default="{InsGetField('#this#','$DefaultWash$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+        <Parameter Token="$Waste$" Type="List" DisplayName="废液工作站" Default="{InsGetField('#this#','$DefaultWaste$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+        <Parameter Token="$LargeWashSourceVolume$" Type="Int32" DisplayName="超过体积(uL)" Default="{InsGetField('#this#','$DefaultLargeWashVolume$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="10000" Min="1" SameCondition="False" />
+        <Parameter Token="$LargeWashSource$" Type="List" DisplayName="大体积针洗针工作站" Default="{InsGetField('#this#','$DefaultLargeWash$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+        <Parameter Token="$LargeWaste$" Type="List" DisplayName="大体积针废液工作站" Default="{InsGetField('#this#','$DefaultLargeWaste$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultWash$,VarValue=$WashSource$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultWaste$,VarValue=$Waste$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultWasteIndex$,VarValue={InsGetProperty('#this#','$Waste$.MaxIndex')})</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultLargeWashVolume$,VarValue=$LargeWashSourceVolume$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultLargeWash$,VarValue=$LargeWashSource$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultLargeWaste$,VarValue=$LargeWaste$)</Atom>
+        <Atom>System.SetSaveInsField(InsName=#this#,VarName=$DefaultLargeWasteIndex$,VarValue={InsGetProperty('#this#','$LargeWaste$.MaxIndex')})</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="模块重命名" DisplayClass="高级设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'" IsLongTime="False">
+      <Parameters>
+        <Parameter Token="$OldName$" Type="List" ValueList="{InsGetProperty('#this#.ITool')}#{InsGetProperty('#this#.IInjector')}#{InsGetProperty('#this#.IWashStation')}#{InsGetProperty('#this#.TrayContainer')}#{InsGetProperty('#this#.InputSignalDescription')}#{InsGetProperty('#this#.OutputSignalDescription')}#{InsGetProperty('#this#.IStack')}#{InsGetProperty('#this#.ITeachTarget')}" DisplayName="模块" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$NewName$" Type="String" DisplayName="命名为" Default="$OldName$" DisableCondition="False" RefreshKey="$OldName$" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.RenameModule(Name=$OldName$,NewName=$NewName$)</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="保存校正位置" DisplayClass="高级设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'" IsLongTime="False">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.GetAllTeachPoints(File="$System._RunDir$\Resource\Instruments\CTCPal3Position.txt")</Atom>
+        <Atom>System.InfoDialog(Message="$System._RunDir$\Resource\Instruments\CTCPal3Position.txt 保存完毕")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="保存备份" DisplayClass="高级设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'" IsLongTime="False">
+      <Parameters>
+        <Parameter Token="$BackFileDir$" Type="DirName" DisplayName="保存目录" Default="D:" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" FullPath="True" InitPath="D:\" Extension="png" MustExist="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.CreateBackupFile(FileName="$BackFileDir$\InLab-{StrGetDate('yyyy-MM-dd-hh-mm')}.pack")</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="还原校正位置" DisplayClass="高级设置" Range="Manual" Enable="'$System._LogonRule$'=='Manager'" IsLongTime="True">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>System.InfoDialog(Message="重置系统参数,是否确定?",ShowCancel=True)</Atom>
+        <Atom>If('$System._DialogResult$'=='OK')</Atom>
+        <Atom>#this#.HackRun(Command=RestoreTeachFile,File="$System._RunDir$\Resource\Instruments\CTCPal3Position.txt")</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </UtilsFunction>
+    <UtilsFunction DisplayName="读取XYZ位置" DisplayClass="扩展功能" Range="Manual" Enable="True" IsLongTime="False">
+      <Parameters>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.GetAxisPosition(Axis=1)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=_X,VarValue={StrToDouble(StrReplace('$#this#.AtomReturnInfo$',' m',''))*1000})</Atom>
+        <Atom>#this#.GetAxisPosition(Axis=2)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=_Y,VarValue={StrToDouble(StrReplace('$#this#.AtomReturnInfo$',' m',''))*1000})</Atom>
+        <Atom>#this#.GetAxisPosition(Axis=3)</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=_Z,VarValue={StrToDouble(StrReplace('$#this#.AtomReturnInfo$',' m',''))*1000})</Atom>
+        <Atom>System.InfoDialog(Message="{StrReplace('X:@$#this#._X$@mm Y:@$#this#._Y$@mm Z:@$#this#._Z$@mm','@','')}")</Atom>
+      </Atoms>
+    </UtilsFunction>
+  </UtilsFunctions>
+  <Commands>
+    <Command DisplayName="移动到目标物" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$MoveObject$" Type="List" DisplayName="目标物" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="$#this#.IMoveTarget$" SameCondition="False" />
+        <Parameter Token="$MoveIndex$" Type="Int32" DisplayName="目标编号" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="120" Min="1" SameCondition="False" />
+        <Parameter Token="$UseTouchDown$" Type="Bool" DisplayName="下探侦测" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="120" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MoveToObject(Target=$MoveObject$,Index=$MoveIndex$,UseTouchDown=$UseTouchDown$)</Atom>
+      </Atoms>
+    </Command>
+    <!--
+    <Command DisplayName="换针" Range="Manual" Enable="'$#this#.ToolHandlingBehavior$'=='Automatic'">
+      <Parameters>
+        <Parameter Token="$Tool$" Type="List" DisplayName="换针" Default="LS 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="$#this#.ITool$" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>If('$#this#.ToolHandlingBehavior$'=='Automatic')</Atom>
+        <Atom>#this#.ChangeTool(Tool=$Tool$)</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+        <Atom>Else()</Atom>
+        <Atom>System.InfoDialog(Message=$#this#.ToolHandlingBehavior$ Can't Auto Change Tool)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </Command>
+    -->
+    <Command DisplayName="洗针" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$WashSource$" Type="List" DisplayName="洗针工作站" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+        <Parameter Token="$WashIndex$" Type="List" DisplayName="洗针液体" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="1#2" SameCondition="False" />
+        <Parameter Token="$WashCount$" Type="Int32" DisplayName="洗针次数" Default="3" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="10" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.CleanSyringe(WashSource=$WashSource$,WashIndex=$WashIndex$,WashVolume=100%,Cycles=$WashCount$,WasteTarget=$#this#.DefaultWaste$,WasteIndex=$#this#.DefaultWasteIndex$)</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="Dilutor冲洗" Range="Manual" Enable="ListCount(InsGetField('#this#','IToolDilutor')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$DILTool$" Type="List" DisplayName="Dilutor Tool" Default="DIL 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','IToolDilutor')}" />
+        <Parameter Token="$DILChanel$" Type="List" DisplayName="通道" Default="2" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="2#3#4#5#6" />
+        <Parameter Token="$DILVolume$" Type="Int32" DisplayName="体积(mL)" Default="5" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="100" Min="1" SameCondition="False" />
+        <Parameter Token="$DILWaste$" Type="List" DisplayName="废液口" Default="{InsGetField('#this#','$DefaultWaste$')}" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="{InsGetProperty('#this#.IWashStation')}" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$DILTool$)</Atom>
+        <Atom>#this#.PrimeDilutor(Dilutor=Dilutor 1,SolventPort=$DILChanel$,Volume=$DILVolume$mL,WastePosition=$DILWaste$.Waste)</Atom>
+        <Atom>#this#.Reset()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="提针扎入检查" Range="Manual" Enable="'$#this#.ToolHandlingBehavior$'=='Automatic'">
+      <Parameters>
+        <Parameter Token="$MoveObject$" Type="List" DisplayName="目标物" Default="Injector 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" ValueList="$#this#.IMoveTarget$" SameCondition="False" />
+        <Parameter Token="$MoveIndex$" Type="Int32" DisplayName="目标编号" Default="1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="120" Min="1" SameCondition="False" />
+        <Parameter Token="$TestDeep$" Type="Int32" DisplayName="测试深度(mm)" Default="10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="45" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.MoveToObject(Target=$MoveObject$,Index=$MoveIndex$,UseTouchDown=True)</Atom>
+        <Atom>#this#.PenetrateObject(Target=$MoveObject$,Index=$MoveIndex$,Depth=$TestDeep$mm)</Atom>
+        <Atom>#this#.RetractNeedleGuide(Distance=20mm)</Atom>
+        <Atom>System.InfoDialog(Message="检查完毕后确定",ShowCancel=False)</Atom>
+        <Atom>#this#.LowerNeedleGuide()</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="扎入深度测试" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$Target$" Type="List" DisplayName="目标位置" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','TraySlots')}" />
+        <Parameter Token="$TargetIndex$" Type="String" CheckCondition="" CheckErrorMsg="" DisplayName="目标编号(-#)" Default="1-15" DisableCondition="'Z$Target$'=='Z'" RefreshKey="$Target$" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$TestTool$" Type="List" DisplayName="进样针" Default="#0" DisableCondition="False" RefreshKey="False" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="$#this#.ITool$" />
+        <Parameter Token="$TestDeep$" Type="Int32" DisplayName="测试深度(mm)" Default="5" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="50" Min="-2" SameCondition="False" />
+        <Parameter Token="$NextWait$" Type="Double" DisplayName="测试间隔(s)" Default="10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="600" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>Call(Name=Pal3_BatchCheckTrayPentrate,CheckTool=$TestTool$,TestDeep=$TestDeep$,NextWait=$NextWait$,CheckList=$TargetIndex$,Target=$Target$)</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="SPME老化" Range="Manual" Enable="ListCount(InsGetField('#this#','IToolFiber')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$SPMETool$" Type="List" DisplayName="SPME Tool" Default="SPME 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','IToolFiber')}" />
+        <Parameter Token="$ConditionTime$" Type="Int32" DisplayName="老化时间(min)" Default="30" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="50" Min="12" SameCondition="False" />
+        <Parameter Token="$ConditionInjector$" Type="List" DisplayName="老化进样口" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','IConditioningStation')}" />
+        <Parameter Token="$ConditionTemp$" Type="Int32" DisplayName="老化温度(°C)" Default="245" DisableCondition="!ListContains(InsGetField('#this#','ITemperatureControl'),'$ConditionInjector$')" RefreshKey="$ConditionInjector$" UniqueCondition="False" VisableCondition="True" Max="600" Min="0" SameCondition="False" />
+        <Parameter Token="$ConditionDepth$" Type="Int32" DisplayName="老化深度(mm)" Default="42" DisableCondition="False" RefreshKey="$ConditionInjector$" UniqueCondition="False" VisableCondition="True" Max="60" Min="35" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$SPMETool$)</Atom>
+        <Atom>If(ListContains(InsGetField('#this#','ITemperatureControl'),'$ConditionInjector$'))</Atom>
+        <Atom>#this#.SetTemperature(Target=$ConditionInjector$,Temperature=$ConditionTemp$C,Wait=True)</Atom>
+        <Atom>EndIf()</Atom>
+        <Atom>If(StrContains('$SPMETool$','Arrow'))</Atom>
+        <Atom>SetVar(VarRange=#this#,VarName=$ArrowConditionCount$,VarValue={Round($ConditionTime$/3,0)})</Atom>
+        <Atom>Repeat($#this#.ArrowConditionCount$)</Atom>
+        <Atom>#this#.StartSpmeDesorb(Target=$ConditionInjector$,FiberPenetrationDepth=$ConditionDepth$mm)</Atom>
+        <Atom>System.InputDialog(Prompt="老化进行中(s)...",Type=Timeout,Default=180)</Atom>
+        <Atom>#this#.StopSpmeDesorb()</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.Wait(Time=2min)</Atom>
+        <Atom>EndRepeat()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+        <Atom>Else()</Atom>
+        <Atom>#this#.StartSpmeDesorb(Target=$ConditionInjector$,FiberPenetrationDepth=$ConditionDepth$mm)</Atom>
+        <Atom>System.InputDialog(Prompt="老化进行中(s)...",Type=Timeout,Default={$ConditionTime$*60})</Atom>
+        <Atom>#this#.StopSpmeDesorb()</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="SPME萃取深度测试" Range="Manual" Enable="ListCount(InsGetField('#this#','IToolFiber')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$Target$" Type="List" DisplayName="托盘" Default="#1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','TraySlots')}" />
+        <Parameter Token="$TargetIndex$" Type="Int32" DisplayName="样品瓶" Default="1" DisableCondition="False" RefreshKey="$Target$" UniqueCondition="False" VisableCondition="True" Max="15" Min="1" SameCondition="False" />
+        <Parameter Token="$TestTool$" Type="List" DisplayName="SPME Tool" Default="SPME 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','IToolFiber')}#{InsGetField('$WhichPal3$','IToolArrow')}" />
+        <Parameter Token="$TestDeep$" Type="Int32" DisplayName="测试深度(mm)" Default="20" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="50" Min="12" SameCondition="False" />
+        <Parameter Token="$HomeWait$" Type="Double" DisplayName="移回前等待(s)" Default="10" DisableCondition="'$IfTransHome$'=='False'" RefreshKey="$IfTransHome$" UniqueCondition="False" VisableCondition="True" Max="600" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$TestTool$)</Atom>
+        <Atom>#this#.StartSpmeAdsorb(Target=$Target$:$TargetIndex$,FiberPenetrationDepth=$TestDeep$mm,DoAgitation=False)</Atom>
+        <Atom>System.Wait(Time=$HomeWait$)</Atom>
+        <Atom>#this#.StopSpmeAdsorb()</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="SPME进样口扎入深度测试" Range="Manual" Enable="ListCount(InsGetField('#this#','IToolFiber')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$TestTool$" Type="List" DisplayName="SPME针" Default="SPME 1" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetField('#this#','IToolFiber')}#{InsGetField('$WhichPal3$','IToolArrow')}" />
+        <Parameter Token="$TestInjector$" Type="List" ValueList="{InsGetField('#this#','IInjector')}" DisplayName="测试进样口" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$TestDeep$" Type="Double" DisplayName="测试深度(mm)" Default="30" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="70" Min="20" SameCondition="False" />
+        <Parameter Token="$HomeWait$" Type="Double" DisplayName="移回前等待(s)" Default="10" DisableCondition="'$IfTransHome$'=='False'" RefreshKey="$IfTransHome$" UniqueCondition="False" VisableCondition="True" Max="600" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.ChangeTool(Tool=$TestTool$)</Atom>
+        <Atom>#this#.StartSpmeInject(Target=$TestInjector$,FiberPenetrationDepth=$TestDeep$mm)</Atom>
+        <Atom>System.Wait(Time=$HomeWait$)</Atom>
+        <Atom>#this#.StopSpmeInject()</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="过滤" Range="Manual" Enable="ListCount(InsGetField('#this#','IToolGripper')) &gt; 0">
+      <Parameters>
+        <Parameter Token="$Source$" Type="List" DisplayName="源位置" Default="None" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetProperty('#this#.IObjectContainer')}" />
+        <Parameter Token="$SourceIndex$" Type="Int32" DisplayName="源位置编号" Default="1" DisableCondition="'Z$Source$'=='Z'" RefreshKey="$Source$" UniqueCondition="False" VisableCondition="True" Max="{InsGetProperty('#this#.$Source$.MaxIndex')}" Min="1" SameCondition="False" />
+        <Parameter Token="$Target$" Type="List" DisplayName="目标位置" Default="None" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetProperty('#this#.IObjectContainer')}" />
+        <Parameter Token="$TargetIndex$" Type="Int32" DisplayName="目标编号" Default="1" DisableCondition="'Z$Source$'=='Z'" RefreshKey="$Target$" UniqueCondition="False" VisableCondition="True" Max="{InsGetProperty('#this#.$Target$.MaxIndex')}" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.MoveToObject(Target=$Source$,Index=$SourceIndex$)</Atom>
+        <Atom>#this#.GrabObject()</Atom>
+        <Atom>#this#.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=-25mm,AccelerationFactor=45%,ForceDirectMovement=True)</Atom>
+        <Atom>#this#.ApproachObject(Target=$Target$,Index=$TargetIndex$,OffsetZ=-5mm)</Atom>
+        <Atom>#this#.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=18mm,AccelerationFactor=15%,ForceDirectMovement=True)</Atom>
+        <Atom>#this#.MovePlunger(Movement=5mm,IsRelativeMovement=True)</Atom>
+        <Atom>#this#.MoveRelative(MovementX=0mm,MovementY=0mm,MovementZ=-50mm,AccelerationFactor=65%,ForceDirectMovement=True)</Atom>
+        <Atom>#this#.LeaveObject()</Atom>
+        <Atom>#this#.MovePlunger(Movement=-5mm,IsRelativeMovement=True)</Atom>
+        <Atom>#this#.MoveToHome()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="移动瓶子" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$Source$" Type="List" DisplayName="源位置" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetProperty('#this#.IObjectContainer')}" />
+        <Parameter Token="$SourceIndex$" Type="Int32" DisplayName="源位置编号" Default="1" DisableCondition="'Z$Source$'=='Z'" RefreshKey="$Source$" UniqueCondition="False" VisableCondition="True" Max="{InsGetProperty('#this#.$Source$.MaxIndex')}" Min="1" SameCondition="False" />
+        <Parameter Token="$Target$" Type="List" DisplayName="目标位置" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="{InsGetProperty('#this#.IObjectContainer')}" />
+        <Parameter Token="$TargetIndex$" Type="Int32" DisplayName="目标编号" Default="1" DisableCondition="'Z$Source$'=='Z'" RefreshKey="$Target$" UniqueCondition="False" VisableCondition="True" Max="{InsGetProperty('#this#.$Target$.MaxIndex')}" Min="1" SameCondition="False" />
+        <Parameter Token="$IfLeave$" Type="Bool" DisplayName="移后离开" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$IfTransHome$" Type="Bool" DisplayName="是否移回" Default="False" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" />
+        <Parameter Token="$TransHomeWait$" Type="Double" DisplayName="移回前等待(s)" Default="10" DisableCondition="'$IfTransHome$'=='False'" RefreshKey="$IfTransHome$" UniqueCondition="False" VisableCondition="True" Max="600" Min="0" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.TransportVial(Source=$Source$:$SourceIndex$,Destination=$Target$,DestinationIndex=$TargetIndex$,LeaveObject=$IfLeave$)</Atom>
+        <Atom>If('$IfTransHome$'=='True')</Atom>
+        <Atom>System.Wait(Time=$TransHomeWait$)</Atom>
+        <Atom>#this#.TransportVialHome(Vial=$Source$:$SourceIndex$,LeaveObject=True)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="绝对位移" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$MRX$" Type="Double" DisplayName="X(mm)" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$MRY$" Type="Double" DisplayName="Y(mm)" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$MRZ$" Type="Double" DisplayName="Z(mm)" Default="0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$Speed$" Type="Int32" DisplayName="加速度(%)" Default="60" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="100" Min="1" SameCondition="False" />
+        <Parameter Token="$Part$" Type="List" DisplayName="部件" Default="#0" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="Tool#Head#ToolTip" />
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.MoveAbsolute(DestinationX=$MRX$mm,DestinationY=$MRY$mm,DestinationZ=$MRZ$mm,AccelerationFactor=$Speed$%,Part={StrToListValue('$Part$','Head@1#Tool@2#ToolTip@3')},ForceDirectMovement=True)</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="相对位移" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$RefP$" Type="List" DisplayName="参考位置(mm)" Default="None" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" SameCondition="False" ValueList="None#{InsGetProperty('#this#.ITeachTarget')}" />
+        <Parameter Token="$MRX$" Type="Double" DisplayName="X(mm)" Default="-10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$MRY$" Type="Double" DisplayName="Y(mm)" Default="-10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$MRZ$" Type="Double" DisplayName="Z(mm)" Default="-10" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="2000" Min="-2000" SameCondition="False" />
+        <Parameter Token="$Speed$" Type="Int32" DisplayName="加速度(%)" Default="60" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" Max="100" Min="1" SameCondition="False" />
+      </Parameters>
+      <Atoms>
+        <Atom>If('$RefP$'=='None')</Atom>
+        <Atom>#this#.MoveRelative(MovementX=$MRX$mm,MovementY=$MRY$mm,MovementZ=$MRZ$mm,AccelerationFactor=$Speed$%,ForceDirectMovement=True)</Atom>
+        <Atom>Else()</Atom>
+        <Atom>#this#.MoveRelative(ReferencePoint=$RefP$,MovementX=$MRX$mm,MovementY=$MRY$mm,MovementZ=$MRZ$mm,AccelerationFactor=$Speed$%,ForceDirectMovement=True)</Atom>
+        <Atom>EndIf()</Atom>
+      </Atoms>
+    </Command>
+    <Command DisplayName="运行命令" Range="Manual" Enable="True">
+      <Parameters>
+        <Parameter Token="$NativeCommand$" Type="String" DisplayName="命令" Default="" DisableCondition="False" RefreshKey="" UniqueCondition="False" VisableCondition="True" CheckCondition="True" CheckErrorMsg="" SameCondition="False">
+        </Parameter>
+      </Parameters>
+      <Atoms>
+        <Atom>#this#.$NativeCommand$</Atom>
+      </Atoms>
+    </Command>
+  </Commands>
+</Instrument>
