@@ -104,6 +104,7 @@ This project utilizes custom datasets collected and organized by our team. To se
       └─papers
         ├─paper1.pdf
         ├─paper2.pdf
+        ├─paper3.pdf
         ...
     ├─config.json
     ├─main.py
