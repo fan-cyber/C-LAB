@@ -88,7 +88,7 @@ pip install -r requirements.txt
 
 This project utilizes custom datasets collected and organized by our team. To set up the datasets:
 
-1. Download the dataset from [Google Drive](https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing)
+1. Download the dataset from [Google Drive](https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing).
 2. Unzip the dataset to the `./ChatChemPaper/Dataset/papers` folder.
 
 ## 🌲Structure
@@ -133,24 +133,24 @@ This folder contains four parts: automation platform operation software, automat
 
 ### ChatChemPaper
 
-1. Settings
+#### 1. Settings
 
 Before running the project, configure your OpenAI API key and custom parameters in `config.json`.
 
-2. Summary
+#### 2. Summary
 
 ```
 cd ChatChemPaper
 python main.py --mode 'summary'
 ```
-3. Query-Localize
+#### 3. Query-Localize
 
 ```
 cd ChatChemPaper
 python main.py --mode 'query_localize' --query_text 'Au NRs'
 ```
 
-4. Query-Extract
+#### 4. Query-Extract
 
 ```
 cd ChatChemPaper
