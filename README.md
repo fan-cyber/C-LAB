@@ -86,9 +86,10 @@ pip install -r requirements.txt
 
 **Dataset**
 
-This project uses datasets that were collected and organized by our team. The datasets are available for download at the links provided below:
+This project utilizes custom datasets collected and organized by our team. To set up the datasets:
 
-https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing
+1. Download the dataset from [Google Drive](https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=sharing)
+2. Unzip the dataset to the `./ChatChemPaper/Dataset/papers` folder.
 
 ## 🌲Structure
 
@@ -99,6 +100,12 @@ https://drive.google.com/file/d/1iELKCFNAL1uaEMM30rFa9PRcQ91E2fUc/view?usp=shari
 │  ├─Data
 │  └─InLab Solution
 └─ChatChemPaper
+    ├─Dataset
+      └─papers
+        ├─paper1.pdf
+        ├─paper2.pdf
+        ...
+    ├─config.json
     ├─main.py
     ├─paper_analyst.py
     ├─query_module.py
@@ -124,20 +131,26 @@ This folder contains four parts: automation platform operation software, automat
 4. Data
    This project includes synthesis parameter files and UV-Vis data for Au NRs, Au NSs, and Ag NCs. This part of the data is available for algorithm execution.
 
-### Summary
+### ChatChemPaper
+
+1. Settings
+
+Before running the project, configure your OpenAI API key and custom parameters in `config.json`.
+
+2. Summary
 
 ```
 cd ChatChemPaper
-python main.py --mode 'summary' --dataset_paper './dataset_paper' --dataset_summary './dataset_summary'
+python main.py --mode 'summary'
 ```
-### Query-Localize
+3. Query-Localize
 
 ```
 cd ChatChemPaper
-python main.py --mode 'query_localize' --query_text 'Au NRs' --dataset_summary 'dataset_summary' --similarity_top_k 3 --similarity_cutoff 0.7
+python main.py --mode 'query_localize' --query_text 'Au NRs'
 ```
 
-### Query-Extract
+4. Query-Extract
 
 ```
 cd ChatChemPaper
